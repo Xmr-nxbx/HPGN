@@ -4,7 +4,7 @@
 
 本文在词符注意力机制的基础上，引入语句注意力机制，构建了一种基于层次注意力机制的源代码迁移模型（Hierarchical Pointer-Generator Networks，HPGN）。其在迁移过程中通过关注代码语句的语法和语义，从而进一步提升迁移代码的语义一致性。
 
-HPGN源代码将在相关论文接收后公开。
+HPGN项目源代码正在整理中，将于近期上传。
 
 # 评测指标 与 数据集
 - BLEU：计算生成的序列和参考序列的n-gram重叠率，并返回0到100%之间的分值。BLEU值越高，表示生成的序列越接近参考序列
@@ -14,6 +14,9 @@ HPGN源代码将在相关论文接收后公开。
 数据集：基于真实项目的(Java-C#)数据集[CodeTrans](https://github.com/microsoft/CodeXGLUE/tree/main/Code-Code/code-to-code-trans)
 
 # 实验结果
+
+HPGN 隐藏层-64维，网络-1层
+
 ## Java到C#
 |模型|BLEU|EM|CodeBLEU|
 |--|--|--|--|
