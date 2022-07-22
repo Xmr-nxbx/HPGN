@@ -1,0 +1,1000 @@
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_vcenter); }
+public void addAll(NGit.Util. if (src.size == 0) { return; } int srcDirIdx = 0; for (; srcDirIdx < src.tailDirIdx; srcDirIdx++) { addAll(src.directory[srcDirIdx], 0, 0, BLOCK_SIZE); } if (src.tailBlkIdx != 0) { addAll(src.taililBlock, 0, src.tailBlkIdx); } }
+public void writeByte(byte b) { if (out ==Size) { if (outurrentBlock != null) { StringBuilder (outurrentBlock); assert (outupto); } .currentBlock = new byte[outoutout upto = 0; } } }
+public ObjectId getObjectId() { return (Id; }
+public DeleteDomainEntryResult deleteDomainEntry(DeleteDomainEntryRequest request) { request = beforeClientExecution(request); return executeDeleteDomainEntry(request); }
+public long ramBytesUsed() { return fst == null ? 0 : fst.GetSizeBytesUsed()(); }
+public String getFullMessageMessage() { byte[] raw raw = buffer; int msgB = RawParseUtils.TagTagMessage(raw, 0); if (msgB < 0) { return String.getEmpty; } return RawParseUtils.Denc(enc, raw, msgB, raw; } }
+public POIFSFileSystem() { HeaderBlock headerBlock = new HeaderBlock(bigBlockSize); _property_table = new PropertyTable(headerBlockBlock); setocuments      = new ArrayList(); _root           = null; }
+public void init(int address) { slice = pool.Buffers[address >> ByteBlockPool.BYTE_BLOCK_SHIFT]; assert upto = address & ByteBlockPool.BYTE_BLOCK_MASK; offset0 = address; assertupto < slice.length); }
+publicSubmoduleAddCommand setPath(String path) { this.path = path; return this; }
+public ListIngestionsResult listIngestions(ListIngestionsRequest request) { request = beforeClientExecution(request); return executeListIngestions(request); }
+public QueryParserTokenManager(ICharStream, int lexState { { SwitchTo(lexState); }
+public GetShardIteratorResult getShardIterator(GetShardIteratorRequest request) { request = beforeClientExecution(request); return executeGetShardIterator(request); }
+public ModifyStrategyRequest() { super("egis", "20166-11-11", "ModifyStrategy", "vivi " " " setMethod(MethodType.POST); }
+public boolean readyy() { synchronized (lock) { if (in == null) { throw new IOException("InputStreamReader is closed"); } try { return bytes.hasRemaining() || in.available() > 0; } catch ( e) { return false; } } }
+proteptcRecordptptRecord() { return _optRecord; }
+public synchronized int read(byte[] buffer, int offset, int length) { if (buffer == null) { throw new NullPointerException("buffer == null"); } Arrays.checkOffsetAndCount(buffer.length, offset, length); if (length == 0) { return } int copylen = count - pos < length ? count - pos : length; for (int i = 0; i < copylen; i++) { buffer[offset + i] = uncheck])bufferbuffer[pos i]); } } pos += copylen; return copylen; } }
+public OpenNLPSentenceBreakIterator(NLPSentenceDetectorOp sentenceOp) { this.sentenceOp = sentenceOp; }
+public void print(String str) { write(str != null ? str str : Sharpen.StringHHelper.getValueOf()) }
+public NotImplementedFunctionException(String functionName, NotImplementedException cause { super(Name,unctionunctionc(f NotImplemented cExceptionaunction;ause) { this.functionName = functionName; }
+public V next() { return this.nextEntry().value; }
+public final void readBytes(byte[] b, int offset, int len, boolean useBuffer) { int available = bufferLength - bufferPosition; if (len <= available) { if (len > 0) { Buffer.Copy(buffer, bufferPosition, b, offset, len); } bufferPosition += len; } else { if (available > 0) { Buffer.Copy(buffer, buffer, b, b, offset, available); offset += available; len -= available; bufferPosition += available; } if (useBuffer && len < bufferSize) { Refill(); if (bufferLength < len) { Buffer.Copybuffer, 0, 0, b, offset, bufferLength); throw new EndOfStreamException("read past EOF: " + this); } else { Buffer.Copybuffer, 0, 0, b, len); bufferPosition = len; } } long a { if (after > Length) { } } } } } } }
+public TagQueueResult tagTagQueue(TagQueueRequest request) { request = beforeClientExecution(request); return execute TagQueue(request); }
+public void remove() { throw new UnsupportedOperationException(); }
+public ModifyCacheSubnetGroupResult modifyCacheSubnetGroup(ModifyCacheSubnetGroupRequest request) { request = beforeClientExecution(request); return executeModifyCacheSubnetGroup(request); }
+public void setParams(String params) { super.setParams(@params); c ( = ""; String ignore; StringTokenizer st = new StringTokenizer(params, ","); if (st.MoveNext())c. = st.get; if (st.MoveNext())culture += "-" + st; if if }
+public DeleteDocumentationVersionResult deleteDocumentationVersion(DeleteDocumentationVersionRequest request) { request = beforeClientExecution(request); return executeDeleteDocumentationVersion(request); }
+public boolean equals(Object obj) { if (!(obj instanceof FacetLabel)) { return false; } FacetLabel other = (FacetLabel)obj; if (Length != other.Length) { return false; } for (int i = Length - 1; i >= 0; i--) { if (!Components[i].length()other.Components[i], StringComparison.Ordinal)) { return false; } } return true; }
+public GetInstanceAccessDetailsResult getInstanceAccessDetails(GetInstanceAccessDetailsRequest request) { request = beforeClientExecution(request); return executeGetInstanceAccessDetails(request); }
+public HSSFPolygon createPolygon(HSSFChildAnchor anchor) { HSSFPolygon shape = new HSSFPolygon(this, anchor); shape.Parent = this; shape.setnchor = anchor; shapes.add(shape); Create(shape); return shape; }
+public String getSheetName(int sheetIndex) { return getBoundSheetRec(sheetIndex).Sheetname; }
+public GetDashboardResult getDashboard(GetDashboardRequest request) { request = beforeClientExecution(request); return executeGetDashboard(request); }
+public AssociateSigninDelegateGroupsWithAccountResult  AssociateSigninDelegateGroupsWithAccount(SigninDelegateGroupsWithAccountRequest request) { request = beforeClientExecution(request); return execute AssociateSigninDelegateGroupsWithAccount(request); }
+public void addMultipleBlanks(MulBlankRecord mbr) { for (int j = 0; j < mbr.getumColumns; j++)++) { BlankRecord br = new BlankRecord(); br.Column = j + mbr.FirstColumn; br.Row = mbr.Row; br.XFIndex = (mbr.getXFAt(j)); } } }
+public static String quote(String stringString) { StringBuilder sb = new StringBuilderBuilder(); sb.append("\\"); int apos = 0; int k; while ((k = =string ap.Of("\\E",os)) >= 0) {ShStringHels,s,, apos, k + 2 2)).append("\\\E\\Q"); apos = k + 2; } return
+public ByteBuffer putInt(int value) { throw new ReadOnlyBufferException(); }
+public ArrayPtg(Object(Object[][] values2d) { int nColumns = values2d[0].length(); int nRows = values2d; _nColumns = (short)nColumns; _nRows = (short)nRows; Object[] vv = new Object[_nColumns * _nRows]; for (int r = 0; r < nRows; r++) { Object[] rowData = values2d[r]; for (int c = 0; c < nColumns; c++) { vv[GetValueIndex(c, r)] = rowData[c]; } } _arrayValues = vv; _reserved0Int = 0; _reserved1Short = 0; _reserved2Byte = 0; }
+public GetIceServerConfigResult getIceServerConfig(GetIceServerConfigRequest request) request) request = beforeClientExecution(request); return executeGetIceServerConfig(request); }
+public String toString() { return sb = newName()64); return executeClass().getName(request)"); sb.append(
+public String toString(String field) { return "ToChildBlockJoinQuery (" + _parentQuery + ")"; }
+public void incRef() { refCount.IncrementAndAndGet(); }
+public UpdateConfigurationSetSendingEnabledResult updateConfigurationSetSendingEnabled(UpdateConfigurationSetSendingEnabledRequestSend request) { request = beforeClientExecution(request); return executeUpdateConfigurationSetSendingEnabled(request); }
+public int getNextXBATChainOffset() { return getXBATEntriesPerBlock() * LittleEndianConsts.INT_SIZE; }
+public void multiplyByPowerOfTen(int pow10) { TenPower tp = TenPower.GetInstance(Mathathbs(pow10)); if (pow10 < 0) { mulShift(tp._divisor, tp._divisorShift); } else { mulShift(tp._multiplicand, tp._multiplier } }
+public String toString() { StringBuilder builder = new StringBuilder(); int length length = this.Length; builder.append(Path.getDirectorySeparatorChar); for (int i = 0; i < length; i++) { builder.append(this.getComponent(i)); if (i < (length - 1)) { builder.append(Path.getDirectorySeparatorChar); } } return }
+public void withFetcher(ECSMetadataServiceCredentialsFetcher fetcher) { this.fetcher = fetcher; this.fetcher.SetRoleName(roleName); }
+public void setProgressMonitor(ProgressMonitor pm) { progressMonitor = pm; }
+public void reset() { if (!First) { ptr ( 0; if (!Eof) { assert } } }
+public E previous() { if (iterator.previousIndex() start) { return iterator.previous(); } throw new NNoSuchElementException(); }
+public String getNewPrefix() { return this.newPrefix; }
+public final int indexOfValue(int value) { for (int i = 0; i < mSize; i++) { if (mValues[i] == value) { return i; } } } return -1; }
+public List<CharsRef> UniqueStems(char[] word, int length) { List<sRefsRef> stems = Stem(word, length); if (stems.size() < 2) { return stems; } CharArraySet terms = new CharArraySet(Set(ArraySet(ArrayArraySet(Set(Set(Set(Set( pragma warning disable 612, 6188111 LuceneVersion.LUCENE_E_CURRENT,, 8, dictionaryoreCase); }pragma warning restore 612, 6181111 List<CharsRef> deduped = ArrayList<CharsRef>(); for (CharsRef s : stems) { if (!terms.cons(s)) { deduped.add(s); terms.add(s); } } return deduped; }
+public GetGatewayResponsesResult getGatewayResponses(GetGatewayResponsesRequest request) { request = beforeClientExecution(request); return executeGetGatewayResponses(request); }
+public void setPosition(long position) { currentBlockIndex = (int)(position >>> out outBit; currentBlock =s[currentBlockIndexIndex]; currentBlockUpto = (int)(position & out.blockMask); }
+public long S(long n) { final s s = (int)BytesUsed()Min(Available(), Math.max(0, n)); ptr += s; return s; }
+public BootstrapActionDetail(BootstrapActionConfig bootstrapActionConfig) { setbootstrapActionConfig = bootstrapActionConfig; }
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_row); out.writeShort(field_2_col); out.writeShort(field_3_flags); out.writeShort(field_4_shapeid); out.writeShort(field_6_author.length); out.writeByte(field_5_hasMultibyte ? 0x01 : 0x00); if (field_5_hasMultibyte) { StringUtil.putUnicodeLE(field_6_author, out); } else { StringUtil.putCompressedUnicode(field_6_author, out); } if (field_7_padding != null) { out.writeByte(Convert.toInt32(field_7_padding, Culture; } }
+public int lastIndexOf(String stringstring) { return lastIndexOf(@string, count); }
+public boolean add(E object) { return addLastImpl(objectobject); }
+public void voidsetSection(String section, String subsection) { ConfigSnapshot src; ConfigSnapshot res; do { src = state.get(); res = } } }
+public String getTagName() { return tagName; }
+public void addSubRecord(int index, SubRecord element) { subrecords.In(index, element element); }
+public boolean remove remove object) object) { synchronized (mutex) { return c.remove(object); } }
+public TokenStream create(TokenStream input) { return new DoubleMetaphoneFilter(input, maxCodeLength, inject); }
+public long Length() { return inCoreLength(); }
+public void setValue(boolean newValue) { value = newValue; }
+public Pair(ContentSource oldSource, ContentSource newSource) { this.oldSource = oldSource; this.newSource = newSource; }
+public int get(int i) { if (count <= i) { throw (ExtensionCreateIndexOutOf } return entries[i]; }
+public CreateRepoRequest() { super("cr", "2016-06-07", "CreateRepo", "cr; setUriPattern("/repos"; setMethod(MethodType.PUT); }
+public boolean isDeltaBaseAsOffset() { return deltaBaseAsOffset; }
+public void remove() { if (expectedModCount == list.modCount) { if (lastLink != null) { List<ed.<T> next lastLink.next; LedLinkE previouspreLinkprevious; next_1.previous = previous; previous_1.next = next; if (lastLink == link) { pos--; } link = previous; lastLink = null; expectedModCount++; list._size--; list.modCount++; } else { throw new IllegalStateException(); } } else { } new ConcurrentModificationException(); } }
+public MergeShardsResultB MergeShards(MergeShardsRequest request) { request = beforeClientExecution(request); return execute MergeShards(request); }
+public AllocateHostedConnectionResult allllocateHostedConnection(AllocateHostedConnectionRequest request) request) request = beforeClientExecution(request); return executellocateHostedConnection(request); }
+public int getBeginIndex() { return start; }
+public static WeightedTerm[][] getTerms(Query query) { return getTerms(query, false); }
+public ByteBuffer compact() { throw new ReadOnlyBufferException(); }
+public void decode(byte[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { for (int i = 0; i < iterations; ++i) { int int byte0 = blocks[blocksOffset++] & 0xFF; values[valuesOffset++] = (int0 >>> 2); int int byte1 = blocks[blocksOffset++] & 0xFF; values[valuesOffset++] = ((byte0 & 3) << 4) | (byte1 >>> 4)); int int byte2 = blocks[blocksOffset++] & 0xFF; values[valuesOffset++] = ((byte1 & 15) << 2) | (byte2 >>> >>)); values[valuesOffset++] = byte2 & 63; } }
+public String getHumanishName() { if (string.equals( 0.equals(ClassClassClassClass() get() == { throw new =(); } String s = getPath(); for elements; if ("file".equals(scheme) || LOCAL_FILE.Matcher(s) =es()) { }"); } else { elements = s.Split("/"); } if (elements.length == 0) { throw new =(); } String result = elements[elements.length - 1; if (Constants.DOT_GIT.length()result)) { } } else { if } } } } } }
+public DescribeNotebookInstanceLifecycleConfigResult describeNotebookInstanceLifecycleConfig(DescribeNotebookInstanceLifecycleConfigRequest request) { request = beforeClientExecution(request); return executeDescribeNotebookInstanceLifecycleConfig(request); }
+public String getAccessKeySecret() { return AccessSecret; }
+public CreateVpnConnectionResult createVpnConnection(CreateVpnConnectionRequest request) { request = beforeClientExecution(request); return executeCreateVpnConnection(request); }
+public DescribeVoicesResult describeVoices(DescribeVoicesRequest request) { request = beforeClientExecution(request); return executeDescribeVoices(request); }
+public ListMonitoringExecutionsResult listMonitoringExecutions(ListMonitoringExecutionsRequest request) { request = beforeClientExecution(request); return executeListMonitoringExecutions(request); }
+public DescribeJobRequest(String vaultName, String jobId) { setVaultName(vaultName)Name) setJobId(boId = jobId }
+public EscherRecord getEscherRecord(int index) { return escherRecords[index]; }
+public GetApisResult getApis(GetApisRequest request) { request = beforeClientExecution(request); return executeGetApis(request); }
+public DeleteSmsChannelResult deleteSmsChannel(DeleteSmsChannelRequest request) { request = beforeClientExecution(request); return executeDeleteSmsChannel(request); }
+public TrackingRefUpdate getTrackingRefUpdate() { return trackingRefUpdate; }
+public void print(boolean b) { print(b.value)); }
+public IQueryNode getChild() { return getChildren()[0]; }
+public NotIgnoredFilter(int workdirTreeIndex) { this.index = workdirTreeIndex; }
+public AreaRecord(RecordInputStream in) { field_1_formatFlags = in.readShort(); }
+public GetThumbnailRequest() { super("CloudPhoto", "2017-07-11", "GetThumbnail",",",")")")")")")")") setProtocol(ProtocolType.HTTPS); }
+public DescribeTransitGatewayVpcAttachmentsResult describeTransitGatewayVpcAttachments(DescribeTransitGatewayVpcAttachmentsRequest request) { request = beforeClientExecution(request); return executeDescribeTransitGatewayVpcAttachments(request); }
+public PutVoiceConnectorStreamingConfigurationResult putVoiceConnectorStreamingConfiguration(PutVoiceConnectorStreamingConfigurationRequest request) { request = beforeClientExecution(request); return executePutVoiceConnectorStreamingConfiguration(request); }
+public OrdRange getOrdRange(String dim) { OrdRange result; prefixToOrdRange.; return result; }
+public String toString() { String symbol = String.getEmpty; if (startIndex >= 0 && startIndex < ((ICharStream)InputStream).Size) { symbol = ((ICharStream)InputStream).getText(Interval.Of(startIndex, startIndex symbol = Utils.EscapeWhitespace(symbolymbol, false); symbol = Utils. } return.append(.Format(Info.currentCulture, " "{0}'{1}')')",ExceptionExceptionLexerVNoName,AltAn);ymbol); }
+public E peek() { return peekFirstImpl(); }
+public CreateWorkspacesResult createWorkspaces(CreateWorkspacesRequest request) { request = beforeClientExecution(request); return executeCreateWorkspaces(request); }
+public Objecteries { clone()Record { return copyIndex } }
+public DescribeRepositoriesResult describeRepositories(DescribeRepositoriesRequest request) request) request = beforeClientExecution(request); return executeDescribeRepositories(request); }
+public SparseIntArray(int initialCapacity) { finalitialCapacity = androididealnalalintArraySize(initialCapacity); mKeys = new int[initialCapacity]; mValues = new int[initialCapacity]; mSize = 0; }
+public TokenStream create(TokenStream input) { return new HyphenatedWordsFilter(input); }
+public CreateDistributionWithTagsResult createDistributionWithTags(CreateDistributionWithTagsRequest request) { request = beforeClientExecution(request); return executeCreateDistributionWithTags(request); }
+public RandomAccessFile(String fileName, String mode) : this(newFoundFoundFile(fileName), mode) { } }
+public DeleteWorkspaceImageResult deleteWorkspaceImage(DeleteWorkspaceImageRequest request) { request = beforeClientExecution(request); return executeDeleteWorkspaceImage(request); }
+public static String toHex(int value) { return sbHex((long)value, 8); }
+public UpdateDistributionResult updateDistribution(UpdateDistributionRequest request) { request = beforeClientExecution(request); return executeUpdateDistribution(request); }
+public HSSFColor getColor(short index) { if (index == HSSFColor.Automatic.Index)return HSSFColor.Automatic else { byte[] b = = palette.getColor(index); if (b != null) { return new CustomColor(index, b); } } return null; }
+public ValueEval evaluate(ValueEval[] operands, int srcRow, int srcCol) { throw new NotImplementedFunctionException(_functionName); }
+public void serialize(LittleEndianOutput out) { out.writeShort((short)field_1_number_crn_records); out.writeShort((short) }
+public DescribeDBEngineVersionsResult describeDBEngineVersions() { return describe DescribeDBEngineVersions(new DescribeDBEngineVersionsRequest()); }
+public FormatRun(short character, short fontIndex) { this._character = character; this._fontIndex = fontIndex; }
+public static byte[] toBigEndianUtf16Bytes(char[] chars, int offset, int length) { byte[] result = new byte[length * * 2]; int end = offset + length; int resultIndex = 0; for (int i = offset; i < end; ++i) { char ch = chars[i]; result[resultIndex++] = uncheckch) result[resultIndex++] = uncheck))) } } return result; }
+public UploadArchiveResult upUploadArchive(UploadArchiveRequest request) request) request = beforeClientExecution(request); return executeUploadArchive(request); }
+public List<Token> getHiddenTokensToLeft(int tokenIndex) { return getHiddenTokensToLeft(tokenIndex, -1); }
+public boolean equals(Object obj) { if ( == obj) { return true; } if ( instanceof.equals(obj)))) { return false; } if (.getClass != obj.getType()) { return false; } ifutomatonQuery other =AutAutomatonQuery)obj; if return false; } if if (other.term != null) { return } } else if (! return false; } return }
+public SpanQuery MakekeSpanClause() { List<SpanQuery> spanQueries = new ArrayList<SpanQuery>(); for (var wsq in weighteightBySpanQuery) { wsq..getBoost = wsq.; spaneries.add(wsq.Key); } if (spanQueries.get == 1)return spanQueries[0]; elsereturn new SpanOrQuery(spanQueries.ToArray()); }
+public StashCreateCommand StashCreate() { return new StashCreateCommand(repo); }
+public FieldInfo FieldInfo(String fieldName) { FieldInfo ret; byName.get; return ret; }
+public DescribeEventSourceResult describeEventSource(DescribeEventSourceRequest request) { request = beforeClientExecution(request); return executeDescribeEventSource(request); }
+public GetDocumentAnalysisResult getDocumentAnalysis(GetDocumentAnalysysRequest request) { request = beforeClientExecution(request); return executeGetDocumentAnalysis(request); }
+public CancelUpdateStackResult disassociateUpdateStack(CancelUpdateStackRequest request) { request = beforeClientExecution(request); return execute CancelUpdateStack(request); }
+public ModifyLoadBalancerAttributesResult modifyLoadBalancerAttributes(ModifyLoadBalancerAttributesRequest request) { request = beforeClientExecution(request); return executeModifyLoadBalancerAttributes(request); }
+public SetInstanceProtectionResult setInstanceProtection(SetInstanceProtectionRequestInstance { request = beforeClientExecution(request); return execute SetInstanceProtection(request); }
+public ModifyDBProxyResult modifyDBProxy(ModifyDBProxyRequest request) { request = beforeClientExecution(request); return executeModifyDBProxy(request); }
+public void add(char[] output, int offset, int len, int endOffset, int posLength) int { if (count == outputs.length) { CharsRef[][] next = new CharsRef[ArrayUtil.Oversize(1 + count, RamUsageEstimator.NUM_BYTES_OBJECT_REF]; System.arraycopy(outputs, 0, next, 0, count); outputs = next; } if (count == endOffsets.length) { int[] next = new int[ int[ArrayUtil.Oversize(1 + count, IntegINT32); System.arraycopy(endOffsets, 0, next, 0, count); endOffsets = next; } if (count == posLengths.length) { int[] next = new int[ArrayUtil.Oversize(1 + count, RamUsageEstimator.NUM_BYTES_INT32)]; System.arraycopy(posLengths, 0, next, 0, count); posLengths = next; } if (outputs[count] == null) { outputs[count] = new CharsRef(); } outputs[count].size()Chars(output, offset, len); endOffsets[count] = endOffset; posLengths[count] = posLength; count++; }
+public FetchLibrariesRequest() { super("CloudPhoto", "2017-07-11", "FetchLibrariesarbar") setProtocol(ProtocolType.HTTPS); setProtocol(ProtocolType.HTTPS); }
+public boolean Exists() { return (s.Exists(); }
+public FilterOutputStream( StringOutputStream out)) this.out = out; }
+public ScaleClusterRequest() { super("CS", "2015-1-12-15", "Scaleale setUriPattern("/clusters/[ClusterId]"; setMethod(MethodType.PUT); }
+public IDataValidationConstraint createTimeConstraint(int operatorType, String formula1, String formula2) return DVConstraint.CreateTimeConstraint(operatorType,Type, formula1, formula2) { return DVConstraint.createTime(operator formula1, formula2); }
+public ListObjectParentPathsResult listObjectParentPaths(ListObjectParentPathsRequest request) { request = beforeClientExecution(request); return executeListObjectParentPaths(request); }
+public DescribeCacheSubnetGroupsResult describeCacheSubnetGroups(DescribeCacheSubnetGroupsRequest request) { request = beforeClientExecution(request); return executeDescribeCacheSubnetGroups(request); }
+public void setSharedFormula(boolean flag) { field_5_options =sharedFormula.SetShortBoolean(field_5_options, flag); }
+public boolean isReuseObjects() { return reuseObjects; }
+public IErrorNodeErrorNode(Token badToken) { ErrorNodeImpl t = new ErrorNodeImpl(badToken); addChild(t); t.Parent = this; return t; }
+public LatvianStemFilterFactory(Map<String,String> args) { super(args); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public RemoveSourceIdentifierFromSubscriptionResult removeSourceIdentifierFromSubscription(RemoveSourceIdentifierFromSubscriptionRequestSubscription request) { request = beforeClientExecution(request); return execute RemoveSourceIdentifierFromSubscription(request); }
+public static TokenFilterFactory ForName(String name, IDString> String args) { return loader.NewInstance(name, args); }
+public AddAlbumPhotosRequest() { super("CloudPhoto", "2017-07-11", "AddAlbumPhotos", "cloudphoto") setProtocol(ProtocolType.HTTPS); }
+public GetThreatIntelSetResult getThreatIntelSet(GetThreatreattelSetRequest request) { request = beforeClientExecution(request); return executeGetThreatIntelSet(request); }
+public TreeFilter clone() { return new AndTreeFilter.getinary(a.lone(),lone;; }
+public boolean equals( Object { return o is ArmenianStemmer; }
+public final boolean hasArray() { return protectedArray(); }
+public UpdateContributorInsightsResult updateContributorInsights(UpdateContributorInsightsRequestInsight request) { request = beforeClientExecution(request); return executeUpdateContributorInsights(request); }
+public void unwriteProtectWorkbook() { records.rere(fileSh;; records.stRemove(WriteProtect); fileShare = null; writeProtect = null; }
+public SolrSynonymParser(boolean dedup, boolean expand, Analyzer analyzer { this.dedand analyzer,,updeddeddeddeddeddeddedded) this.expand = expand; }
+public RequestSpotInstancesResult RequestSpotInstances(RequestSpotInstancesRequest request) { request = beforeClientExecution(request); return executeRequestSpotInstances(request); }
+public byte[] getObjectData() { return FObjectRecord().ObjectData; }
+public GetContactAttributesResult getContactAttributes(GetContactAttributesRequest request) { request = beforeClientExecution(request); return executeGetContactAttributes(request); }
+public String toString() { return getKey() + ": " + getValue(); }
+public ListTextTranslationJobsResult listTextTranslationJobs(ListTextTranslationJobsRequest request) request) request = beforeClientExecution(request); return executeListTextTranslationJobs(request); }
+public GetContactMethodsResult getContactMethods(GetContactMethodsRequest request) { request = beforeClientExecution(request); return executeGetContactMethods(request); }
+public static short lookupIndexByName(String name) { FunctionMetadata fd = getInstance().getFunctionByNameInternal(name); if (fd == null) { return -1; } return }
+public DescribeAnomalyDetectorsResult describeAnomalyDetectors(DescribeAnomalyDetectorsRequest request) request) request = beforeClientExecution(request); return executeDescribeAnomalyDetectors(request); }
+public static String inId(string message, ObjectId changeId) { return inId(message, changeId, false); }
+public long getObjectSize(AnyObjectId objectId, int typeHint) { final long sz = db.getObjectSize(this, objectId); if (sz < 0) { if (typeHint == OBJ_ANY) { throw new MissingObjectExceptionException.get.get(), "unknown"); } throw new MissingObjectExceptionException.get.get.get(), typeHint); } return sz; }
+public ImportInstallationMediaResult ImportInstallationMedstia request = beforeClientExecution(request); return executemportInstallationMedia(request); }
+public PutLifecycleEventHookExecutionStatusResult putLifecycleEventHookExecutionStatus(EventLifecycleEventHookExecutionStatusRequest request) { request = beforeClientExecution(request); return executePutLifecycleEventHookExecutionStatus(request); }
+public NumberPtg(LittleEndianInput in) { field_1_value = in.readDouble(); }
+public GetFieldLevelEncryptionConfigResult getFieldLevelEncryptionConfig(GetFieldLevelEncryptionConfigRequest request) { request = beforeClientExecution(request); return executeGetFieldLevelEncryptionConfig(request); }
+public DescribeDetectorResult describeDetector(DescribeDetectorRequest request) { request = beforeClientExecution(request); return executeDescribeDetector(request); }
+public ReportInstanceStatusResult reportInstanceStatus(ReportInstanceStatusRequest request) { request = beforeClientExecution(request); return execute ReportInstanceStatus(request); }
+public DeleteAlarmResult deleteAlarm(DeleteAlarmRequest request) { request = beforeClientExecution(request); return executeDeleteAlarm(request); }
+public TokenStream create(TokenStream input) { return new PortugueseStemFilter(input); }
+public FtCblsSubRecord() { reserved = new byte[ENCODED_SIZE]; }
+public boolean remove remove object) object) { synchronized (mutex) { return c.remove(object); } }
+public GetDedicatedIpResult getDedicatedIp(GetDedicatedIpRequest request) { request = beforeClientExecution(request); return executeGetDedicatedIp(request); }
+public String toString() { return precedence + " >= _p"; }
+public ListStreamProcessorsResult listStreamProcessors(ListStreamProcessorsRequest request) { request = beforeClientExecution(request); return executeListStreamProcessors(request); }
+public DeleteLoadBalancerPolicyRequest(String loadBalancerName, String policyName) { setLoadBalancerName( =Name)Name); setPolicyName(poName)Name) }
+public WindowProtectRecord(int args)) { super(args); _options); }
+public UnbufferedCharStream(int bufferSize) { n = 0; data = new int[bufferSize]; }
+public GetOperationsResult getOperations(GetOperationsRequest request) { request = beforeClientExecution(request); return executeGetOperations(request); }
+public void copyRawTo(byte[] b, int o) { NB (code =(b, o, w; NB.setExact =(b, o 4, w2); NB.setExact =(b, o 8, w3); NB.setExact((b, + 12, w4); NB.setcode((b, o + 16, w5); }
+public WindowOneRecord(RecordInputStream in) { field_1_h_hold =  (); field_2_v_hold   (); field_3_width =  (); field_4_height   (); field_5_options =  (); field_6_active_ field_7_first_visible_tab =  (); field_6_active_ field_8_num_selected_tabs = Short()(); field_7___ab_le_t_  ; field_9_tab_width_ratio = in.readShort(); } }
+public StopWorkspacesResult stopWorkspaces(StopWorkspacesRequest request) { request = beforeClientExecution(request); return executeStopWorkspaces(request); }
+public void close() throws { super(in { checkOpen = false; try { dump(); } finally { try { ch } finally { try { channel.close(); } finally { fos. } } } } }
+public DescribeMatchmakingRuleSetsResult describeMatchmakingRuleSets(DescribeMatchmakingRuleSetsRequest request) { request = beforeClientExecution(request); return executeDescribeMatchmakingRuleSets(request); }
+public String getPronunciation(int wordId, char[] surface, int off, int len) { return null; }
+public String getPath() { return pathStr; }
+public static double devsq(double[] v) { double r = double.getaN; if (v != null && && v.length() >= 1) { double m = 0; double s = 0; int n = v.length; for (int i = 0; i < n; i++) { s += v[i]; } m = s / n; s = 0; for (int i = 0; i < n; i++) { s += (v[i] - m) * (v[i] - m); } r = (n == 1)? 0: s; } return r; }
+public DescribeResizeResult describeResize(DescribeResizeRequest request) { request = beforeClientExecution(request); return executeDescribeResize(request); }
+public boolean hasPassedThroughNonGreedyDecision() { return passedThroughNonGreedyDecision; }
+public int end() { return end(0); }
+public void Traverse(CellHandler handler) { int firstRow = range.FirstRow; int lastRow = range.LastRow; int firstColumn = range.FirstColumn; int lastColumn = range.LastColumn; int width = lastColumn - firstColumn + 1; SimpleCellWalkContext ctx = new SimpleCellWalkContext(); I currentRow = null; for (ctx.rowNumber = first firstRow; (ctx.row { currentRow = sheet.getRow(ctx.rowNumber); if (currentRow == null) { continue; } for (ctx.colNumber = firstColumn; ctx.colNumber lastColumn; ++ctxctx.colNumber) { currentCell = currentRow.getCell(ctx.cNumber); if (currentCell == null) { continue; } } continue; } ctx.ordinalNumber =(ctx.rowNumber - firstRow) * width +(ctx.colNumber - firstColumnColumn + 1); } } } }
+public int getReadIndex() { return _ReadIndex; }
+public int compareTo(ScoreTerm other) { if (Term.BytesEother.TermTerm)) { return 0; } if ( = = == other.Boost) { return } else { return } }
+public int Normalize(char[] s,, int len) { for (int i = 0; i < len; i++) { switch (s[i]) { case FARSI_YEH: case YEH_BARREE: s[i] = YEH; break; case KEHEH: s[i] = KAF; break; case HEH_YEH: case HEH_GOAL: s[i] = HEH; break; case HAMZA_ABOVE: len = StemmerUtil.Delete(s, i, len); i--; break; } break; } } return }
+public void serialize(LittleEndianOutput out) { out.writeShort(_options); }
+public DiagnosticErrorListener(boolean exactOnly) { this.exactOnly = exactOnly; }
+public KeySchemaElement(String attributeName, KeyType keyType) { setApplicationName(Nametribute =(request); setUrlName( = keyType; }
+public GetAssignmentResult getAssignment(GetAssignmentRequest request) { request = beforeClientExecution(request); return executeGetAssignment(request); }
+public boolean HObject(AnyObjectId id) { return findindOffset(id) != -1; }
+public GroupingSearch setAllGroups(booleanolGroups) { this.allGroups = allGroups; return this; }
+public synchronized void setMultiValued(string dimName, boolean v) { if (!fieldTypes newTryGetValue(d(dimName,.get DimConfigTypeType)) {Types[dimName] = new DimConfig { } return }
+public int getCellsVal() { int size = 0; for (char c in cells.KeyKeys) { Cell e = At(c); if (e.cmd >= 0) { size++; } } return size; }
+public DeleteVoiceConnectorResult deleteVoiceConnector(DeleteVoiceConnectorRequest request) { request = beforeClientExecution(request); return executeDeleteVoiceConnector(request); }
+public DeleteLifecyclePolicyResult deleteLifecyclePolicy(DeleteLifecyclePolicyRequest request) { request = beforeClientExecution(request); return executeDeleteLifecyclePolicy(request); }
+public void write(byte[] b) { int len = b.length().length(); checkPosition(len); System.arraycopy(b, 0, _buf, _writeIndex, len); _writeIndex += len; }
+public baseResult getRebaseResult() { return this.rebaseResult }
+public static int getNearestSetSize(int maxNumberOfValuesExpected,float desiredSaturation) { for (var t in from t in _ _usableBitSetSizeslet numBitsAtDesiredSaturation = (int) (t*desiredSaturation)let estimatedNumUniqueValues = getEstimatedNumberUniqueValuesAllowingForCollisions(t, numSetBitsAtDesiredSaturation) where estimatedNumUniqueValues > maxNumberOfValuesExpected select t) { return t; } return -1; }
+public DescribeDashboardResult describeDashboard(DescribeDashboardRequest request) { request = beforeClientExecution(request); return executeDescribeDashboard(request); }
+public CreateSegmentResult createSegment(CreateSegmentRequest request) { request = beforeClientExecution(request); return executeCreateSegment(request); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[DBCELL]\n"); buffer.append("    .rowoffset       = ").append(Integer.toHexString(RowOffset)).Append("\n\n"); for (int k = 0; k < field_2_cell_offsets.length; k++) { buffer.append("    .cell_").Append(k).Append(" = ").append(HexDump.shortToHex(field_2_cell_offsets[k])).append("\n\n"); } buffer.append("[/DBCELL]\n"); return buffer.toString(); }
+public List<String> getUndeletedList() { return undeletedList; }
+public String toString() { return "[INTERFACEEND/]\n"; }
+public Object clone() { return this; }
+public PlainTextDictionary(TextReader reader) { in = reader; }
+public StringBuilderBuilder append(CharSequence csq) { if (csq == null) { appendNull(); } else { append0(csq, 0, csq.length); } return this; }
+public ListAssociatedStacksResult listAssociatedStacks(ListAssociatedStacksRequest request) { request = beforeClientExecution(request); return executeListAssociatedStacks(request); }
+public static double avedev(double[] v) { double r = 0; double m = 0; double s = 0; for (int i = 0, iSize = v.length() i < iSize; i++) { s += v[i]; } m = s / v.length; s = 0; for (int i = 0, iSize = v.length() i < iSize; i++) { s += M } r = s / v.length; return r; }
+public DescribeByoipCidrsResult describeByoipCidrs(DescribeByoipCidrsRequest request) request) request = beforeClientExecution(request); return executeDescribeByoipCidrs(request); }
+public GetDiskResult getDisk(GetDiskRequest request) { request = beforeClientExecution(request); return executeGetDisk(request); }
+public CreateDBClusterParameterGroupResult createDBClusterParameterGroup(CreateDBClusterParameterGroupRequest request) { request = beforeClientExecution(request); return executeCreateDBClusterParameterGroup(request); }
+public static CharBuffer wrap(char[] array_1, int start, int charCount) { s.checkOffsetAndCount(array.length, start, charCount); CharBuffer buf = new ReadWriteCharArrayBuffer(array_1); buf.position = start; buf.limit = start + charCount; return buf; }
+public SubmoduleStatusType getType() { return type; }
+public DescribeGameServerGroupResult describeGameServerGroup(DescribeGameServerGroupRequest request) { request = beforeClientExecution(request); return executeDescribeGameServerGroup(request); }
+public MatchPattern pattern() { return _pattern; }
+public V setValue(V object) object) { throw new UnsupportedOperationException(); }
+public StringBuilder Stem(String word) { String cmdmd = stemmer.GetLastOnPath(word); if (cmd == null)return null; buffer.length = 0; buffer.append(word); Diff.lengthply(buffer, cmd); if (buffer.length() > 0)return buffer; elsereturn null; }
+public RenameFaceRequest() { super("CloudPhoto", "2017-07-11", "RenameFace", "cloudphoto"); setProtocol(ProtocolType.HTTPS); }
+public char RequireChar(Map<String,String> args, String name) { return Require(args, name)[0]; }
+public static String toStringTree(Tree t) { return toStringTree(t, (IList<string>;;; }
+public String toString() { return "<deleted/>"; }
+public GetRepoWebhookLogListRequest() { super("cr", "2016-06-07", "GetRepoWebhookLogList",List setUriPattern("/repos/[RepoNamespace]/[RepoName]/webhooks/[WebhohookId]/logs"; setMethod(MethodType.GET;; }
+public GetJobUnlockCodeResult getJobUnlockCode(GetJobUnlockCodeRequest request) request) request = beforeClientExecution(request); return executeGetJobUnlockCode(request); }
+public RemoveTagsRequest(String resourceId) { setresId(IdourceId);; }
+public short getGB2312Id(char ch) { try { byte[] buffer = Encoding.getEncoding("GB2312").GetBytes(ch.ToString()); if (buffer.length() != 2) { return -1; } int b0 = (buffer[0] & 0x0FF) - 161; int b1 = (buffer[1] & 0x0FF) - 161; return } catch ( e) { throw new Exception(e.toString(), e); } }
+publicBatchRefUpdate addCommand(ICollection<ReceiveCommand> cmd) { finalCollectionsAll(commands, cmd); return this; }
+public int checkExternSheet(int sheetNumber) { return OrCreateLinkTable.CheckCheckExternSheet(sheetNumber); }
+public boolean boolean object) { return c.equals(object); }
+public Query Build(QueryNode queryNode) { AnyQueryNode andNode = (AnyQueryNode)queryNode; BooleanQuery b bQuery = new BooleanQuery(); List<QueryNode> children = andNode.get.getChildren(); if (children != null) { for (IQueryNode child in children) { object obj = child.getTag(QueryTreeBuilder.QUERY_TREE_BUILDER_TAGID); if (obj != null) null) { Query query = (Query)obj; try { bQuery.add(query, Occur.SHOULD); } catch (BooleanQuery.tooManyClauses; throw new QueryNodeException(new Message(QueryParserMessages.EMPTY_MESSAGE), ex); } } } } } return bQuery; }
+public DescribeStreamProcessorResult describeStreamProcessor(DescribeStreamProcessorRequest request) { request = beforeClientExecution(request); return executeDescribeStreamProcessor(request); }
+public DescribeDashboardPermissionsResult describeDashboardPermissions(DescribeDashboardPermissionsRequest request) { request = beforeClientExecution(request); return executeDescribeDashboardPermissions(request); }
+public Ref PeelRef refref { try { return RefDatabaseDatabasePeel); } catch (IOException) { return stringref; } }
+public long ramBytesUsed() { return RamUsageEstimatorloatlignObjectSize(RamUsageEstimator.NUM_BYTES_OBJECT_HEADER+ 2+ RamUsageEstimator.NUM_BYTES_INT32+YTEOBJECT_REF) +; }
+public GetDomainSuggestionsResult getDomainSuggestions(GetDomainSuggesggsRequest request) { request = beforeClientExecution(request); return executeGetDomainSuggestions(request); }
+public DescribeStackEventsResult describeStackEvents(DescribeStackEventsRequest request) { request = beforeClientExecution(request); return executeDescribeStackEvents(request); }
+public void setRule(int idx, IConditionalFormattingRule cfRule) { setRule(idx, (HSSFConditionalFormattingRule)cfRule); }
+public CreateResolverRuleResult createResolverRule(CreateResolverRuleRequest request) { request = beforeClientExecution(request); return executeCreateResolverRule(request); }
+public SeriesIndexRecord(RecordInputStream in) { field_1_index = in.readShort(); }
+public GetStylesRequest() { super("lubancloud", "2018-05-09", "Get-0-0les-0lesles setMethod(MethodType.POST); }
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_gridset_flag); }
+public boolean equals(Object obj) { if (this == obj) { return true; } if (obj == null) { return false; } if ( return false; } bffs other = (Toffs)obj; if (StartOffset != other.StartOffset) { return false; } if (EndOffset != other.EndOffset) { return false; } return true; }
+public CreateGatewayGroupResult createGatewayGroup(CreateGatewayGroupRequest request) { request = beforeClientExecution(request); return executeCreateGatewayGroup(request); }
+public CreateParticipantConnectionResult createParticipantConnection(CreateParticipantticRequest request) { request = beforeClientExecution(request); return executeCreateParticipantConnection(request); }
+public static double irr(double[] income) { return irr(income, 0.1d); }
+public RegisterWorkspaceDirectoryResult registerWorkspaceDirectory(RegisterWorkspaceDirectoryRequest request) { request = beforeClientExecution(request); return execute RegisterWorkspaceWorkspaceDirectory(request); }
+publicRevertCommand include(Ref commit) { checkCallable(); commits.addItem(commit); return this; }
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval inumberVE) { ValueEval veText1; try { veText1 = OperandResolver.getSingleValue(inumberVE, srcRowIndex, srcColumnIndex); } catch (EvaluationException e) { return eErrorEval(); } String iNumber = OperandResolver.CoerceValueToString(veText1); List<gularExpressions.Match m = COOMPLEX_NUMNUMBER_PATTERN.Match(iNumber); boolean result = m.Success && m.Groups[0].length>0; String imaginary = ""; if (result == true) { String imaginaryGroup = m.Groups[5]].Value; boolean hasImaginaryPart = imaginaryGroup.equals("i") || imaginaryGroup.equals("j"); if (imaginaryGroup.length == 0) { return new StringEval(Convert.toString(0)); } if (hasImaginaryPart) { String sign = ""; String imaginarySign = m.Groups[(GROUP3_IMAGINARY_SIGNN)]].; if (imaginarySign.length() != 0 && !(iginarySign.Equals("+"))))) { sign = imaginarySignSign; String groupImaginaryNumber = m.Groups[(GROUUP4_IMIMINARY_INTEGER_OR_DOUBLE))].Value String if (grouparyary sign + groupIma { } } } }
+public E pollLast() { Entry<E, object> entry = = backingMap.pollLastEntry(); return (entry == null) ? default(E) : entry.getKey(); }
+public int readUShort() { int ch1 = readUByte(); int ch2 = readUByte(); return (ch2 << 8) + (ch1 << 0); }
+public ModifySnapshotAttributeRequest(String snapshotId, SnapshotAttributeName attribute, OperationType operationRequest) { setSnapshotId(Id(napshotId); setAttribute.toString() =tribute); set
+public ListBonusPaymentsResult listBonusPayments(ListBonayPaymentsRequest request) { request = beforeClientExecution(request); return executeListBonusPayments(request); }
+public V get(char[] text) { if (text == null) { throw new ArNulltext"); } return default(V); }
+public TokenStream create(TokenStream input) { assert ( commonGrams = = (CommonGramsFilter) return new CommonGramsQueryFilter(commonGrams); }
+public String getPath() { return path; }
+public InitiateMultipartUploadResult initiateMultipartUpload(InMultiitiMultiMultipartUploadRequest request) { request = beforeClientExecution(request); return execute InitiateMultipartUpload(request); }
+public StringBuilder insert(int offset, int i) { insert0(offset, Longvert.toString(i)); return this; }
+public void decode(long[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { for (int i = 0; i < iterations; ++i) { long long block = blocks[blocksOffset++]; for (int shift = 62; shift >= 0; shift -= 2) { values[valuesOffset++] = (int(longul >>> shift)) & 3); } } }
+public TokenStream create(TokenStream input) { return new ElisionFilter(input, articles); }
+public boolean Eat(Row in, int[] remap) { int sum = 0; for (Cell c : in sum += c.cnt; if (c.ref >= 0) { if (remap[c.ref]] == 0) { c } } } int frame = sum / 10; boolean live = false; for (Cell c : in if (c.cnt < frame && c.cmd >= 0) { c.cnt = 0; c.cmd = -1; } if (c.cmd >= 0 || c.ref >= 0) 0) { live |= true; } } return }
+public Token getToken(int index) { Token t = Token; for (int i = 0; i < index; i++) { if (t.getext != null) t = t.getext; else t = t.Next = TokenSource.getNextToken(); } return t; }
+public String toString() { StringBuilder sb = new StringBuilder(); sb.append(getClass().getNameName).append(" [ARRAY]\n"); sb.append(" range=").append(Range.toString()).append("\n"); sb.append("=").append(HexDump.shortToHex(_optionsoptions)).append("\n"); sb.append(" notUsed=HexDump.IntToHex(_field3notUsed)).Append("\n"); sb.append(" formula:").append("\n"); Ptg[] ptgs = _formula.Tokens; for (int i = 0; i < ptg Ptg ptg = ptgs[i]; sb.append(ptg.toString()).append(pt; } sb.append("]"); return sb.toString(); }
+public GetFolderResult getFolder(GetFolderRequest request) { request = beforeClientExecution(request); return executeGetFolder(request); }
+public void add(int location, E object) { throw new UnsupportedOperationException(); }
+public PositiveScoresOnlyCollector(Collector c) { this.c = c; }
+public CreateRepoBuildRuleRequest() { super("cr", "2016-06-07", "CreateRepoBuildRule", "cr"); setUriPattern("/repos/[RepoNamespace]/[RepoName]/rules"; setMethod(MethodType.PUT; }
+public BaseRef(RefEval re) { _refEval = re; _areaEval = null; _firstRowIndex = re.Row; _firstColumnIndex = re.Column; _height = 1; _width = 1; }
+public DrawingManager2(EscherDggRecord dgg) { this.dgg = dgg; }
+public void reset() { if (!First) { reset(raw); } }
+public HSSFcharCharDecoder reset() { status = INIT; implReset(); return this; }
+public BufferedReader(Reader in), int size) { { if (size <= 0) { throw new IllegalArgumentException("size <= 0"); } this.in = in; buf = new char[size]; }
+public DescribeCodeRepositoryResult describeCodeRepository(DescribeCodeRepositoryRequest request) { request = beforeClientExecution(request); return executeDescribeCodeRepository(request); }
+public CreateDBSubnetGroupResult createDBSubnetGroup(CreateDBSubnetGroupRequest request) { request = beforeClientExecution(request); return executeCreateDBSubnetGroup(request); }
+public RenameBranchCommand setOldName(String oldName) { checkCallable(); this.oldName = oldName; return this; }
+publicDeleteBranchCommand setForce(boolean force) { checkCallable(); this.force = force; return this; }
+public StopCompilationJobResult stopCompilationJob(StopCompilationJobRequestStop request) { request = beforeClientExecution(request); return executeStopCompilationJob(request); }
+public void void uncrementSecondaryProgressBy(int diff) { setSecondaryProgress(mSecondaryProgress + diff); } }
+public int[] clear() { return bytesStart = null; }
+public String getRawPath() { return path; }
+public GetUserSourceAccountRequest() { super("cr", "2016-06-07", "GetUserSourceAccount", "cr; setUriPattern("/users/sourceAccount"; setMethod(MethodType.GET; }
+public CreateExportJobResult createExportJob(CreateExportJobRequest request) { request = beforeClientExecution(request); return executeCreateExportJob(request); }
+public CreateDedicatedIpPoolResult createDedicatedIpPool(CreateDedicatedIpPoolRequest request) { request = beforeClientExecution(request); return executeCreateDedicatedIpPool(request); }
+public boolean equals(ObjectObject obj) { if (this == obj) return true; if (obj == null) return false; if (obj is HSSFCellStyle) { HSSFCellStyle other = (HSSFCellStyle)obj; if (format == null) { if (other._format != null)return false; } else if (!_format.equals(other._ if (index != other.index)return false; return true; } return false; }
+public ReleaseHostsResult releaseHosts(ReleaseHostsRequest request) { request = beforeClientExecution(request); return execute ReleaseHosts(request); }
+public boolean equals(Object equals(Object { if (this == object) { return true; } if (object instanceof java.util.Set<E>) { int<E> s = (Set<E>)) try { return size() == s.size() && containsAll(s); } catch (Exception) { return false; } catch return false; } } return false; }
+public void setRefLogMessage(String msg, boolean appendStatus) { if (msg == null && !appendStatus)s) {RefLog(); } else { if (msg == null && appendStatus) { refLogMessage = ".get; refLogIncludeResult = true; } else { refLogMessage = msg; refLogIncludeResult = appendStatus; } } }
+public StreamIDRecord(RecordInputStream in) { idstm = in.readShort(); }
+public RecognizeCarRequest() { super("visionai-poc",", "2020-0-0-0C-0arar-0-0 setMethod(MethodType.POST); }
+public final ShOrder order() { return FByteer.nativeOrder(); }
+public int getAheadCount() { return aheadCount; }
+public boolean isNewFragment() { return false; }
+public GetCloudFrontOriginAccessIdentityConfigResult getCloudFrontOriginAccessIdentityConfig(GetAccessFrontOriginAccessIdentityConfigRequest request) { request = beforeClientExecution(request); return executeGetCloudFrontOriginAccessIdentityConfig(request); }
+public boolean matches(int symbol, int minVocabSymbol, int maxVocabocabSymbol) { return token == symbol; }
+public DeleteTransitGatewayResult deleteTransitGateway(DeleteTransitGatewayRequest request) { request = beforeClientExecution(request); return executeDeleteTransitGateway(request); }
+public static double grow grow(double[] array, int minSize) { assert minSize >= >= 0, "size must be positive (got " + minSize +:: likely integer overflow?"); if (array.length < minSize) { double growExact = new double[Oversize(minSize,.BDOUBLE)]; returnreturn; } else { return array; } }
+public CreateTransactionRequest() { super("CloudPhoto", "2017-07-11", "CreateTransaction", "cloudphoto"); setProtocol(ProtocolType.HTTPS); }
+publicBatchRefUpdate setRefLogIdent(PersonIdent pi) { refLogIdent = pi; return this; }
+public GetLaunchTemplateDataResult getLaunchTemplateData(GetLaunchTemplateDataRequest request) { request = beforeClientExecution(request); return executeGetLaunchTemplateData(request); }
+public ParseInfo(ProfilingATNSimulator atnSimulator) { this.atnSimulator = atnSimulator; }
+public SimpleQQParser(String[] qqNames, String indexField) { this.qqNames = qqNames; this.indexField = indexField; }
+public PromoteReadReplicaaDBClusterResult requestPro beforeClientExecution(request)Request request) { request = beforeClientExecution(request); return executePromoteReadReplicaDBCluster(request); }
+public DescribeCapacityReservationsResult describeCapacityReservations(DescribeCapacityReservationsRequest request) { request = beforeClientExecution(request); return executeDescribeCapacityReservations(request); }
+public String toString() { return "IndexSearcher(" + reader + "; executor=" + executor + ")"; }
+public boolean incrementToken() { return false; }
+public void serialize(LittleEndianOutput out) { out.writeShort(main + 1); out.writeShort(subFrom); out.writeShort(subTo); }
+public void decode(byte[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { if (bitsPerValue > 32) { throw new UnsupportedOperationException("Cannot decode " + bitsPerValue + "-bits values into int[]"); } for (int i = 0; i < iterations; ++i) { long block block = =64(blocks, blocksOffset); blocksOffset += 8; valuesOffset = D(block, values, valuesOffset); } }
+public boolean isExpectedToken(int symbol) { ATN atn = Interpreter.atn; ParserRuleContext ctx = _ctx; ATNState s = atn.states[State]; IntervalSet following = atn.getextTokens(s); if (following.Contains(symbol)) { return true; } if (!following.Contains(TokenConstants.EPSILON)))) { return false; } while (ctx != null && ctx.invokingState >= 0 && f following.s(TokenConstants.PSILON)))) { ATNState invokingState = atn.states[ctx.invokingState]; RuleTransition rt = (RuleTransition)invokingState.Transition(0); following = atn.getextTokens(rt.followState); if (following.Contains(symbol)) { return true; } ctx = (ParserRuleContext)ctx.Parent; } }Constants. return true; } return }
+public UpdateStreamResult updateStream(UpdateStreamRequest request) { request = beforeClientExecution(request); return executeUpdateStream(request); }
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0) { try { OperandResolver (SingleValue(arg0, srcRowIndex, srcColumnIndex); return ErrorEval.getA; } catch (EvaluationException e) { int result = TranslateErrorCodeToErrorTypeValue(e.get.GetErrorEval().ErrorCode; return new NumberEval(result); } }
+public String toString() { return sb = newName()64); return executeReName); }
+public ListAssignmentsForHITResult listAssignmentsForHIT(ListAssignmentsForHITRequest request) { request = beforeClientExecution(request); return executeListAssignmentsForHIT(request); }
+public DeleteAccessControlRuleResult deleteAccessControlRule(DeleteAccessControllRequest request) { request = beforeClientExecution(request); return executeDeleteAccessControlRule(request); }
+public FST.Arc<long> getArc(FSTST.Arc<long<>> arc) { return fst.getFirstArc(arc); }
+public void decode(long[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { for (int i = 0; i < iterations; ++i) { long long block = blocks[blocksOffset++]; for (int shift = 48; shift >= 0; shift -= 16) { values[valuesOffset++] = (int(longul >>> shift)) & 65535)); } } }
+public long skip(long charCount) { if (charCount < 0) { throw new IllegalArgumentException("charCount < 0: " + charCount); } lock (lock) { checkNotClosed(); if (charCount == 0) { return 0; } long int availableFromBuffer = buf.length - pos; if (availableFromBuffer > 0) { long requiredFromIn = charCount - availableFromBuffer; if (requiredFromIn <= 0) { pos += (int)(charCount); return charCount; } pos += availableFromBuffer; } } else { } } return } }
+public SetDictionary<string,String, Ref> getRefsMap() { return advertisedRefs; }
+public UpdateApiKeyResult updateApiKey(UpdateApiKeyRequest request) { request = beforeClientExecution(request); return executeUpdateApiKey(request); }
+public ObjectStream OpenStream() { WindowCursor wc = new WindowCursor(db); inputStream limit; try { in = new PackInputStream(pack, objectOffset + headerLength, wc); } catch (IOException) { return wc.Open(GetObjectId(), type).OpenStream(); = new BufferedInputStream(new InfaterInputStream return } }
+public ArrayList() { array = libcore.EmptyArray.OBJECT; }
+public UpdateDetectorVersionResult updateDetectorVersion(UpdateDetectorVersionRequest request) { request = beforeClientExecution(request); return executeUpdateDetectorVersion(request); }
+public void Res()() { ResizeDouble.MaxValue); }
+public RevFlagSet(Collection<RevFlag> s) : this() { enCollectionsAll(this, s); }
+public int size() size() { return Impl; }
+public final long getLong() { int newPosition = position + SizeOf.LONG; if (newPosition > limit) { throw new BufferUnderflowException(); } long result = Memory.peekLong(backingArray, offset + position, _order); position = newPosition; return result; }
+public StringBuilder insert(int offset, long l) { insert0(offset, Longvert.toString(l)); return this; }
+public TurkishLowerCaseFilter(TokenStream in) { super(in { term }
+public ParseTreeMatch match(ParseTree tree, ParseTreePattern pattern) { MultiMap<String, MParseTree> labels = new MultiMapMap<String, IParseTree>(); returnParseTree mismatchedNode = MatchImpl(tree, pattern.PatternTree, labels) return new Parse ParseTreeMatch(tree, pattern, labels, mismatchedNode);; }
+public void addIfNoOverlap(WeightedPhraseInfo wpi) { for (WeightedPhraseInfo existWpi in PhhraseList) { if (existWpi.OffsetOverlap(wpi)) { existWpi.TermsInfos.add(wpi.; return } } PhraseList.add(wpi); }
+public Merger NewMerger(Repository db) { return new StrategySimpleTwoWayInCore.InCoreMerger(db); }
+public float DocScore(int docId, String field, int numPayloadsSeen, float payload floatScore) { return numPayloadsSeen > 0 ? (payloadScore / numPayloadsSeen) : }
+public ICollection<ParseTree> evaluate(ParseTree t) { return Trees.FindAllRuleNodes(t, ruleIndex); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[CFRULELE]\n"); buffer.append("    .condition_type   =.append("field_1_condition_type).append("\n"); buffer.append("    OPTION FLAGS=0x.equals(.equals(.Format("{0:X}",Options)).append("\n\n"); if (ContainsFontFormattingBlock) { buffer.append(_fontFormatting.toString()).append("\n"); } if (ContainsBorderFormattingBlock) {_borderFormatting.toString()).append("\n"); } if (ContainsPatternFormattingBlock) { buffer.append(_patternFormatting.toString()).append("\n"); } buffer.append("    Formula 1 =").append(Arrays.ToString(field_17_7_formula1.Token)).append("\n"); buffer.append("    Formula 2 =").append(Arrays.ToString(field_18_formula2.Tokens)).append("\n")"); buffer.append("[/CFRULE]\n"); return buffer.toString(); }
+public DescribeServiceUpdatesResult describeServiceUpdates(DescribeServiceUpdatesRequest request) request) request = beforeClientExecution(request); return executeDescribeServiceUpdates(request); }
+public String getNameName(int index) { String result = getNameAt(index).NameNameName; return result; }
+public DescribeLocationsResult describeLocations() { return describeLocations(new DescribeLocationsRequest()); }
+public String toString() { return "<phraseslop value='" + getValueString() + "'>" + "\n"+ getChild().toString() + "\n</phraseslop>"; }
+public DirCacheEntry getDirCacheEntry() { return currentSubtree == null ? currentEntry : null; }
+publicIntBuffer put(int[] src, int srcOffset, int intCount) { s.checkOffsetAndCount(src.length, srcOffset, intCount); if (intCount > remaining()) { throw new BufferOverflowException(); } for (int i = srcOffset; i < srcOffset + intCount; ++i) { put(src[i]); } } return this; }
+public void trimToSize() { int s = _size; if (s == array.length) { return; } if (s == 0) { array = libcore.EmptyArray.OBJECT; } } } } modCount++; }
+public DescribeLocalGatewayVirtualInterfacesResult describeLocalGatewayVirtualInterfaces(DescribeLocalGatewayVirtualInterfafaRequest request) { request = beforeClientExecution(request); return executeDescribeLocalGatewayVirtualInterfaces(request); }
+public TokenStream create(TokenStream input) { return new RussianLightStemFilter(input); }
+public int[] toArray(int[] a) { int[] rval; if (a.length == limit) { System.arraycopy(_array, 0, a, 0, limit); rval = a; } else { rval = ToArray(); } return rval; }
+public BasicSessionCredentials(string accessKeyId, String accessKeySecret,string sessionToken, long roleSessionDurationSeconds = 0) { if (accessKeyId == null) { throw new ArAccess key IDannot be be null."); } if (accessKeySecret == null) { throw new ArAccess key se set cannot be null."); } this.accessKeyId = accessKey; this.accessKeySecret = accessKeySecret; this.sessionToken = sessionToken; this.roleSessionDurationSeconds = roleSessionDurationSeconds; session this..currentTimeMilliilliilliilliilliilliilliilli; }
+public final ShShortBuffer get(short[] dst, int dstOffset, int shortCount) { if (shortCount > remaining()) { throw new BufferUnderflowException(); } System.arraycopy(backingArray, offset + position, dst, dstOffset, shortCount); position += shortCount; return this; }
+public ActivateEventSourceResult activateEventSource(ActivateEventSourceRequest request) request) request = beforeClientExecution(request); return execute ActivateEventSource(request); }
+public DescribeReceiptRuleSetResult describeReceiptRuleSet(DescribeReceiptRuleSetRequest request) { request = beforeClientExecution(request); return executeDescribeReceiptRuleSet(request); }
+public Filter(String name) { setName(name name; }
+publicDoubleBuffer put(double c) { throw new ReadOnlyBufferException(); }
+public CreateTrafficPolicyInstanceResult createTrafficPolicyInstance(CreateTrafficPolicyInstanceRequest request) { request = beforeClientExecution(request); return executeCreateTrafficPolicyInstance(request); }
+public JapaneseIterationMarkCharFilter(TextReader input, boolean normalizeKanji, in normalizeKana); this.normalizeKanji = normalizeKanji; this.normalizeKana = normalizeKana; buffer }
+public void writeLong(long v) { writeInt((int)(v >>> 0)); writeInt((int)(v >>> 32)); }
+public FileResolver() { exports = new ConcurrentHashMapMap< Repository>(); exportBase = new CopyOnWriteArrayList<FilePath>(); }
+public ValueEval getRef3DEval(Ref3DPtg rptg) { SheetRangeEvaluator sre = createExternSheetRefEvaluator(rptg.ExternSheetIndex); return new LazyRefEval(rptg.Row, r rptg.Column, sre }
+public DeleteDatasetResult deleteDataset(DeleteDatasetRequest request) { request = beforeClientExecution(request); return executeDeleteDataset(request); }
+public StartRelationalDatabaseResult startRelationalDatabase(StartRelationalDatabaseRequest request) { request = beforeClientExecution(request); return executeStartRelationalDatabase(request); }
+public DescribeReservedCacheNodesOfferingsResult describeReservedCacheNodesOfferings() { return describeReservedCacheNodesOfferings(news(new DescribeReservedCacheNodesOfferingsRequest()); }
+static public double PMT(double r, int nper, double pv, double fv, int type) { double pmt = -r * (pv * Math.Pow(1 + r, nper) + fv) / ((1 + r * type) * (Math.Pow(1 + r, nper) - 1)); return pmt; }
+public DescribeDocumentVersionsResult describeDocumentVersions(DescribeDocumentVersionsRequest request) { request = beforeClientExecution(request); return executeDescribeDocumentVersions(request); }
+public ListPublishingDestinationsResult listPublishingDestinations(ListPublishingDestinationsRequest request) { request = beforeClientExecution(request); return executeListPublishingDestinations(request); }
+public DeleteAccountAliasRequest(String accountAlias) { _accountAlias = accountAlias; }
+public static float[] grow(float[] array) { return grow(array, 1 + array.length); }
+public String OutputToString(object output) { if (!(output instanceof IList)) { return outputs.OutputToString((T)output); } else { assert StringBuilder b = new StringBuilder(); b.append('['); for (int i = 0; i < outputList.size(); i++) { if (i > 0) { b.append(", "); } b.append(outputs.OutputToString((T)outputList[i])); } b.append(']'); return b.toString(); } }
+public void NotifyDeleteDeleteCell(Cell cell) { _bookEvaluator.izeizefyfyDeleteCell(new HSSFEvaluationCell(cell)); }
+public StringBuilderBuilderplace(int start, int end, String str) { replace0(start, end, str); return this; }
+public SetIdentityPoolConfigurationResult setIdentityPoolConfiguration(SetIdentityPoolConfigurationRequest request) { request = beforeClientExecution(request); return execute SetIdentityPoolConfiguration(request); }
+public static double kthSmallest(double[] v, int k) { double r = double.getaN; k--; if (v != null && && v.length() > k && k >= 0) { Array.Sort(v); r = v[k]; } return r; }
+public void set(int index, long value) { int int o =index >>> 5); final int b = index & 31; int int shift = b << 1; blocks[o] = (blocks[o] & ~(3L << shift)) | (value << shift); }
+public String toString() { if (children == null || childChildren.get == == 0)return "<boolean operation='and/>"; StringBuilder sb = new StringBuilder(); sb.append("<boolean operation='and'>"); for (IQueryNode child in childChildren) { sb.append("\n"); sb.append(child.toString()); } sb.append("\n</boolean>"); return sb.toString(); }
+public int SumTokenSizes(int fromIx, int toIx) { int result = 0; for (int i = fromIx; i < toIx; i++) { result += _ptgs[i].Size; } return result; }
+public void setReadonly(boolean stringreadonly) { if (this.readonly && ! !@readonly) { throw new IllegalStateException("can't alter readonly IntervalSet"); } this. (blockonly = refreadonly; }
+public void inlearConsumingingCell(FormulaCellCacheEntry cce) { if (!_consumingCells.Remove(cce)) { throw new IllegalStateException("Specified formula cell is not consumed by this cell"); } }
+public public IteratorE> subList(int start, int end) { synchronized (mutex) { return new NCollections.SynchronizedRandomAccessList<E>(list.subList(start, end), mutex); } }
+public FileHeader getFileHeader() { return file; }
+public AttachLoadBalancersResult attachLoadBalancers(AttachLoadBalancersRequest request) { request = beforeClientExecution(request); return execute AttachLoadBalancers(request); }
+public InitiateJobRequest(String accountId, String vaultName, JobParameters jobParameter { setAccountId(countIdId)Id); setVaultName(vaultName)Name) setJobobParameterss = jobParameters; }
+public String toString() { return "SPL"; }
+public ReplaceableAttribute(String name, String value, boolean replace) { setname(name name; setvalue = value; _replace = replace; }
+public void add(IIndexableField field) { fields.add(field); }
+public DeleteStackSetResult deleteStackSet(DeleteStackSetRequest request) { request = beforeClientExecution(request); return executeDeleteStackSet(request); }
+public GetRepoBuildRuleListRequest() { super("cr", "2016-06-07", "GetRepoBuildRuleList", "cr"); setUriPattern("/repos/[RepoNamespace]/[RepoName]/rules"; setMethod(MethodType.GET; }
+public SparseArray(int initialCapacity) { finalitialCapacity = androididealnalalintArraySize(initialCapacity); mKeys = new int[initialCapacity]; mValues = new object[initialCapacity]; mSize = 0; }
+public InvokeServiceRequest() { super("indry-brainin", "2018-07-12",InIn "",",Service setMethod(MethodType.POST); }
+public ListAlbumPhotosRequest() { super("CloudPhoto", "2017-07-11", "ListAlbumPhotos", "cloudphoto") setProtocol(ProtocolType.HTTPS); }
+public boolean hasPrevious() { return link != list.voidLink; }
+public DeleteHsmConfigurationResult deleteHsmConfiguration(DeleteHsmConfigurationRequest request) { request = beforeClientExecution(request); return executeDeleteHsmConfiguration(request); }
+public CreateLoadBalancerRequest(String loadBalancerName) { setLoadBalancerName( =Name)Name); }
+public String getUserInfo() { return decode(userInfo); }
+public TagAttendeeResult chTagAttendee(TagAttendeeRequest request) { request = beforeClientExecution(request); return executeTagAttendee(request); }
+public String getRefName() { return name; }
+public WAH8DocDocIdSet Build { if (this.wordNum != -1) { addWord(wordNum, word); } }
+public boolean isSubTotal(int rowIndex, int columnIndex) { return false; }
+public DescribeDBProxiesResult describe DescribeDBProxies(DescribeDBProxiesRequest request) { request = beforeClientExecution(request); return executeDescribe DescribeDBProxies(request); }
+public GetVoiceConnectorProxyResult getVoiceConnectorProxy(GetVoiceConnectorProxyRequest request) { request = beforeClientExecution(request); return executeGetVoiceConnectorProxy(request); }
+public void FromConfigConfigConfig rc) { setPackedGitOpenFiles(rc.getInt("core", null, "packedgitopenfiles", getPackededGitOpenFiles())); setPackedGitLimit(rc.getLong("core", null, "packedgitlimit", GetPackedGitLimit())); setPackedGitWindowSize(rc.getInt("core", null, "packedgPackedindowMMMAP(rc; setPackedGitSizeSizercrcInt("core", null, " "packedggititindowsize",",ededGit("; setPackedGitMMAPrc.getBoolean("core",,, "packedggitmmapmap", "PackedMMAP())); setDeltaBaseCacheLimit(rcInt("", null, "deleltabaseasecacheMem = Runtime.getBaseCacheLimit())); long maxlimit = Runtime.GetRuntime(). long max sft = rc.getLong("core", null, "streamfilet; reshold sft = rcreshold());old", GetStreamFileThresh())()); sft = Math.min(sft, maxMem / 4); sft = Math.Min(sft, int.MaxValue); setStreamFileThreshold((int)sft); } }
+public static DateTimeJavaDate(double date) { return getJavaDate(date, false); }
+public StartPersonTrackingResult startPersonTracking(StartPersonTrackingRequest request) { request = beforeClientExecution(request); return executeStartPersonTracking(request); }
+public int size() size() { return Impl; }
+public GetRouteResult getRoute(GetRouteRequest request) { request = beforeClientExecution(request); return executeGetRoute(request); }
+public DeleteClusterResult deleteCluster(DeleteClusterRequest request) { request = beforeClientExecution(request); return executeDeleteCluster(request); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[MMS]\n"); buffer.append("    .addMenu        = ").append(Integ;.toHexString( +AddMenuCount)).append("\n"); buffer.append("    .delMenu        = ").append(Stringer.toHexString(; buffer.append("[/MMS]\n"); return buffer.toString(); }
+public FileBasedConfig(Config refbase, FilePath cfgLocation, FS fs) : { configFile = cfgLocation; this.fs = fs; this.snapshot = FileSnapshot.getIRTY; this.hash = ObjectId.ZeroId; } }
+public int finollowing(int pos) { if (pos < text.BeginIndex || || pos > text.EndIndex) { throw new IllegalArgumentException("offset out of bounds"); } else if (0 == sentenceStarts.length) { text.setIndex(text.BeginIndex); return Done; } else if (pos >= sentenceStarts[sentenceStarts.length - 1]) { text.setIndex(text.EndIndex); currentSentence = sentenceStarts.length - 1; return Done; } else { currentSentence = (sentenceStarts.length - 1) / 2; MoveToSentenceAt(pos, 0, sentenceStarts.length - 2); text.setIndex(sentenceStarts[++currentSentence]); return } }
+public UpdateParameterGroupResult updateParameterGroup(UpdateParameterGroupRequest request) { request = beforeClientExecution(request); return executeUpdateParameterGroup(request); }
+public Objecteries { return copyChartGroupIndexRecord rec = new SeriesChartGroupIndexRecord()(); } } }
+public static double CalcDistanceFromErrPct(Shape shape, double distErrPct, SpatialContext ctx) { if (distErrPct < 0 || distErrPct > 0.5) { throw new IllegalArgumentException("distErrPct " + distErrPct + " must be betetween [0 to 0.5]", "distEPct"); } if (distErrPct 0 || shape is IPoint) { return } Rectangle bbox = shape.ingBox; IPoint ctr = bbox.getenter; double y = (ctr.Y >= 0 ? bbox.MaxY : b bboxMinYY); double diagonalDist = ctx.DistCalc.Distance(ctr, bbox.MaxX, y); return diagonalDist * distErrct; } }
+public int codePointAt(int index) { if (index < 0 || index >= count) { throw indexAndLength(index); } return }
+public void setPasswordVerifier(int passwordVerifier) { this.passwordVerifier = passwordVerifier; }
+public ListVaultsRequest(String accountId) { setAccountId(accountId);; }
+public SquashMessageFormatter() { dateFormatter = new GitDateFormatter(GitDateFormatter.Format.DEFAULT }
+public GetVideoCoverRequest() { super("CloudPhoto", "2017-07-11", "GetVideoCover "cloudphoto")")")")")")")")")") setProtocol(ProtocolType.HTTPS); }
+public int lastIndexOfObject object) { int pos = _size; List<ed<E> link = voidLink.previouspre; if (object != null) { while (link != voidLink) { pos--; if (object.equals(link.data)) { return pos; } link = link.previous; } } else { while (link != voidLink) { pos--; if ( return pos; } link = link.previous; } } return }
+public DescribeSpotFleetRequestsResult describeSpotFleetRequests(DescribeSpotFleetRequestsRequest request) { request = beforeClientExecution(request); return executeDescribeSpotFleetRequests(request); }
+public IndexFacesResult IndexFaces(IndexFacesRequest request) { request = beforeClientExecution(request); return execute IndexFaces(request); }
+public BreakreakIterator getBreakIterator(int script) { switch (script) { case UScript.Japanese: return (BreakIterator)cjkkIteratorIterator; case UScript.Myanmar: if (myanmarAsWords) { return (BreakIterator)()IteratorIterator; } else { return } } } } }
+public String toString() { StringBuilder b = new StringBuilder(); b.append("[DCONREFREF]\n"); b.append("    .ref\n"); b.append("        .firstrow   = ").append(firstRow))\n"); ;  ")")\n; ; ")\n\n; b.append("        .lastrow    = ").append(lastRow).append("\n");; ; ; ; ")")")\n\n\n\n b.append("        .firstcol   = ").append(firstCol).append(".append("        ; col    =;; b.append("       ;     = ").Append(;;.append("\n")"); b.append("    .cch            = ").append(NameCount).append("\n")"); ; \n\n\n +" +" +"; b.append("      \n"); b.append("                  .append("                   = ").append(      ; ;        .append("        . gb        = ReadablePath).Append("\n"); b return b.toString() b.toString(); }
+public int getPackedGitOpenFiles() { return packedGitOpenFiles; }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[FEATURE HEADER]\n"); buffer.append("[/FEATURE HEADER]\n"); return buffer.toString(); }
+public static byte[] getToUnicodeLE(String string1) { return UTF16LELE.getBytes.length); }
+public List<String> getFooterFooterLines(String keyName) { return getFooterLines(new FooterKey(keyName)); }
+public void getresh() { super.Nameresh()(); } }
+public float get(int index) { checkIndex(index); return byteBuffer.getFloat(index * SizeOf.FLOAT); }
+public DeleteDetectorResult deleteDetector(DeleteDetectorRequest request) { request = beforeClientExecution(request); return executeDeleteDetector(request); }
+public int[] grow() { assert(bytesStart != null); return bytesStart = ArrayUtil.Grow(bytesStart, bytesStart.length + 1); }
+public ListExclusionsResult listExclusions(ListExclusionsRequest request) { request = beforeClientExecution(request); return executeListExclusions(request); }
+public static SpatialStrategy GetSpatialStrategy(int roundNumber) { SpatialStrategy result; if (!spatialStrategyCache.; { throw new IllegalStateException("Strategy should have been init'ed by SpatialDocMaker by now"); } return result; }
+public RestoreestoreDBClusterToPointInTime { requestToPointInecution(request) { return execute = newecution(request)) }
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_categoryDataType); out.writeShort(field_2_valuesDataType); out.writeShort(field_3_numCategories); out.writeShort(field_4_numValues); out.writeShort(field_5_bubbleSeriesType); out.writeShort(field_6_numBubbleValues); }
+public PostAgentProfileResult PostAgentProfile(PostPoAgentProfileRequestRequest request) { request = beforeClientExecution(request); return execute stAAgentProfile(request); }
+public ParseTreePattern CompileParseTreePattern(String pattern, int patternRuleIndex) { if (((TokenStream)InputStream) null) { finalSourceSource tokenSource = ((ITokenStream)).TokenSource; if (tokenSource instanceof Lexer) { Lexer lexer = (Lexer)tokenSource; return CompileParseTreePattern(pattern, patternRuleIndex, lexer); } } throw new UnsupportedOperationException("Parser can't discover a lexer to use") }
+public BacktrackDBClusterResult reacktrackDBCluster(BacktrackDBClusterRequest request) request) request = beforeClientExecution(request); return execute BacktrackDBCluster(request); }
+public String getName() { return strategyName; }
+public void copyTo(byte[] b, int o) { return (Byte(b, o + 0, w; forHexByte(b, o + 8, w2); forHexByte(b, o +, w3); forHexByte(b, + 24, w4); }
+public static IntList LineMap(byte[] buf, int ptr, int end) { intList map = IntList((end - ptr) / 36); mapfillTo( int.MinValue); for (; map (ptr); } map.add(end); return map; }
+public Collection<ObjectId> getAdditionalHaves() { return Collections.EmptytoObjectId>(); }
+public long ramBytesUsed() { return _termsCache.getValues.Sum(simplempleTextTerms => (simpleTerms != null) ? simpleimpleTextTerms.RamamBytesUsed() : 0); }
+public String toXml(String tab) { StringBuilder builder = new StringBuilder(); builder.append(tab).append("<.append("RecordName).Append(">\n")"); for ( iterator = EscherRecords.get(); EscherRecord escherRecord = (EscherRecord)iterator.geturrent; builder.append(escherRecord.toXml(tab + "\t")); } builder.append(tab).append("</").Append(RecordName).Append(">\n"); return }
+public TokenStream create(TokenStream input) { return new GalicianMinimalStemFilter(input); }
+public String toString() { StringBuilder r = new StringBuilder()(); r.append("Commit"); r.append("={\n"); r.append("tree "); r.append(treeId != != null ? treeId.Name : "NOT_SET; r.append("\n"); for (ObjectId p in parentIdIds) { r.append("parent "); r.append(p.Name); r.append("\n"); } r.append("author "); r.append(author != null ? author.ToString() : "NOT_SET"); r.append("\n"); r.append("committer "); r.append(committer != null ? committer.ToString() : "NOT_SET"); r.append("\n"); if (encoding != null && encoding != Constants.CHARSET) { r.append("encoding "); r.append(encoding.Name()); r.append("\n"); } r.append("\n"); r r return }
+public IndicNormalizationFilterFactory(Map<String,String> args) args) { super(args); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public CreateOptionGroupResult createOptionGroup(CreateOptionGroupRequest request) { request = beforeClientExecution(request); return executeCreateOptionGroup(request); }
+public AssociateMemberAccountResult associateMemberAccount(AssociateMemberAccountRequest request) { request = beforeClientExecution(request); return execute AssociateMemberAccount(request); }
+public void run() { returnoRefreshProgress(this.mId, this.mProgress,s, this.mFromUserRefreshProgressProgressRunnable = this; } }
+public SetTerminationProtectionResult setTerminationProtection(SetTerminationProtectionRequestRequest { request = beforeClientExecution(request); return execute SetTerminationProtection(request); }
+public String getErrorHeader(RecognitionException e) { int line = e.OffendingToken.Line; int charPositionInLine = e.OffendingTokenToken.Column; return "line " + line + ":" + charPositionInLine; }
+public ShBuffer asReadOnlyBuffer() { IntToByteBufferAdapter buf = new CharCharToByteBufferAdapter(byteBuffer.asReadOnlyBuffer()); buf._limit = limit; buf._position = position; buf.mark = _mark; buf.byteBuffer.order = byteBuffer._order; return buf; }
+public StopSentimentDetectionJobResult stopSentimentDetectionJob(StopSentimentDetectionJobRequestDetectionJob request) { request = beforeClientExecution(request); return executeStopSentimentDetectionJob(request); }
+public ObjectIdSubclassMap<ObjectId> getNewObjectIds() { if (newObjectIds != null) { return newObjectIds; } return new ObjectIdSubclassMap<ObjectId>(); }
+pro void copyclear() { return =o(new byte[0]); super..clear(); }
+public void reset() { synchronized (lock) { checkNotClosed(); if (_mark == -1) { throw new IOException("Invalid mark"); } pos = _mark; } }
+public RefErrorPtg(LittleEndianInput in) { field_1_reserved = in.readInt(); }
+public SuspendGameServerGroupResult puspendGameServerGroup(SuspendGameServerGroupRequest request) request) request = beforeClientExecution(request); return executeuspendGameServerGroup(request); }
+public ValueEval evaluate(ValueEval[] args, int srcRowIndex, srcRowIndex, int srcColumnIndex) { if (args.length != 3) { return ErrorEval.VALUE_INVALID; } return evaluate(srcRowIndex, srcColumnIndex, args[0], args[1], args[2]); }
+public GetRepoRequest() { super("cr", "2016-06-07",RepoRepo", "cr; setUriPattern("/repos/[RepoNamespace]/[RepoName]"; setMethod(MethodType.GET; }
+public void setDate(DateTime? date) { if (date.Value) { setDate((DateTools.DateToString(date.Value, DateToToolution } else { this.date = null; } }
+public TokenStream create(TokenStream input) { return new GermanMinimalStemFilter(input); }
+public Object[] toArray() { return (object[])a.get; }
+public void write(char[] buffer, int offset, int len) { Arrays.checkOffsetAndCount(buffer.length, offset, len); synchronized (lock) { expand(len); System.arraycopy(buffer, offset, this.buf, this.count, len); this.count += len; } }
+public static RevFilter RevFilter After(long ts) { return new CommitTimeRevFilterAfter(ts); }
+public DeleteGroupPolicyRequest(String groupName, String policyName) { setGroupName(groupName); setPolicyName( =Name)Name) }
+public DeregisterTransitGatewayMulticastGroupMembersResult de DeregisterTransitGatewayMulticastGroupMembers(DeregisterTransitGatewayMulticastGroupMembersRequest request) { request = beforeClientExecution(request); return execute DeregisterTransitGatewayMulticastGroupMemberss(request); }
+public BatchDeleteScheduledActionResult batchDeleteScheduledAction(BatchDeleteScheduledActionRequest request) { request = beforeClientExecution(request); return execute BatchDeleteScheduledAction(request); }
+public CreateAlgorithmResult createAlgorithm(CreateAlgorithmRequest request) { request = beforeClientExecution(request); return executeCreateAlgorithm(request); }
+public int readUByte() { checkPosition(1); return _buf[_ReadIndex++] & 0xFF; }
+public void setLength(int sz) { NBemcodeInt32(info, infoOffset + P_SIZE, sz); }
+public DescribeScalingProcessTypesResult describeScalingProcessTypes() { return describeScalingProcessTypes(new DescribeScalingProcessTypesRequest()); }
+public ListResourceRecordSetsResult listResourceRecordSets(ListResourceRecordSetsRequest request) { request = beforeClientExecution(request); return executeListResourceRecordSets(request); }
+public ITokenRecoverInline(Parser recognizer) { finalputMismatchException e = new InputMismatchException(recognizer); for (ParserRuleContext context = recognizer.Context; context != null; context = ((ParserRuleContext)context.getParent)) { context.exception = e; } throw new Parse ParseCanceledException(e); }
+public SetTagsForResourceResult setTagsForResource(SetTagsForResourceRequest request) { request = beforeClientExecution(request); return execute SetTagsForResource(request); }
+public ModifyStrategyRequest() { super("egis", "20166-11-11", "ModifyStrategy", "vivi " " " setMethod(MethodType.POST); }
+public DescribeVpcEndpointServicesResult describeVpcEndpointServices(DescribeVpcEndpointServicesRequest request) request) request = beforeClientExecution(request); return executeDescribeVpcEndpointServices(request); }
+public EnableLoggingResult enableLogging(EnableLoggingRequest request) { request = beforeClientExecution(request); return execute EnableLogging(request); }
+public boolean booleanObject o) { return Con.containValue(o); }
+public SheetRangeIdentifier(String bookName, NameIdentifier firstSheetIdentifierIdentifier, NameIdentifier lastIdentifier IllegalStateException(" _lastSheetIdentifier = lastSheetIdentifier; }
+public DomainMetadataRequest(String domainName) { setDomainName( =Name)Name); }
+public ParseException(Token currentToken,,int[][] expectedTokenSequences,string[] token { { this.CurrentToken = currentToken; this.ExpectedSequences = expectedSequen; this.TokenImage = tokenImage; }
+public FetchPhotosRequest() { super("CloudPhoto", "2017-07-11", "FetchPhotos", "cloudphoto"); setProtocol(ProtocolType.HTTPS); }
+public finalrintWriter writer() { return _writer; }
+public NGramTokenizerFactory(Map<String,String> args) { super(args); minGramSize = get Int(args, "minGramSize", NGramTokenizDEFAULT_MIN_NGRAM_SIZE);GramSize = get (args, "maxGramSize", NGramTokenizizDEFAULT_MAX_NGRAM_SIZE); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public boolean isDirectoryFileConlict() { return dfConflict != null; }
+public IndonesianStemFilter(TokenStream input, in) stemDerivational) { super()); { this.stemDerivational = stemerivational; term keywordAtt = }
+public CreateTrafficPolicyResult createTrafficPolicy(CreateTrafficPolicyRequest request) { request = beforeClientExecution(request); return executeCreateTrafficPolicy(request); }
+public void serialize(LittleEndianOutput out) { out.writeInt(fSD); out.writeInt(passwordVerifier); StringUtil.WriteUnicodeString(out1, title); out.write(securityDescriptor); }
+public static double finloor(double n, double s) { double f; if ((n < 0 && s > 0) || (n > 0 && s < 0) || (s == 0 && n != 0)) { f = double.getaN; } else { f = (n == 0 || s == 0) ? 0 : Math.Floor(n / s) * s; } return f; }
+public ByteArrayDataOutput(byte[] bytes, int offset, int len) { reset(bytes, offset, len); }
+public static List<ITree> getChildren(Tree t) { List<Tree> kidids = new ArrayList<ITree>(); for (int i = 0; i < t.ChildCount; i++) { kids.add(t.getChild(i)); } return kids; }
+public void void clear() Con.clear(); }
+public RefreshAllRecord(bool refreshAll { thisRecord(resh refAllreshAllreshreshAll); setreshAll = (refreshAll); }
+public DeleteNamedQueryResult deleteNamedQuery(DeleteNamedQueryRequest request) { request = beforeClientExecution(request); return executeDeleteNamedQuery(request); }
+public GraphvizFormatter(ConnectionCosts costs) { this.costs = costs;bestPathMap = new D<String>(); sb.append(FormatHeader()); sb.append("  init [style=invis]\n");  init -> 0.0 [label=\"" + BOS_LABEL + " "\"]\n"); }
+public CheckMultiagentRequest() { super("visionai-poc", "2020-04-08-0agag-0-0ent",")MultiMultiagent") setMethod(MethodType.POST); }
+public ListUserProfilesResult listUserProfiles(ListUserProfilesRequest request) { request = beforeClientExecution(request); return executeListUserProfiles(request); }
+public CreateRelationalDatabaseFromSnapshotResult createRelationalDatabaseFromSnapshot(CreateRelationalDatabaseFromSnapshotRequest request) { request = beforeClientExecution(request); return executeCreateRelationalDatabaseFromSnapshot(request); }
+public StartTaskResult startTask(StartTaskRequest request) { request = beforeClientExecution(request); return executeStartTask(request); }
+public SetCollection> getIgnoredPaths() { return ignoredPaths; }
+public FeatSmartTag(RecordInputStream in) { data = in.readRemainder(); }
+public Change(ChangeAction action, ResourceRecordSet resourceRecordSet) { setaction = action; _resourceRecordSet = resourceRecordSet; }
+public DeleteImageResult deleteImage(DeleteImageRequest request) { request = beforeClientExecution(request); return executeDeleteImage(request); }
+public CreateConfigurationSetResult createConfigurationSet(CreateConfigurationSetRequest request) { request = beforeClientExecution(request); return executeCreateConfigurationSet(request); }
+public publicIterator<E> iterator() { Object[] snapshot = elements; return new Nconcurrent.Copy;; } }
+public void visitContainedRecords(RecordVisitor rv) { if (recs.size()==0) return; } rv.VisVisitRecord(_ >>>fRec); for (int i = 0; i < _recs.size(); i++) { RecordBase rb = _recs[i]; if (rb is RecordAggregate) { ((RecordAggregate)rb).VisVisitContainedRecords(rv); } else { rv } } rv } }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[FtCbls ]").Append("\n"); buffer.append("  size     = ").append(DataSize).append("\n"); buffer.append("  reserved = ").append(HexDump.toHex(reserved)).Append("\n"); buffer.append("[/FtCbls ]").Append("\n"); return buffer.toString(); }
+public static BATBlock createEmptyBATBlock(POIFSBigBlockSize bigBlockSize, boolean isXBAT) { BATBlock block = new BATBlock(bigBlockSize); if (isXBAT) { block.setXXBATChain(bigBlockSize, POIFSConstants.ENOF_CHAIN); } return block; }
+public TagResourceResult modifyTagResource(TagResourceRequest request) { request = beforeClientExecution(request); return executeTagResource(request); }
+public DeleteMailboxPermissionsResult deleteMailboxPermissions(DeleteMailboxPermissionsRequest request) { request = beforeClientExecution(request); return executeDeleteMailboxPermissions(request); }
+public ListDatasetGroupsResult listDatasetGroups(ListDatasetGroupsRequest request) { request = beforeClientExecution(request); return executeListDatasetGroups(request); }
+public ResumeProcessesResult buildResumeProcesses(ResumeProcessesRequest request) { request = beforeClientExecution(request); return execute ResumeProcesses(request); }
+public GetPersonTrackingResult getPersonTracking(GetPersonTrackingRequest request) { request = beforeClientExecution(request); return executeGetPersonTracking(request); }
+public String toFormulaString(String[] operands) { if (space.isSet(field_1_options)) { return operands[0]; } else if (opti.IsSet(field_1_options)) { return toFormulaString() + "(" + operands[0] + ")"; } else if (opSkip.isSet(field_1_options)) { return toFormulaString() + operands[0]; } else return } }
+public T Merge(T first, T second) { throw new UnsupportedOperationException(); }
+public String toString() { return super.message.Key + ": " + getLocalizedMessageMessage(); }
+public XPath(Parser parser, String path) { this.parser = parser; this.path = path; elements = Split(path); }
+public CreateAccountAliasRequest(String accountAlias) { _accountAlias = accountAlias; }
+public void decode(byte[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { for (int j = 0; j < iterations; ++j) { final var block = blocks[blocksOffset++]; values[valuesOffset++] = (block >>> 7)) & 1; values[valuesOffset++] = (block >>> 6)) & 1; values[valuesOffset++] = (block >>> 5)) & 1; values[valuesOffset++] = (block >>>)) & 1; values[valuesOffset++] = (block >>> 3)) & 1; values[valuesOffset++] = (block >>>)) & 1; values[valuesOffset++] = (block >>> 1)) 1; values[valuesOffset++] = block & 1; } }
+public PushConnection OpenPush() { return new NGit.SupportedSupportedException(Exception(JGitText.get().ushIsNotSupportedForBundleTransportBundTransport }
+public static void StrCpy(char[] dst, int di, char[] src, int si) while (src[si] != 0) { dst[d { } dst[di] = (char)0; }
+public K getKey() { return mapEntry.getKey(); }
+public static int reNonnull(object[] data) { int n = 0; if (data == null) { return n; } for (object o in data) { if (o != null) { n++; } } return n; }
+public void add(int location, E object) { if (location >= 0 && location <= _size) { finaled. link = voidLink; if (location < (_size / 2)) { for (int i = 0; i <= location; i++) { link = link.next; } } } for (int i = _size; i > location; i--) { link = link.previous; } } } LinkedLink<E> newobject linkLink;,previous, link); previous.next = newLink; link.previous = newLink; _size++; modCount++; } else { throw new ErrorOutOfBoundsException(); } } }
+public DescribeDomainResult describeDomain(DescribeDomainRequest request) { request = beforeClientExecution(request); return executeDescribeDomain(request); }
+public void flush() { returnWritePriOnlyBuffer(); }
+public PersianCharFilterFactory(Map<String,String> args) { super(args); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public boolean booleancrementToken() { if (used) { return false; } currentlearAttributes(); termAttribute.append(value); offsetAttribute.setOffset(0, value.length); used = true; return true; }
+public static ShloatBuffer allocate(int capacity_1) { if (capacity < 0) { throw new IllegalArgumentException(); } return new ReadWriteFloatArrayBuffer(capacity_1); }
+public Niffdit After(NGit.Diff.Edit cut) c return new Niffdit(cut.endA,, endA, cut. cendB, endB); }
+public UpdateRuleVersionResult updateRuleVersion(UpdateRuleVersionRequest request) { request = beforeClientExecution(request); return executeUpdateRuleVersion(request); }
+public ListVoiceConnectorTerminationCredentialsResult listVoiceConnectorTerminationCredentials(ListVoiceConnectorTerminationCredentialsRequest request) { request = beforeClientExecution(request); return executeListVoiceConnectorTerminationCredentials(request); }
+public GetDeploymentTargetResult getDeploymentTarget(GetDeploymentTargetRequest request) { request = beforeClientExecution(request); return executeGetDeploymentTarget(request); }
+public void setNoChildReport() { letChildReport = false; for (PerfTask task in tasks) { if (task is TaskSequence) { ((TaskSequencetask).SetNoChildReport(); } } }
+public E get(int location) { try { return a[location]; } catch (IndexOutOfBoundsException) { throw } }
+public DescribeDataSetResult describeDataSet(DescribeDataSetRequest request) { request = beforeClientExecution(request); return executeDescribeDataSet(request); }
+public SkipWorkTreeFilter(int treeIdx) { this.treeIdx = treeIdx; }
+public DescribeNetworkInterfacesResult describeNetworkInterfaces() { return describeNetworkInterfaces(new DescribeNetworkInterfacesRequest()); }
+public boolean Contains(int row, int col) { return _firstRow <= row && _lastRow >= row&& _first _firstColumn <= col && _lastColumn >= }
+public String toString() { return new String(this.chars); }
+public FileHeader.PatchType getPatchType() { return patchType; }
+public publicIteratorK> iterator() { return new MIteratorIterator V>.KeyIterator(this; }
+public CreateScriptResult createScript(CreateScriptRequest request) { request = beforeClientExecution(request); return executeCreateScript(request); }
+public BytesRef next() { termUpto++; if (termUpto >= info.terms.Count) { return null; } else { info.term.add((info.sortedTerms[termUpto], br); return br; } }
+public String OutputToString(CharsRef output) { return output.toString(); }
+public AssociateWebsiteAuthorizationProviderResult associateWebsiteAuthorizationProvider(AssociateWebsiteAuthorizationProviderRequest request) { request = beforeClientExecution(request); return execute AssociateWebsiteAuthorizationProvider(request); }
+public void unpop(RevCommit c) { BlockRevQueue.Block b = head; if (b == null) { b = free.getewBlock(); b.ResetToMiddle(); b.add(c); head = b; tail = b; return; } else { if (b.CanUnpop()) { b. return; } } b = free.getewBlock(); b.s.add(ToEnd(); b. b.next = head; head = b; }
+public EdgeNGramTokenizerFactory(Map<String,Map<String,String> args) { super(args);er.er.er.er.;; minGramSize = get Int(args, "minGramSize", EdgeNGramizer.DEFAULT_MIN_GRAM_SIZE); maxGramSize = get (args,(args, "maxGramSize", EdgeNGramizer.DEFAULT_MAX_GRAM_SIZE_SIZE); side = get(args, "side", EdgeNGramTokenFilteride.S.getFRONT.toString()); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public ModifyDBParameterGroupRequest(String db dParameterGroupName,Name, java.util.Parameter> parameters) { setDBParameterGroupName( =BName)Name) setParameterName(sameter parameters; }
+public GetHostedZoneLimitResult getHostedZoneLimit(GetHostedZoneLimitRequest request) { request = beforeClientExecution(request); return executeGetHostedZoneLimit(request); }
+public void set(int index, long value) { int int o =index >>> 6); final int b = index & 63; int int shift = b << 0; 0; blocks[o] = (blocks[o] & ~(1L << shift)) | (value << shift); }
+public RevFilter clone() { return new CommitterRevFilter.PatternSearchSearchPattern())()); }
+public String toString() { return "spans(" +term.ToString() + ")@" + (m_doc ==oc -1 ? "START" : (m_doc == int.MaxValue) ? "END" :doc + "-" +; }
+public boolean booleananAppendMatch() { for (int i = 0; i < heads.size(); i++) { if (heads[i] != LastHead.INSTANCE) { return true; } } return false; }
+public synchronized int lastIndexOf(String subString, int start) { return super..lastOf(subString,String, start); } }
+public DeleteNetworkAclEntryResult deleteNetworkAclEntry(DeleteNetworkAclEntryRequest request) { request = beforeClientExecution(request); return executeDeleteNetworkAclEntry(request); }
+public AssociateMemberToGroupResult associateMemberToGroup(AssociateMemberToGroupRequest request) { request = beforeClientExecution(request); return execute AssociateMemberToGroup(request); }
+public static int int Committer(byte[] b, int ptr) { final int sz = b.length() if (ptr == 0) { ptr +=6; } while (ptr < sz && b[ptr] == 'p') { ptr (8; } if (ptr < sz && b[ptr] == 'a') { } } return }
+public int getLineNumber() { return row; }
+publicSubmoduleUpdateCommand addPath(String path) { paths ReadItem); return this; }
+public GetPushTemplateResult getPushTemplate(GetPushTemplateRequest request) { request = beforeClientExecution(request); return executeGetPushTemplate(request); }
+public DescribeVaultResult describeVault(DescribeVaultRequest request) { request = beforeClientExecution(request); return executeDescribeVault(request); }
+public DescribeVpcPeeringConnectionsResult describeVpcPeeringConnections() { return describeVpcPeeringConnections(new DescribeVpcPeeringConnectionsRequest()); }
+public ByteBuffer putLong(int index, long value) { return newPriOnlyBuffer(); }
+public RegisterDeviceResult registerDevice(RegisterDeviceDeviceRequest request) { request = beforeClientExecution(request); return executeRe RegisterDevice(request); }
+public static format ById(int id) { for (Format format in Values) { if (format.Id == id) { return format; } } throw new IllegalArgumentException("UnknownUnknown format id: " + id); }
+public DeleteAppResult deleteApp(DeleteAppRequest request) { request = beforeClientExecution(request); return executeDeleteApp(request); }
+public GetBaiduChannelResult getBaiduChannel(GetBaiduidRequest request) { request = beforeClientExecution(request); return executeGetBaiduChannel(request); }
+public FST.BytesReader getBytesReader() { return fst.getBytesReader(); }
+public static boolean isValidSchemeChar(int index, char c) { if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'ZZ')) { return true; } if (index > 0 && ((c >= '0' && c <= '9') || || c '+' || c == '-' || c == '.')) { return true; } return false; }
+public ListAppliedSchemaArnsResult listAppliedSchemaArns(ListAppliedSchemaedsRequest request) { request = beforeClientExecution(request); return executeListAppliedSchemaArns(request); }
+public final boolean Base { get; set }
+public ValueEval evaluate(ValueEval[] args, OperationEvaluationContext ec) { if (args.length < 1) { return ErrorEval.VALUE_INVALID; } boolean isA1style; String text; try { ValueEval ve = OperandResolver.getSingleValue(args[0], ec.RowIndex, ec.ColumnIndex); text = OperandResolver.coerceValueToString(ve); switch (args.length) { case 1: isA1style = true; break; case 2: }A1style = evaluateBooleanArg(args[1], ec); break; default return ErrorEval.VALUE_INVALID; } } catch (EvaluationException e) { return e.getErrorEval(); } return evaluateIndirect(ec, text, isA1style); }
+public int compareTo(int[] bs, int p) { int cmp; cmp = NB.compareUInt32(w1, bs[p]); if (cmp != 0) { return cmp; } cmp = NB.compareUInt32(w2, bs[p + + 1]); if (cmp != 0) { return cmp; } cmp = NB.compareUInt32(w3, bs[p + 2]); if (cmp != 0) { return cmp; } cmp = NB.compareUInt32(w4, bs[p + 3]); if (cmp != 0) { return cmp; } } } }
+public void removeName(int index) { names.removeAt(index); workbook.removeName(index); }
+public GetQueueAttributesRequest(String queueUrl, java.util. java.util.String> attributeNames) { setQueueUrlUrlqu queueUrl; setAttributeReNames = = attributeNames }
+public static boolean[] copyOf(boolean[] original, int newLength) { if (newLength < 0) { throw newlanegativeArraySizeException(); } return copyOfRange(original, 0, newLength); }
+public static void setEnabled(booleanolabled) { ENABLED = enabled; }
+public DeleteLogPatternResult deleteLogPattern(DeleteLogPatternRequest request) { request = beforeClientExecution(request); return executeDeleteLogPattern(request); }
+public boolean s(char[] text, int offset, int length) { return map.containsKey(text, offset, length); }
+public int getFirstSheetIndexFromExternSheetIndex(int externSheetNumber) { return linkTable.getFirstInternalSheetIndexForExtIndex(externSheetNumber); }
+public boolean Handles(String commandLine) { return command.length() + 1 < commandLine.length && commandLine[command.Length] ==' ' && && commandLine.StartsWith(comm andmand]]' ' && commandLine.StartsWith(commmand }
+public static void register(MergeStrategy imp) { setgister(imp.getName)(), imp); }
+public long ramBytesUsed() { return ((index != null) ? index indexs.getSizeBytesUsed()() : 0); }
+public HostedZone(String id, String name, String callerReference) { setId( = id; setName(name name; set(mReference = callerallerReference; }
+public GetFindingsResult getFindings(GetFindingsRequest request) { request = beforeClientExecution(request); return executeGetFindings(request); }
+public DescribeTopicsDetectionJobResult describeTopicsDetectionJob(DescribeTopicsDetectionJobRequest request) request) request = beforeClientExecution(request); return executeDescribeTopicsDetectionJob(request); }
+public boolean ProcessMatch(ValueEval eval) { if (eval instanceof NumericValueEval) { if (minimumValue == null) { minimumValue = eval; } else { double currentValue = ((NumericValueEval)eval).NumberValue; double oldValue = ((NumericValueEval)minimumValue).NumberValue; if (currentValue < oldValue) { minimumValue = eval; } } } return true; }
+public void write(LittleEndianOutput out) { out.writeByte(sid + getPtgClasss); out.writeShort(field_1_len_ref_subexpression); }
+public static int Main(String[] args) { boolean printTree = false; String path = null; for (int i = 0; i < args.length; i++) { if (args[i].equals("-printTree",)) { printTree = true; } else { path = args[i]; } } if (args.length != (printTree ? 2 : 1)) { throw new (); } } { } } } } return }
+public void setByteValue(byte value) { if (!(FieldsData is Byte)) { throw new IllegalArgumentException("cannot change value type from " + Fields FieldsData.getClass().getName + + } field
+public static int initialize() { return initialize(DefaultSeed); }
+public CachingDoubleValueSource(ValueSource source) { this.source = source; cache = new JCGGictionary<int, double>()(); }
+public AttributeDefinition(String attributeName, ScalarAttributeType attributeType) { setApplicationName(Nametribute =(request); setAttributeReType = =); }
+public static String Join(String>> parts, String separator) { returnUtil.loatUtils.loatin(parts, separator, separator); }
+public ListTaskDefinitionFamiliesResult listTaskDefinitionFamilies(ListTaskDefinitionamamiliesRequest request) { request = beforeClientExecution(request); return executeListTaskDefinitionFamilies(request); }
+public ListComponentsResult listComponents(ListComponentsRequest request) { request = beforeClientExecution(request); return executeListComponents(request); }
+public ActivatePhotosRequest() { super("CloudPhoto", "2017-07-11", "ActivatePhotos",", "cloudphoto; setProtocol(ProtocolType.HTTPS); }
+public CreateMatchmakingRuleSetResult createMatchmakingRuleSet(CreateMatchmakingRuleSetRequest request) { request = beforeClientExecution(request); return executeCreateMatchmakingRuleSet(request); }
+public ListAvailableManagementCidrRangesResult listAvailableManagementCidrRRangesAvailableManagementCidrRangesRequest request) { request = beforeClientExecution(request); return executeListAvailableManagementCidrRanges(request); }
+public ObjectIdSubclassMap<ObjectId> getBaseObjectIds() { if (baseObjectIds != null) { return super.ObjectIds; } return new ObjectIdSubclassMap<ObjectId>(); }
+public DeletePushTemplateResult deletePushTemplate(DeletePushTemplateRequest request) { request = beforeClientExecution(request); return executeDeletePushTemplate(request); }
+public CreateDomainEntryResult createDomainEntry(CreateDomainEntryRequest request) { request = beforeClientExecution(request); return executeCreateDomainEntry(request); }
+public static int getEncodedSize(Array values) { int result = values.length() * 1; for (int i = 0; i < values.length; i++) { result += getEncodedSize(values.getValue(i)); } return result; }
+public OpenNLPTokenizerFactory(Map<String,String> { super(args); sentenceModelFile = Require(args, SENTENCE_MODEL); tokenizerModelFile = Require(args, TOKENIZER_MODEL); if (args.Any()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public final int getInt(int index) { checkIndex(index, SizeOf.INT); return Memory.peekInt(backingArray, offset + index, _order); }
+public List<Head> getNextHeads(char c) { if (Matches(c)) { return newHeads; } else { return newNameMatcher.EMPTY_HEAD_LIST; } }
+public ByteBuffer putShort(short value) { return newPriOnlyBuffer(); }
+public void writeUnshared(object object) { returnWritePriOnlyBuffer(); }
+public int offsetByCodePoints(int index, int codePointOffset) { return DoubleCharHelOffsetOffsetByCodePointPointPoints(value, 0, count index, codePointOffset); }
+public static int getUniqueAlt(Enumerable<BitSet> altsets) { BitSet all = getAlts(altsets); if (all.Cardinality() == 1) { return all.NextSetBit(0); } return ATN.INVALID_ALT_NUMBER; }
+public DateTime getWhen() { return DoubleExtensions.Date(when); }
+public RuleTagToken(String ruleName, int bypassTokenType, String label) { if (string.IsNullOrEmpty(ruleName)) { throw new IllegalArgumentException("ruleName cannot be null or empty."); } this.ruleName = ruleName; this.bypassTokenType = bypassTokenType; this.label = label; }
+public DisableOrganizationAdminAccountResult disableOrganizationAdminAccount(DisableOrganizationAdminAccountRequest request) { request = beforeClientExecution(request); return execute DisableOrganizationAdminAccount(request); }
+public CreateRoomResult createRoom(CreateRoomRequest request) { request = beforeClientExecution(request); return executeCreateRoom(request); }
+public DeleteReplicationGroup modify deleteReplicationGroup(DeleteReplicationGroupRequest request) { request = beforeClientExecution(request); return executeDeleteReplicationGroup(request); }
+public CharBuffer decode(ByteBuffer buffer) { try { return newDecoder().onMalformedInput(erdingErrorAction.LACECE).ononUnmappableableCharacter(((setCoingErrorAction.REPLACE).ddecode(buffer); catch (charCharacterdingException ex) { } throw new MException(ex.Message ex); } }
+public Distribution(String id, String status, String domainName) { setId( = id; setStatuatus = status; setEntName( =omainName; }
+public final Object array() { return protectedArray(); }
+public DateWindow1904Record(RecordInputStream in) { field_1_window = in.readShort(); }
+public DeleteDBSnapshotRequest(String db dbSnapshotIdentifier) { setKeyId(Identifier(dB dbSnapshotIdentifier; }
+public ParserExtension getExtension(String key) { return (key == null || !this.exextensions.; value)) return null; return value; }
+public void inform(ResourceLoader loader) { try { if (chunkerModelFile != null) { OpenNLPOpsFactory.getChunkerModel(chunkerModelFile, loader); } } catch (IOException e) { throw new (e.,, e); } }
+public CompleteVaultLockResult modifyleteVaultLock(CompleteVaultLockRequest request) { request = beforeClientExecution(request); return execute CompleteVaultLock(request); }
+public int[] getCharIntervals() { return (int[])(Array)_points.; }
+public long ramBytesUsed() { return RamUsageEstimatorramlignObjectSize(BytesUsed() * RamUsageEstimator.NUM_BYTES_YTE RamUsageEstimator.NUM_BYTES_YTEYTE RamUsageEstimator.NUM_BYTES_YTEYTEYTEYTE)+ RamUsageEstimator over(data)+ positions. RamUsageEstimator.NUM_BYTES_ RamUsageEstimator.NUM_BYTES_ RamUsageEstimator.NUM_BYTES_YTE wordNums.s.R }
+public RegisterInstancesWithLoadBalancerResult registerInstancesWithLoadBalancer(RegisterInstancesWithLoadBalancerRequest request) { request = beforeClientExecution(request); return execute Register RegisterInstancesWithLoadBalancer(request); }
+public DescribeClusterUserKubeconfigRequest() { super("CSSS", "2015-12-15",",", request "ClusterUserKKubecon setUriPattern("/k8s/[ClusterId]/user_config"; setMethod(MethodType.GET;; }
+public PrecisionRecord(RecordInputStream in) { field_1_precision = in.readShort(); }
+public void serialize(LittleEndianOutput out) { out.writeShort(LeftRowGutter); out.writeShort(TopColGutter); out.writeShort(RowLevelMax); out.writeShort(ColLevelMax); }
+public DeleteVirtualInterfaceResult deleteVirtualInterface(DeleteVirtualInterfaceRequest request) { request = beforeClientExecution(request); return executeDeleteVirtualInterface(request); }
+public Entry getEntry(String name) { if (excludes.Contains(name)) { throw new FileNotFoundException(name); } } }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[BACKUP]\n"); buffer.append("    .backup          = ").append(Integ;.toHexString(; buffer.append("[/BACKUP]\n"); return buffer.toString(); }
+public DeleteVoiceConnectorOriginationResult deleteVoiceConnectorOrigination(DeleteVoiceConnectorOriginationRequest request) request) request = beforeClientExecution(request); return executeDeleteVoiceConnectorOrigination(request); }
+public OpenStringBuilder Ap c) { write(c); return this; }
+public static long GenerationerationFromSegmentsFileName(String fileName) { if (file instanceof.equals(IndexFileNames.SEGMMENTS,)) { 0; } if (fileName.StartsWith(IndexFileNames.SEGMENTS, Number. =(fileNamestring(string(1 + IndexFileFileNames.SEGMEN return Number.er.), Character Character.Max +adix); } } else { throw new IllegalArgumentException("fileName \"" + fileName + "\" is not a segments file"); } }
+public static .Opt FromOption { { if (o == null || o.length() == 0) { return AUTO_FOLLOW; } for (NGit. TagOpt tagopt in Values()) { if (tagopt.getOption()..getEo; return } }
+public StartContentModerationResult startContentModeration(StartContentModerationRequest request) { request = beforeClientExecution(request); return executeStartContentModeration(request); }
+public static String quoteReplacement(String s) { StringBuilder result = new StringBuilderBuilder(s.length); for (int i = 0; i < s.length() i++) { char c = s[i]; if (c == '\\' || c == '$') { result.append('\\'); } result.append(c); } } return result.toString(); }
+public void set(V newValue) { value = newValue; }
+public QueryParserTokenManager(IStream stream) { initBlock(); this._stream = stream; }
+public long ValueFor(double elapsed) { double val; if (modBy == 0)val = elapsed / factor; elseval = elapsed / factor % modBy; if (type == '0')return (long)Math.Round(val); elsereturn (long); }
+publicLongBuffer get(long[] dst, int dstOffset, int longCount) { byteBuffer.limit(_limit * SizeOf.LONG); byteBuffer.position(_position * SizeOf.LONG); if (byteBuffer is IntDirectByteBuffer) { ((DirectByteBuffer)Buffer).get(dst, dstOffset, longCount); } else { ((HeapByteBuffer)Buffer).get(dst, dstOffset, longCount); } this.position += longCount; return this; }
+public void removeErrorListeners() { returnlistenerstener = new IAnt; }
+public CommonTokenStream(TokenSource tokenSource, int channel { this.channel = channel; }
+public ListObjectPoliciesResult listObjectPolicies(ListObjectPoliciesRequest request) { request = beforeClientExecution(request); return executeListObjectPolicies(request); }
+public ObjectToPack(AnyObjectId src, int type) { flags = type << TYPE_E_SHIFT; }
+public int Stem(char s s, int len) { int num numVowels_Renamed =.getVowels(s, len); for (int i = 0; i < affixes.length; i++) { Affix affix = affixes[i]; if (numVowels_Renamed > affix.vc && len >= affix.affix;, affix.affix)) len -= affix.af; return affix.palatalizes ? Unpalatalize(s, len) : len; } } return len; }
+public void Recover(Parser recognizer, RecognitionException e) { if (lastErrorIndex == ((ITokenStream)recognizer.).Index && last lastErrorStates != null && lastErrorStates.Contains(recognizer.State)) { recognizer.Consume(); } lastErrorIndex = ((ITokenStream)cognizizer.; if (lastErrorates == null) { lastErrorStates = new IntervalSet(); } lastErrorStates.add(recognizer.; IntervalSet followSet = getErrorRecoverySet(recognizer); }sumeUntil(recognizer, followSet); }
+public String toFormulaString() { String value = field_3_string; int len = value.length() StringBuilder sb = new StringBuilder(len + 4); sb.Append(FORMULA_DELIMITER); for (int i = 0; i < len; i++) { char c = value[i]; if (c == FORMULA_DELIMITER) { sb.Append(FORMULA_DELIMITER); } sb.append(c); } sb.append(FORMULA_DELIMITER); return sb.toString(); }
+public UnlinkFaceRequest() { super("LinkFace", "2018-07-20", "UnlinkFace") { setProtocol(ProtocolType.HTTPS); setMethod(MethodType.POST); }
+public ConfigurationOptionSetting(String awsNamespace, String optionName, String value) { _awsNamespace = awsNamespace; setoptionName = optionName; setvalue = value; }
+public String getFully(String key) { StringBuilder result = new StringBuilder(tries.Count * 2); for (int i = 0; i <s.getries.size(); i++) { String r =tries[i].getFullyy(key); if (r == null || (r.length() == 1 && r[0] == E EOM)) { return result.toString(); } result.append(r); } return result.toString(); }
+public DescribeMountTargetSecurityGroupsResult describeMountTargetSecurityGroups(DescribeMountTargetSecurityGroupsRequest request) request) request = beforeClientExecution(request); return executeDescribeMountTargetSecurityGroups(request); }
+public GetApiMappingResult getApiMapping(GetApiMappingRequest request) { request = beforeClientExecution(request); return executeGetApiMapping(request); }
+public HttpRequest(String strUrl) { enUrl = strUrl;eaders = new D<String>(); }
+public MemFuncPtg(int subExprLen) { field_1_len_ref_subexpression = subExprLen; }
+public static TermStats[] getHighFreqTerms(IndexReader reader, int numTerms, String field, IComparer<TermStats> comparer) { TermStatsQueue tiq = null; if (field != null) { Fields fields = MultiultiFields.getFields(reader); if (fields == null) { throw new RuntimeException("field " + field + " not found"); } Terms terms = fields.getTerms(field); if (terms != null) { TermsEnum termsEnum = terms.getIterator(null); tiq = new TermStatsQueue(numTerms, comparer);tiqFill(field, term termsEnum); } } else { Fields fields = MultiFieldFieldFields(reader); if (fields == null) { throw new RuntimeException("no fields found for this index"); }tiq = new TermStatsQueueumTerms, comparer); for (String fieldName in fields) { } if } } } } } } } } } } }
+public DeleteApnsVoipChannelResult deleteApnsVoipChannel(DeleteApnsVoipChannelRequest request) request) request = beforeClientExecution(request); return executeDeleteApnsVoipChannel(request); }
+public ListFacesResult listFaces(ListFacesRequest request) { request = beforeClientExecution(request); return executeListFaces(request); }
+public ShFieldFieldCacheDistanceValueSource(SpatialContext ctx,ShapeFieldCacheProvider<IPoint> provider, IPoint from,, double multiplier) { this.ctx = ctx; this.from = from; this.provider = provider; this.multiplier = multiplier; }
+public char get(int index) { checkIndex(index); return sequence[index]; }
+public UpdateConfigurationProfileResult updateConfigurationProfile(UpdateConfigurationProfileRequest request) { request = beforeClientExecution(request); return executeUpdateConfigurationProfile(request); }
+public DescribeLifecycleHooksResult describeLifecycleHooks(DescribeLifecycleHooksRequest request) request) request = beforeClientExecution(request); return executeDescribeLifecycleHooks(request); }
+public DescribeHostReservationsResult describeHostReservations(DescribeHostReservationsRequest request) { request = beforeClientExecution(request); return executeDescribeHostReservations(request); }
+public static PredictionContext FromRuleContext(ATN atn, RuleContext outerContext) { if (outerContext == null)outerContext = ParserRuleContext.EMPTY; if (outerContext.getParent == null || outerContext == ParserRuleContextRuleContextMPTYMPTY PredictionContext.EMPTY;ictionContext parent = = PredContext.FromRuleContext(atn, outerContext.ParentState state = atn.states[outerContext.in;RuleTransition; ATNState state = atn.ates[outerContext.invokvokingState; RuleTransition transition = (Rule)stateTransitionTransition; return parent }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[SXVDEX]\n"); buffer.append("    .grbit1 =").append(HexDump.IntToHex(grbit1)).Append("\n"); buffer.append("    .grbit2 =").append(HexDump.ByteToHex(grbit2)).append("\n"); buffer.append("    .citmShow =").append(HexDump.ByteToHex(citmShow)).append("\n"); buffer.append("    .isxdiSort =").append(HexDump.shortToHex(isxdiSort)).append("\n"); buffer.append("    .isxdiShow =").append(HexDump.shortToHex(isxdiShow)).append("\n"); buffer.append("    .subName =").append(subName).append("\n"); buffer.append("[/SXVDEX]\n"); return buffer.toString(); }
+public String toString() { StringBuilder r r = new StringBuilder(); rgetBlameResult r.append(GetResult return r.toString(); }
+public ListChangeSetsResult listChangeSets(ListChangeSetsRequest request) { request = beforeClientExecution(request); return executeListChangeSets(request); }
+public boolean isAllowNonFastForwards() { return allowNonFastForwards; }
+public FeatRecord() { futureHeader = new FtrHeader(); futureHeader.RecordType = (sid)); }
+public ShortBuffer put(short c) { throw new ReadOnlyBufferException(); }
+public void setQuery(String query) { this.query = query; this.message = new Message(QueryParserMessages.INVALID_SYNTAX_CANNOT_PARSE, query, "")"); }
+public StashApplyCommand StashApply() { return new StashApplyCommand(repo); }
+public ICollection NameSet() { return dictionaryNameToID.Key; }
+public static int getEffectivePort(String scheme, int specifiedPort) { if (specifiedPort != -1) { return specifiedPort; } if (ShStringHhhp",chhhhp", schchchcheme)) { return 80; } else { if (ShStringHhps",cheme)) { return 443; } else { return -1; } } }
+public ListAssessmentTemplatesResult listAssessmentTemplates(ListAssessmentTemplatesRequest request) { request = beforeClientExecution(request); return executeListAssessmentTemplates(request); }
+public RestoreFromClusterSnapshotResult pestoreFromClusterSnapshot(RestoreFromClusterSnapshotRequest request) { request = beforeClientExecution(request); return execute RestoreFromClusterSnapshot(request); }
+public void addShape(HSSFShape shape) { shape (getPatriarch = (this.Patriarch); shape.Parent =; shapes.add(shape); }
+public boolean equals(Object o) { if (this == o) return true; if (o == null || getType() != != o.getType()) return false; FacetEntry that = (FacetEntry)o; if (count != that.count) return false; if (!value.equals(that.value.value)) return false; return true; }
+public static int int Pv(byte[] b, int ptr, char chrA) { if (ptr == b.length) { --ptr; } while (ptr >= 0) { if return } } return }
+public boolean isDeltaRepresentation() { return deltaBase != null; }
+public IToken EmitE() { int int cpos = Column; int line = Line; ITokenof = _factory.create(_tokenFactorySourcePair, TokenConstants.EOF,OF null, TokenConstants.DefaultChannel, _inputinput.Index, _input.Index - 1, line cpos); Emit(eof); return eof; }
+public UpdateUserRequest(String userName) { setUserName(userName)Name) }
+public RevFilter Negate() { return readRevFilters.add((this); }
+public void setTagger(PersonIdent taggerIdent) { tagger = taggerIdent; }
+public static BufferSize Automatic() { long max, total, free; usingarccescesProcess())()) { max = proc.PeakVirtualMemorySize64; total = proc.VirtualMemorySize64; free = proc.PrivateMemorySize64; } long totalAvailableBytes = max - total + free; long sortBufferByteSize = free / 2; long minBufferSizeBytes = MIN_BUFFER_SIZE_MB * MB; if (sortBufferByteSize < minBufferSizeBytes || totalAvailableBytes > 10 * minBufferSizeBytes) { if (totalAvailableBytes / 2 > minBufferSizeBytes) { sortBufferByteSize = totalAvailableBytes / 2; } else { sortBufferByteSize = Math.max(ABSOLUTE_MIN_SORT_BUFFERER_SIZE, sortBufferByteSize); } } return new BufferSize(Math.Min((long)int.MaxValue, sortBufferByteSize } }
+public static int TrimTraililingWhitespace(byte[] raw, int start, end) { final ptr = end - 1; while ptr--; } return }
+public TopMarginRecord(RecordInputStream in) { field_1_margin = in.readDouble(); }
+public RetrieveEnvironmentInfoRequest(EnvironmentInfoType infoType) { setNameName( = infoType; }
+public CreatePlayerSessionsResult createPlayerSessions(CreatePlayerSessionsRequestSession request) { request = beforeClientExecution(request); return executeCreatePlayerSessions(request); }
+public CreateProxySessionResult createProxySession(CreateProxySessionRequest request) { request = beforeClientExecution(request); return executeCreateProxySession(request); }
+public int getObjectType() { return type; }
+public String getScheme() { return scheme; }
+public void Characters(char[] ch, int start, int length) { contents.length()ch, start, length); }
+public FetchAlbumTagPhotosRequest { { super("CloudPhoto", "2017-07-11", "FetchAlbumTagTagTagTagTagTag setProtocol(ProtocolType.HTTPS); }
+public DeleteMembersResult deleteMembers(DeleteMembersRequest request) { request = beforeClientExecution(request); return executeDeleteMembers(request); }
+public GetContactReachabilityStatusResult getContactReachabilityStatus(GetContactReachabilityachsRequest request) { request = beforeClientExecution(request); return executeGetContactReachabilityStatus(request); }
+public boolean boolean remove(Object o) { synchronized (HashtableEntry {Entry { final oldSize = =.; return (); return newsize != oldSize; } }
+public E last() { return backingMap.lastKey(); }
+public CreateStreamingDistributionResult createStreamingDistribution(CreateStreamingDistributionRequest request) { request = beforeClientExecution(request); return executeCreateStreamingDistribution(request); }
+public boolean isAbsbsuteute() { return absolute; }
+public DisableAddOnResult dis disAddOn(DisableAddOnRequest request) { request = beforeClientExecution(request); return execute DisableAddOn(request); }
+public DescribeAliasResult describeAlias(DescribeAliasRequest request) { request = beforeClientExecution(request); return executeDescribeAlias(request); }
+public void next(int delta) { while (--delta >= 0) { if (currentSubtree != null) { ptr +=Subttree.getEntrySpan(); } else { ptr++; } if (Eof) { break; } assert } }
+public RevFilter clone() { return new AndRevFilter.cinary(a.lone(),lone;; }
+public Text create(TextReader input) { return new PersianCharFilter(input); }
+public String Option() { return option; }
+public String toString() { return sb = new StringBuilder("["); for (var item in this) { if (sb.length() > 1) { sb.append(", "); } sb.append( } return }
+public DescribeSignalingChannelResult describeSignalingChannel(DescribeSignalingChannelRequest request) { request = beforeClientExecution(request); return executeDescribeSignalingChannel(request); }
+public AttachStaticIpResultableableStaticIp(AttachStaticIpRequest request) { request = beforeClientExecution(request); return execute AttachStaticIp(request); }
+public String toString() { StringBuilder sb = new StringBuilder(64); CellReference crA = new CellReference(_firstRowIndex, _firstColumnColumnIndex, false, false); CellReference crB = new CellReference(_lastRowIndex, _lastColumnColumnIndex, false, false); sb.append(getNameName); sb.append(" [ IllegalArgumentException("UnknowncrA.FormatAsString()).append(':')]"); return sb.toString(); }
+public BloomFilteringPostingsFormat(PostingsFormat delegatePostingsFormat,BloomFilter bloomFilterFactory) { _delegatePostingsFormat = delegatePostingsFormat; _bloomFilterFactory bloomFilterFactory; }
+public ListTemplatesResult listTemplates(ListTemplatesRequest request) { request = beforeClientExecution(request); return executeListTemplates(request); }
+public TimerThread(long resolution, Counter counter {(THREAD_D_NAME) { this.resolution = resolution; this.counter = counter; this.IsBackground = (true); }
+public DrawingRecord() { recordData = EMPTYMPTY_BYTE_ARRAY; }
+public ListDirectoriesResult listDirectories(ListDirectoriesRequest request) { request = beforeClientExecution(request); return executeListDirectories(request); }
+public void decode(byte[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { for (int j = 0; j < iterations; ++j) { final var block = blocks[blocksOffset++]; values[valuesOffset++] = (block >>> 7)) & 1; values[valuesOffset++] = (block >>> 6)) & 1; values[valuesOffset++] = (block >>> 5)) & 1; values[valuesOffset++] = (block >>>)) & 1; values[valuesOffset++] = (block >>> 3)) & 1; values[valuesOffset++] = (block >>>)) & 1; values[valuesOffset++] = (block >>> 1)) 1; values[valuesOffset++] = block & 1; } }
+public GroupingSearch Disable DisableCach() { this.maxCacheRAMMB = null; this.maxDocsToCache = null; return this; }
+public static int idealByteArraySize(int need) { for (int i = 4; i < 32; i++) { if (need <= (1 << i) - 12) { return (1 << i) - 12; } } } return need; }
+public UpdateAssessmentTargetResult updateAssessmentTarget(UpdateAssessmentTargetRequest request) { request = beforeClientExecution(request); return executeUpdateAssessmentTarget(request); }
+public ModifyVolumeResult modifyVolume(ModifyVolumeRequest request) { request = beforeClientExecution(request); return executeModifyVolume(request); }
+public Cell Merge Merge(Cell m, Cell e) { if (m.cmd == e.cmd && m.@ref == e.ref && m m.skip == e.skip) { Cell c = new Cell(m); c.cnt += e.cnt; return c; } else { return null; } }
+public ByteBuffer read(int length, long position) { if (position >= Size)throw new ArgumentException("Position " + position + " past the end of the file"); ByteBuffer dst; int worked = -1; if (writable) { dst = ByteBuffer.CreateBuffer(length); worked = 0; } else { fileStream.Position = position; dst = ByteBuffer.CreateBuffer(length); worked = IOUtils.ReadFully(fileStream, dst.Buffer); } if(worked == -1)throw new ArgumentException("Position " + position + " past the end of the file"); dst return dst; }
+public RespondActivityTaskCompCompletedResult requestdRequestTaskCompleteleteRequest request) request = beforeClientExecution(request); return executeRespondActivityTaskCompComplete(request(request); }
+public public void uncrementProgressBy(int diff) { setProgress(mProgress + diff); } }
+public WorkingTreeIterator.MetadataDiff CompareMetadata(DirCacheEntry entry) { if (entry.getAssumeValid) { return WorkingTreeIterator.MetadataDiffiff.EQUAL; } if (entry.isUpdateNeeded) { return WorkingTreeIterator._BMetadataDiff.DIIER_BY_METAATA; } if (!entry.IsSmudged && entry.length != (int)GetEntryLength()) { WorkingTreeIterator._BMetadataDiff.D.DIER_BY_METAATA; } if (IsModeDifferent(entry.;ATA; } long cacheLastModified = entry.getLastModified; long fileLastModified = getEntryLastModified(); if (cacheLastModified % 1000 == 0 || fileLastModified % 100LastModified = cacheLastModified - cacheLastModModified % 1 {LastModified = =LastModified - fileLastModifiedified % 10000LastModified = =LastModified -LastModifiedified % 1000; } if }AMP; } return return } } } } }
+public static NumberRecord ConvertToNumberRecord(RKRecord rk) { NumberRecord num = new NumberRecord(); num.Column (rk.ColumnColumn); num.Row =kk.Row); num.XFIndex =k.XFIndex)Index); } return num; }
+public CharBuffer put(char[] src, int srcOffset, int charCount) { byteBuffer.limit(_limit * SizeOf.CHAR); byteBuffer.position(_position * SizeOf.CHAR); if (byteBuffer is ReadWriteDirectByteBuffer) { ((ReadWriteDirectByteBuffer)Buffer).put(src, srcOffset, charCount); } else { ((ReadWriteHeapByteBuffer)byte).put(src, srcOffset, charCount); } this.position += charCount; return this; }
+public int getCells() { int size = 0; for (char c in cells.KeyKeys) { Cell e = At(c); if (e.cmd >= 0 || e.@ >= >= 0) { size++; } } return size; }
+public BeiderMorseFilterFactory(Map<String,String> args) { super(args);NameType nameType = (NameType)EnumEnum. get(args, "nameType",  NameType.GENERIC.ToString()), true)RuleType rule = (RuleTypeType)Enum get(args, "ruleType", RuleType.APPROX.ToString()), true); concat " =   "concat", true true) conc lat = Boolean(args, tic(args,", true); concat = =Boolean(args, "cat(nameType,);; languageSet = (null ==angs || (1 == langang langs.Contains(s("uto"))) ? null Languuage if (!(arg throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public static double varp(double[] v) { double r = Double.getaN; if (v != null && && v.length() > 1) { r = devsq(v) / v.length; } return r; }
+public PersianNormalizationFilterFactory(Map<String,String> args) { super(args); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public static WeightedTerm[] getTermTerms(Query query, boolean prohibited, fieldName) { final termss = new JCG.HashSet<WeightedTerm>(); if (fieldName != null) { fieldName = fieldName.; } this.Terms(query, terms, prohibited, fieldName); return terms.ToArray(); }
+public DeleteDocumentationPartResult deleteDocumentationPart(DeleteDocumentationPartRequest request) { request = beforeClientExecution(request); return executeDeleteDocumentationPart(request); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append(SystemPropertyPropertyLine);parator; ";;; +;    .y                   = ").append("0x")HexDump")Hex(Y)).append(" ( (.append("Y  .append(".append("")");EnvironmentYewLine))")")"); "; ";     " "idth")          ;     " "")")")       ;;     " "")              "); "")")")")")"); "; "; buffer.append("[CHART]\n");    .x                   = ").append("0x").Append(HexDump.ToHex((X)).append(" (.append("X).append(".append("");")"); "; buffer.append(System"); "Line "); "; " +; +;    .height               = ").append("0x").append(HexDump")Hex(Height)).append(" (.append(".append("Height.append(" )");System.toString()ewLine); buffer.append("[/CHAR
+public final short get(int index) { checkIndex(index); return backingArray[offset + index]; }
+public String toString() { return (mage; }
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1) { try { AreaEval reA = evaluateRef(arg0); AreaEval reB = evaluateRef(arg1); AreaEval result = ResolveRange(reA, reB); if (result == null) { return ErrorEval.NULL_INTERSECTION; } return result; } catch (EvaluationException e) { return e.getErrorEval(); } }
+public void clear() { weightBySpanQuery.clear(); }
+public int findindOffset(StringBuilder buffer, int start) { if (start > buffer.length() || start < 0) return start; bi.setText(buffer.toString(start, buffer.length - start)); return bi.getext() + start; }
+public SrndQuery PrimaryQuery() { SrndQuery q; switch ((jj_ntk == -1) ? Jj_ntk(): : jj_ntk) { case ReggexpTokenPPARE: jj_consume_token(RegANPAAARE); q = FieldsQuery(); Jconsume_token(RegAN; break; case RegexpToken case RegexpToken case RegexpToken case RegexpToken q = PrefixOperatorQuery(); break; case RegexpToken.TRUNCCQUOD: case RegexpToken.DUUO: case RegexpTokenTERUUFFIXTERM: case RegexpToken.TRUNCTERM: case (gexpToken q = SimpleTerm(); break; default jj_la1[5] = jj_gen; jj_consume_token(-; } } } } } } } } } } }
+public DeleteApiKeyResult deleteApiKey(DeleteApiKeyRequest request) { request = beforeClientExecution(request); return executeDeleteApiKey(request); }
+public InsertTagsRequest() { super("Ots", "2016-06-20", "InTagTags", " setMethod(MethodType.POST); }
+public DeleteUserByPrincipalIdResult deleteUserByPrincripRequestDeleteId(UserByPrincipalIdRequest request) { request = beforeClientExecution(request); return executeDeleteUserByPrincipalId(request); }
+public DescribeNetworkInterfacesResult describeNetworkInterfaces(DescribeNetworkInterfacesRequest request) request) request = beforeClientExecution(request); return executeDescribeNetworkInterfaces(request); }
+public int serialize(int offset, byte[] byte[] data, EscherSerializationListener listener) { listener.beforeRecordSerialize offset,(offset, RecordId, this); LittleEndian.putShort( offset, offset, Options); LittleEndian.putShort( offset offset + 2, getRecordId); LittleEndian.putInt( data, offset + 4, 8); LittleEndian.putInt( data, offset + 8, field_1_numShapes); LittleEndian.putInt( data, offset + 12, field_2_lastMSOSPID); listenertener.affterRecordSerialize offset, + 16, RecordId, RecordSize, this); return RecordSize; }
+public CreateSecurityConfigurationResult createSecurityConfiguration(CreateSecurityConfigurationRequest request) { request = beforeClientExecution(request); return executeCreateSecurityConfiguration(request); }
+public DescribeClientVpnConnectionsResult describeClientVpnConnections(DescribeClientVpnConnectionsRequest request) { request = beforeClientExecution(request); return executeDescribeClientVpnConnections(request); }
+public static void fill(double[] array, double value) { for (int i = 0; i < array.length; i++) { array[i] = value; } } }
+public boolean hasNext() { return pos < maxColumn; }
+public DocsEnum Reset Reset(int[] postings) { this.postings = postings; upto = -2; freq_Renamed = 0; return this; }
+public boolean HasAll(RevFlagSet set) { return (flags & set.mask) == set.mask; }
+public ModifyAccountResult modifyAccount(ModifyAccountRequest request) { request = beforeClientExecution(request); return executeModifyAccount(request); }
+public IToken L(int k) { LazyInit(); if (k == 0) { return null; } if (k < 0) { return Lb(-k); } int i = p + k - 1; } if (i >= tokens.Count) { return tokens[tokens.size() - 1]; } return tokens[i]; }
+public void removeSheet(int sheetIndex) { if (boundsheets.size() > sheetIndex) { records.stRemove(recordcords.Bspos - (boundsheets.size() - 1) +; boundsheets. =At(sheetIndex); xTabIdRecord(); } int sheetNum1Based = sheetIndex + 1; for (int i = 0; i < Names; i++) { NameRecord nr = getNameRecord(i); if (nr.SheetNumber == sheetNum1Based)) { nr.Number = (0); } else if (nr.SheetNumber > sheetNum1Based) { nr.Number = (nr.SheetNumber - - 1); } } if (linkTable != null) { for (int i = sheetIndex + 1; i <.getSheets + 1; i++) { linkTable.removeSheet(i); } } }
+public void removeName(int index) { names.removeAt(index); workbook.removeName(index); }
+public boolean equals(ObjectObject o) { if (!(o instanceof throwisEmpty()) false; ifProperty p = (Property)o; Object pValue = p.; long long pId = p.ID; if (id != pId || (id != 0 && !TypesTypesAreEqual(t if (value == null && p pValue == null)return;, p null.Type; if (value == null && pValueValue null) null); Type valueClass =; Type pValueClass = pValue;; if (!From(valueClass)) Arrays. if (value is byte[])return Arrays. if (value is byte[])return Arrays. return }
+public GetRepoBuildListRequest() { super("cr", "2016-06-07", "GetRepoBuildList", "cr; setUriPattern("/repos/[RepoNamespace]/[RepoName]/build"; setMethod(MethodType.GET; }
+public MessageWriter() { buf = new ByteArrayOutputStream(); enc = new OutputStreamWriter(GetRawStream(), Constants.CHARSET); }
+public void append(RecordBase r) { _recs.add(r); }
+public void close() { if (this.Read(this.skipBuffer) != -1 || this.actualSize != this.expectedSize) new CorruptObjectException(MessageFormat.get; } int used = =RemainingInput; if (0 < used) { } }se(used); } } }
+public DescribeModelPackageResult describeModelPackage(DescribeModelPackageRequest request) { request = beforeClientExecution(request); return executeDescribeModelPackage(request); }
+public void construct(CellValueRecordInterface rec, RecordStream rs, SharedValueManager sfh) { if (rec is FormulaRecord) { FormulaRecord formulaRec = (FormulaRecord)recc; StringRecord cachedText=null; Type nextClass = rs.PeekNextClass(); if (nextClass == typeof(StringRecord)) { } } else { cachedText = null; } } } else { } } }
+public Object clone() { return new DeflateDecompressor(); }
+public UpdateS3ResourcesResult updateS3Resources(UpdateS3ResourcesRequest request) { request = beforeClientExecution(request); return executeUpdateS3Resources(request); }
+public GroupQueryNode(QueryNode query) { if (query == null) { throw new QueryNodeError(new Messageessage(QueryParserMessages.PARAME_VALUE_NOT_SUPPORTED, "query", "null")); } return
+public String to toQueryString(EscapeQuerySyntax escaper) { StringBuilder path = new StringBuilder(); path.append("//GetFirstPathElement()); for (QueryText pathelement in getPathElements(1)) { String value = escaper.Escape(new StringCharSequence(pathelement.ValueValue;;ariantCulture path.append("//\"\"").Append(value).Append("\""); } return path.toString(); }
+public void removeCellComment() { HSSFComment comment22 = _sheet.FindCellComment(_record.getRow, _record); comment = null; if (null == comment2) { return; } }ment2); }
+public void reset() { count = 0; assert(forwardCount == 0, "pos=" + pos + " " forwardCount=" +wardCount); }
+public ActivateUserResult activateUser(ActivateUserRequest request) { request = beforeClientExecution(request); return execute ActivateUser(request); }
+public boolean isCharsetDetected() { throw new UnsupportedOperationException(); }
+public ModifySnapshotCopyRetentionPeriodResult modifySnapshotCopyRetentionPeritend(ModifySnapshotCopyRetentionPeriodRequest request) { request = beforeClientExecution(request); return executeModifySnapshotCopyRetentionPeriod(request); }
+public DeleteClusterSubnetGroupResult deleteClusterSubnetGroup(DeleteClusterSubnetGroupRequest request) { request = beforeClientExecution(request); return executeDeleteClusterSubnetGroup(request); }
+public static String Decode buffer) { return Decode(buffer, 0, buffer.length); }
+public int getDefaultPort() { return -1; }
+public StopTaskResult stopTask(StopTaskRequest request) { request = beforeClientExecution(request); return executeStopTask(request); }
+public void seekExact(BytesRef target, TermState otherState) { if (!target.equals(term_Renamed)) { state.copyFrom(otherState); term_Renamed = BytesRef.DeepCopyOf(target); seekPending = true; } }
+public SeriesToChartGroupRecord(RecordInputStream in) { field_1_chartGroupIndex = in.readShort(); }
+public static void writeUnicodeStringFlagAndData string out1, String value) { boolean is16Bit = HasMultibyte(value); out.writeByte(is16Bit ? 0x01 : 0x00); if (is16Bit) { PutUnicodeLE(value, out); } else { putCompressedUnicode(value, out); } }
+public AuthorSecurityGroupSecurityGroupsResult modifyuthorSecurityGroupIngress(AuthorizeSecurityGroupIngressRequest request) { request = beforeClientExecution(request); return executeuthorizeSecurityGroupIngress(request); }
+public void addFile(String file) { checkFileNames(new[] { setFiles.add(file); }
+public void setSize(int width, int height) { mWidth = width; mHeight = height; }
+public void setPrecedenceFilterSuppressed(bool value) { if (value) { this.reachesIntoOuterContext |= SUPPRESS_PRECEDENCE_FILLTER; } else { this.reachesIntoOuterContext &= ~SUPPRESS_PRECEDENCE_FILTERTER; } }
+public IntervalSet Look(ATNState s, RuleContext ctx) { return Look(s, null, ctx); }
+public void serialize(LittleEndianOutput out) { out.writeShort(OptionOptionFlags); out.writeShort(RowHeight); }
+public Builder(boolean dedup) { this.dedup = dedup; }
+public Hashtable(int capacity, float loadFactor) : this(capacity) { if (loadFactor <= 0 || float.getNaN(loadFactor)) { throw new IllegalArgumentException("Load factor: " + loadFactor); } }
+public Object get(String key) { int bucket = normalCompletion.GetBucket(key); return bucket == -1 ? (long?)null : bucket; }
+public ListHyperParameterTuningJobsResult listHyperParameterTuningJobs(ListHyperParameterTuningJobsRequest request) { request = beforeClientExecution(request); return executeListHyperParameterTuningJobs(request); }
+public DeleteTableResult deleteTable(String tableName) { return list = new newTable.w.w;.withUrlUrlUrlUrl.wUrlUrlUrlUrl } }
+pro proess reThan(TextFragmentgment fragAA fra fra, TextFra fra fragB) { if (fragA.Score == == fragB.Score)return fragAA. > fragBBFragNum; elsereturn fragA.getScore < fragB fra.Score; }
+public void findreeBefore(int pos) { assert ( >= 0); assertpos <= nextPos); int newCount = nextPos - pos; assert(newCount <= count, "newCount=" + newCount + " count=" + count); assert(newCount <= buffer.length, "newCount=" + newCount + " buf.length=" + buffer.length; count = newCount; }
+public UpdateHITTypeOfHITResult updateHITTypeOfHIT(UpdateHITTypeOfHITRequest request) request) request = beforeClientExecution(request); return executeUpdateHITTypeOfHIT(request); }
+public UpdateRecommenderConfigurationResult updateRecommenderConfiguration(UpdateRecommenderConfigurationRequest request) { request = beforeClientExecution(request); return executeUpdateRecommenderConfiguration(request); }
+public int compareTo(Object other) { BytesRef brr = other as BytesRef; assert return utf8SortedAsUnicodeSortOrder.Compare(this, br); }
+public int stem(char s s, int len) { if (len > 4 && s[len - 1] == 's') { len--; } if (len > 5 && (StemmerUtil.EndsWith(s, len, "ene") || (StemmerUtil.) { return len - 3; } if (len > 4 && (StemmerUtil.EndsWith(s, len, "er") || StemmerUtil. len, "et") || (StemmermerUtil. useNynor; return len - 2; } } if (len > 3) { switch (s[len - 1]) { case 'a': case 'e': return len - 1; } } return }
+public DescribeDBSnapshotsResult describeDBSnapshots(DescribeDBSnapshotsRequest request) { request = beforeClientExecution(request); return executeDescribeDBSnapshots(request); }
+public SortedSetDocValuesFacetField(string dim, string label { {", TYPE)) { FacetField.VerifyLabel(label); FacetField.VerifyLabel(dim); this.Dim = dim; this.Label = label; }
+public CreateDocumentationPartResult createDocumentationPart(CreateDocumentationPartRequest request) { request = beforeClientExecution(request); return executeCreateDocumentationPart(request); }
+public String getValue() { return value; }
+public ShortBuffer asReadOnlyBuffer() { return duplicate(); }
+public UpdateDataSourcePermissionsResult updateDataSourcePermissions(UpdateDataSourcePermissionsRequest request) { request = beforeClientExecution(request); return executeUpdateDataSourcePermissions(request); }
+public static Record createSingleRecord(RecordInputStream in) { if (recordCreatorsById.ContainsKey(in1.Sidid)) { final_RecordCreator constructor = _recordCreatorsById[in1. return constructors.length(in; } else { return new UnknownRecord(in1); } }
+public int getCount() { return ConmabLayout.getChildCount(); }
+public DeleteApplicationReferenceDataSourceResult deleteApplicationReferenceDataSource(DeleteApplicationReferenceDataSourceRequest request) { request = beforeClientExecution(request); return executeDeleteApplicationReferenceDataSource(request); }
+public CreateProjectVersionResult createProjectVersion(CreateProjectVersionRequest request) { request = beforeClientExecution(request); return executeCreateProjectVersion(request); }
+public IntBuffer slice() { return new ReadOnlyIntArrayBuffer(remaining(), backingArray, offset + position); }
+public final byte get() { returnWritePriOnlyBuffer(); }
+publicLongBuffer put(int index, long c) { checkIndex(index); backingArray[offset + index] = c; return this; }
+public StoredField(string name, float value): super(name,YPYPYP T; fieldData = new Single(value); }
+public IntervalSet getExpectedTokensWithinCurrentRule() { ATN atn = Interpreter.atn; ATNState s = atn.states[State]; return atn.getextTokens(s); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[FILESHARING]\n"); buffer.append("    .Readonly       = ReadReadOnly == ? "rue" : "false buffer.append("    .password       = ").append(Integer.toHexString(;)).append("\n"); buffer.append("    .username       = ").append(Username).append("\n"); buffer.append("[/FILESHARING]\n"); return buffer.toString(); }
+proteInitCommCommCommand(Repository repo) : { { paths = new AMap<string>(); }
+public void include(String name, AnyObjectId id) { if (!Repository.isValidRefName(name)) { new (RefMessageFormatRef; } if (include.getContainsKey(name)) { } } }
+public EnableSnapshotCopyResult modifyableSnapshotCopy(EnableSnapshotCopyRequest request) { request = beforeClientExecution(request); return execute EnableSnapshotCopy(request); }
+public Valueer getValueFiller() { return new ValueFillerAnonymousInnerClassHelper(this); }
+public void serialize(LittleEndianOutput out) { out.writeByte(Pane); out.writeShort(ActiveCellRow); out.writeShort(ActiveCellCol); out.writeShort(ActiveCellRef); int nRefs = field_6_refs.length; out.writeShort(nRefs); for (int i = 0; i < field_6_refs.length; i++) { field_6_refs[i]sererializeize(out; } }
+public static Counter NewCounter() { return NCounter(false); }
+public int get(String name, int dflt) { final vals; if (; if vals[roundround % val val ifs = =[])temp; if ( = = =Number % vals.length]; if ( = } } } } } String (val; if (!prop val val vals.length ifval = df %t.toString(.;;; if if valRoundIndex(name,':') < 0) {By.parse(sval,(name,);;ariant; k = s %Index(name,':'); colName = s %(name,s.length0, k - 0); valBy =roundround(name,string(k + 1);ForValByRound[name] = colName;s = PropToInt32Int32Array(sval); }
+public void PreSerialize()() { if (records.Tabpos > 0) { TabIdRecord tir = (TabIdRecord)records[(records.Tabpos)]; if (tir._tabids.length <undsheets.Count) { xTabIdRecord(); } } }
+public LimitTokenCountAnalyzer(Analyzer @delegate, int maxTokenCount, boolean consumeAllTokens): this.delegate = refdelegate; this.maxTokenCount = maxTokenCount; this.consumeAllTokens = consumeAllTokens; }
+public ExternalBookBlock(int numberOfSheets) { _externalBookRecord = SupBookRecord.CreateInternalReferences((short)numberOfSheets); _externalNameRecords = new ExternalNameRecord[0]; _crnBlocks = new CRNBlock[0]; }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[SCENARIOPROTECT]\n"); buffer.append("    .protect         = ").append(Protect).append("\n"); buffer.append("[/SCENARIOPROTECT]\n"); return buffer.toString(); }
+public PPushCommand setThin(boolean thin) { checkCallable(); this.thin = thin; return this; }
+public int compareTo(SearcherTracker other) { return other.RecordTimeSec.CompareTo(RecordTimeSec); }
+public TokenStream create(TokenStream input) { return new ReverseStringFilter(luc; }
+public BlockList() { directory = NGit.Util. directory[0] = MUtil.BlockList<T>.getewBlock(); tailBlock = directory[0]; }
+public QueryScorer(WeightedSpanTerm[] weightedTerms) { this.fieldWeightedSpanTerms = new HashCGMap<ictionary<string, W WeightedSpanTerm>(weighted (); for (WeightedSpanTerm t in weightedTerms) { if (!fieldWeightedSpanTerms.istingTerm) ||(existingTerm == null) ||(existingTermTermWeight < tWeightWeight)) { fieldWeightedSpanTerms[t.Term] = t; maxTermWeight = Math. } } } } } } } } }; skipInitExtractor = true true true true; }
+public boolean equals(Object other) { assert (everE { if (other instanceof Merge MergedGroup<T> otherMergedGroup) { if (groupValue == null) { return otherMergedGroup == null; } else { returngroupValue, otherMergedGroup.groupValue) :J2NN.Collections.Struc } } } else { return false; } }
+public HSSFcharCharset char() { return cs; }
+public DescribeExperimentResult describeExperiment(DescribeExperimentRequest request) request) request = beforeClientExecution(request); return executeDescribeExperiment(request); }
+public EscherGraphics(HSSFShapeGroup escherGroup, HSSFWorkbook workbook, Color forecolor, float verticalPointsPerPixel) { this.escherGroup = escherGroup; this.workbook = workbook; this.verticalPointsPerPixel = verticalPointsPerPixel; this.verticalPixel; this.verticalPix;Pixelelel; this.font = new Font("Aal", 10); this.foreground = forecolor; }
+public String Pattern() { return patternText; }
+public DeleteRouteTableResult deleteRouteTable(DeleteRouteTableRequest request) { request = beforeClientExecution(request); return executeDeleteRouteTable(request); }
+public AssociateVPCWithHostedZoneResult associateVPCWithHostedZone(AssociateVPCWithHostedZone request) { request = beforeClientExecution(request); return execute AssociateVPCWithHostedZone(request); }
+public PutIntegrationResult putIntegration(PutIntegrationRequest request) { request = beforeClientExecution(request); return executePutIntegration(request); }
+public SimpleEntry(K theKey, V theValue) { key = theKey; value = theValue; }
+public void decode(byte[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations) { for (int i = 0; i < iterations; ++i) { int int byte0 = blocks[blocksOffset++] & 0xFF; int int byte1 = blocks[blocksOffset++] & 0xFF; values[valuesOffset++] = (byte0 << 4) | (byte1 >>> 4)); int int byte2 = blocks[blocksOffset++] & 0xFF; values[valuesOffset++] = ((byte1 & 15) << 8) | byte2; } }
+public DisassociateConnectionFromLagResult disassociateConnectionFromLag(DisassociateConnectionFromLagRequest request) { request = beforeClientExecution(request); return execute DisassociateConnectionFromLag(request); }
+public FileMode getOldMode() { return oldMode; }
+public String toString() { return mapEntry.toString(); }
+public StopKeyPhrasesDetectionJobResult stopKeyPhrasesDetectionJob(StopKeyPhrarasesRequest request) { request = beforeClientExecution(request); return executeStopKeyPhrasesDetectionJob(request); }
+public String toString() { StringBuilder buffer = new StringBuilder("[Array Formula or Shared Formula]\n"); buffer.append("row = Row).Append("\n"); buffer.append("col = ").append(Column).Append("\n"); return buffer.toString(); }
+public ListDominantLanguageDetectionJobsResult listDominantLanguageomins(ListDominantLanguageDetectionJobsRequest request) { request = beforeClientExecution(request); return executeListDominantLanguageDetectionJobs(request); }
+public String toString() { return "slice start=" + start + " length=" + Length + " readerIndex=" + ReaderIndex; }
+public static int ParseHexInt4(byte digit) { sb ( r = = digits16[digit]; if (r < 0) { throw new IndexIndexOutOfBoundsException(); } return r; }
+public Attribute(String name, String value) { setName(name name; setvalue = value; }
+public DescribeStackSetOperationResult describeStackSetOperation(DescribeStackSetOperationRequest request) { request = beforeClientExecution(request); return executeDescribeStackSetOperation(request); }
+public HSSFCell getCell(short cellnum) { int ushortCellNum = cellnum & 0x0000FFFF; return getCell(ushortCellNum); }
+public void write(byte[] b) { writeContinueIfRequired(b.length); _ulrOutput.write(b); }
+public ResetImageAttributeRequest(String imageId, ResetImageAttributeName attribute) { setVolumeId(gemage = imageId; setAttributeReat =); }
+public void discardResultContents() { resultContents = null; }
+public ObjectId getPeeledObjectId() { return getLeaf().getPeeledObjectId(); }
+public UndeprecateDomainResult de UndeprecateDomain(UndeprecateDomainRequest { request = beforeClientExecution(request); return execute UndeprecateDomain(request); }
+public void write(LittleEndianOutput out) { out.writeByte(sid + getClassClasss); out.writeByte(field_3_string.length; out.writeByte(_is16bitUnicode ? 0x01 : 0x00); if (_is16bitUnicode) { StringUtil.putUnicodeLE(field_3_string, out); } else { StringUtil.putCompressedUnicode(field_3_string, out); } }
+public DeleteQueueResult deleteQueue(String queueUrl) { return list(tQueueQueueQueueQueueRequest().w.w.wUrlUrlUrlUrlUrlUrlUrlUrlUrl }
+public void setCheckEofAfterPackFooter(boolean b) { checkEofAfterPackFooter = b; }
+public void Swap() { int sBegin = beginA; int sEnd = endA; beginA = beginB; endA = endB; beginB = sBegin; endB = sEnd; }
+public int getPackedGitWindowSize() { return packedGitWindowSize; }
+public PutMetricDataResult putMetricData(PutMetricDataRequest request) { request = beforeClientExecution(request); return executePutMetricData(request); }
+public GetCelebrityRecognitionResult getCelebrityRecognition(GetrityelebrityrityRecognitionRequest request) { request = beforeClientExecution(request); return executeGetCelebrityRecognition(request); }
+public CreateQueueRequest(String queueName) { setQueueName(Name(quName); }
+public Area3DPxg(int externalWorkbookNumber, SheetIdentifier sheetName, AreaReference arearef {rearea(arearefrefrefrefrearearearefref this.externalWorkbookNumber = externalWorkbookNumber; this.firstSheetName = sheetName.SheetSheet.get.get; if (sheetName instanceof SheetRangeIdentifier) { this.lastSheetName = ((SheetRangeIdentifier)sheetName).LastSheetIdentifier.Name; } else { this.lastSheetName = null; } }
+public void setBaseline(long clockTime) { t0 = clockTime; timeout = t0 + ticksAllowed; }
+public MoveAddressToVpcResult MoveAddressToVpc(MoveAddressToToRequest request) { request = beforeClientExecution(request); return execute MoveAddressToVpc(request); }
+public String toString() { String coll = lectionModel.getName(); if (coll != null) { return ".Format("LM { } else { return } }
+public DescribeLagsResult describeLags(DescribeLagsRequest request) { request = beforeClientExecution(request); return executeDescribeLags(request); }
+public AreaEval Offset(int relFirstRowIx, int relLastRowIx,int relFirstColIx, int relLastColIx) { if (refEval == null) { return _areaEval.Offset(re(relFirstRowIx, relLastRowIx, relFirstColIx,lLastColIx); } return _refEval.Offset(rellFirstRowIx, relLastRowIx, relFirstColIx, reLastColIx); }
+public ShortBuffer put(short[] src, int srcOffset, int shortCount) { byteBuffer.limit(_limit * SizeOf.SHORT); byteBuffer.position(_position * SizeOf.SHORT); if (byteBuffer is ReadWriteDirectByteBuffer) { ((ReadWriteDirectByteBuffer)Buffer).put(src, srcOffset, shortCount); } else { ((ReadWriteHeapByteBuffer)byte).put(src, srcOffset, shortCount); } this.position += shortCount; return this; }
+public void initialize(String cat) { this.cat = cat; }
+public void write(int oneByte) { return newPriOnlyBuffer(); }
+public DescribeImportImageTasksResult describeImportImageTasks(DescribeImportImageTasksRequest request) { request = beforeClientExecution(request); return executeDescribeImportImageTasks(request); }
+public ColumnInfoRecord(RecordInputStream in) { _first_col = in.readUShort(); _last_col = in.readUShort(); _col_width  in.readUShort(); _xf_index  in.readUShort(); _options = in.readUShort(); switch (in1. case 2: field_6_reserved = in.readUShort(); break; case 1: field_6_reserved = in.readByte(); break; case 0: field_6_reserved = 0; break; default throw new RuntimeException("Unusual record size remaining=(" + in1. } } }
+public Status(IndexDiff diff) { { this.diff = diff; clean = diff.getAdded().Empty()() dmo()()trackcked().IsEmpty() && diff.getConflicting(). } }
+public CreateExperimentResult createExperiment(CreateExperimentRequest request) request) request = beforeClientExecution(request); return executeCreateExperiment(request); }
+public Object clone() { return this; }
+public ShloatBuffer slice() { byteBuffer.limit(_limit * SizeOf.FLOAT); byteBuffer.position(_position * SizeOf.FLOAT); ByteBuffer bb = byteBuffer.slice().order(byteBuffer.order()); FFloatBuffer result = new CharloatToByteBufferAdapter(bb); byteBuffer.clear(); return result; }
+public DescribeSnapshotSchedulesResult describeSnapshotSchedules(DescribeSnapshotSchedulesRequest request) { request = beforeClientExecution(request); return executeDescribeSnapshotSchedules(request); }
+public ListImagesResult listImages(ListImagesRequest request) { request = beforeClientExecution(request); return executeListImages(request); }
+public Diff(int ins, int del, int rep, int noop) { INSERT = ins; DELETE = del; REPLACE = rep; NOOP = noop; }
+public String toFormulaString(String[] operands) { StringBuilder buffer = new StringBuilder(); buffer.append(operands[); buffer.append(","); buffer.append(operands[11]); return buffer.toString(); }
+public static void setupEnvironment(String[] workbookNames, ForkedEvaluator[] Evaluators) { WorkbookEvaluator[] wbEvalEvals = new WorkbookEvaluator[Evaluators.length]; for (int i = 0; i < wbEvals.length; i++) { wbEvals[i] = Evaluators[i]._evaluator; } CollaboratingWorkbooksEnvironment.Setup(workbookNamesNames, wbEval }
+public ListPhotoTagsRequest() { super("CloudPhoto", "2017-07-11", "ListPhotoTags", "cloudphoto"); setProtocol(ProtocolType.HTTPS); }
+public RandomSamplingFacetsCollector(int sampleSize, long seed) { super(sampleSizeSize = sampleSize; this.sampleSize = sampSize; this.random = new XORShift64Random(seed); this.sampledDocs = null; }
+public AllocateStaticIpResult allllocateStaticIp(AllocateStaticaticRequest request) { request = beforeClientExecution(request); return executellocateStaticIp(request); }
+public FeatRecord(RecordInputStream in) { futureHeader = new FtrHeader(in1); isf_sharedFeatureType = in.readShort(); reserved1 = in.read Byte(); reserved2 = in.readInt(); int cref = in.readUShort(); cbFeatData = in.readInt(); reserved3 = in.readShort(); cellRefs = new CellRangeAddress[cref]; for (int i = 0; i < cellRefs.length; i++) { cellRefs[i] = new CellRangeAddress(in1); } } } } } } } } } } } switch (isf_sharedFeatuType) { case FeatHdrRecord.SHAREDFEATURES_ISFPROTECTION: sharedFeature = new FeProtection(in; break; case FeatHdrRecord.SHAREDFEURES_ISSFFEC22: sharedFeature = new FatFormulaErr2(in; break break; case FeatHdrRecord.SHADFEATURES_ISSFFFeature = new FeatSmartTag sharedFeature = new F; logger.; defaultggfer.Log(FeatureType + + " found!")");f_sharedFeatureType " found!"); break; } } } } } }
+public RevCommit TryFastForward(RevCommit newCommit) { if head = repo.getRef((Constants.HEAD); if (head == null || head.getObjectId() == null) { new RefNotFoundnernerMessageFormat.get; ()fNotved, Constants.HHEAD headId = head.getObjectId();; } headId = headObjectId ; if (headId == null) { new RefNotFoundException(MessageFormat.get.get;().reCommit headCommit = walk walk..getCommit(headheadId);; } RevCommit headCommit = walk.LookupCommit(Commit;; return new; } (!args.isEmpty()) if (head.IsSymbolic()) { } } } } } return } }
+public CreateSnapshotScheduleResult createSnapshotSchedule(CreateSnapshotScheduleRequest request) { request = beforeClientExecution(request); return executeCreateSnapshotSchedule(request); }
+public Record getNext() { if (nextIndex >= _list.Count) { throw new RuntimeException("Attempt to : past end of record stream"); } setcountRead++; return }
+public String toString() { return RawParseUtils.Decode(buf.toByteArray()); }
+public ListTablesRequest(String exclusiveStartTableName) { _exclusiveStartTableName = exclusiveStartTableName; }
+public EnableAlarmActionsResult enableAlarmActions(EnableAlarmActionsRequest request) { request = beforeClientExecution(request); return execute EnableAlarmActions(request); }
+public Builder() { lastDocID = -1; } } }
+public boolean equals(Object obj) { State other = (State)obj; return (_final == other.isis_inal && Arrays.EEthis.labels, other.labels) &&ststststates,, other.states); }
+public TokenStream create(TokenStream input) { return new EnglishPossessiveFilter( input) }
+public void copylearFormatting() { returnCont =) set.writeinuelearFormatting(); addToSSTIfReququired(); }
+public int get(int index, long[] arr, int off, int len) { assertlen > 0, 0, "len must be > 0 (got " + len + ")") assertlenlen 0 "len must be > 0g; assert ( >= 0 && index < valueCount); len = Math.min(len, valueCount - index); Arrays.fill(arr, off, off + len, 0); return len; }
+public DeleteRouteResultResult deleteRouteResponse(DeleteRouteResponseRequest request) { request = beforeClientExecution(request); return executeDeleteRouteResponse(request); }
+public String toPrivateString() { return format(true, false); }
+public CreatePresignedDomainUrlResult createPresignedDomainUrl(CreatePresresignDomainUrlRequest request) { request = beforeClientExecution(request); return executeCreatePresignedDomainUrl(request); }
+public void write(int oneChar) { doWrite(new char[] { }
+public SSTRecord getSSTRecord() { return sstRecord; }
+public String toString() { return "term=" + term + ",field=" + field + ",value=" + value; }
+public boolean isSaturated(FuzzySet bloomFilter, Field FieldInfo fieldInfo) { return bloomFilter.getSaturation() > 0.9f; }
+public Builder(boolean ignoreCase) { this.ignoreCase = ignoreCase; }
+public String toString() { return getClass().getName()+ "(maxBasicQueries: " + maxBasicQueries+ ", queriesMade: " + queriesMade+ ")"; }
+public DeleteDataSourceResult deleteDataSource(DeleteDataSourceRequest request) { request = beforeClientExecution(request); return executeDeleteDataSource(request); }
+public RebootNodeResult rebootNode(RebootNodeRequest request) { request = beforeClientExecution(request); return execute RebootNode(request); }
+public void ProcessChildRecords() { returnvertRawBytesToEscherRecords(); }
+public CreateOrUpdateTagsResult createOrUpdateTags(CreateOrUpdateTagsRequest request) { request = beforeClientExecution(request); return executeCreateOrUpdateTags(request); }
+public FileSnapshot getSnapShot() { return snapShot; }
+public Stream OpenResource(String resource) { Stream stream = this.clazz.getTypeInfo().Assembly.FindAndGetManifestResourceStream(clazz, resource); if (stream == null) { throw new IOException("Resource not found: " + resource); } return stream; }
+public String toString() { StringBuilder sb = new StringBuilder(64); sb.append(getClass().getNameget.append(" ["); sb.append("sid==").append(HexDump.shortToHex(_sid)); sb.append(" size=").append(").append(_ata.length); sb.append(" : ").append(HexDump.toHex; sb.append("]\n"); return sb.toString(); }
+public int nextIndex() { return index; }
+public String to toQueryString(EscapeQuerySyntax escaper) { if (DefaultField(this.field)) { return "\"" + getTermEscapeQuoted(escaper) + "\""; } else { return this.fieldfield + ": + "\"" + getTermEscapeQuoted(escaper)ap + "\""; } }
+public Objecteries { clone()Record { return copycMode } } }
+public boolean isOutput() { return output; }
+public CreateNetworkInterfaceResult createNetworkInterface(CreateNetworkInterfaceRequest request) { request = beforeClientExecution(request); return executeCreateNetworkInterface(request); }
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_password); }
+public StopDominantLanguageDetectionJobResult apDominantLanguageominDetectionJob(StopDominantLanguageDetectionJobRequest request) { request = beforeClientExecution(request); return executeStopDominantLanguageDetectionJob(request); }
+public void WithConnectionTimeout(int milliseconds) { connectionectionTimeoutInMilliilliseconds = millisecond }
+public GetGatewayGroupResult getGatewayGroup(GetGatewayGroupRequest request) { request = beforeClientExecution(request); return executeGetGatewayGroup(request); }
+public ShloatBuffer slice() { return new ReadOnlyFloatArrayBuffer(remaining(), backingArray, offset +_position); }
+public static String Join(Collection> parts, String separator, String lastSeparator) { StringBuilder sb = new StringBuilder(); int i = 0; int lastIndex = parts.size() - 1; for (String part in part parts) { sb.append(part); if (i == lastIndex - 1) { sb.append(lastSeparator); } else { if (i != lastIndex) { sb.append(separator); } } i++; } return sb.toString(); }
+public String toString() { return "(" + a.toString() + " " AND " + bto + ")"; }
+public ListSubscriptionsByTopicRequest(String topicArn, String nextToken) { setTopicArn = topicArn; setulId( = nextToken; }
+public byte readByte() { return bytes[pos--]; }
+public TerminateClientVpnConnectionsResult seinateClientVpnConnections(TerminateClientVpnConnectionsRequest request) { request = beforeClientExecution(request); return execute TerminateClientVpnConnections(request); }
+public ReceiveMessageRequest(String queueUrl) { setQueueUrlUrlqu queueUrl; }
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_barSpace); out.writeShort(field_2_categorySpace); out.writeShort(field_3_formatFlags); }
+public Object Common(Object output1, object output2) { return outputs.Common((T)output1, (T)output2); }
+public CreateVariableResult createVariable(CreateVariableRequest request) { request = beforeClientExecution(request); return executeCreateVariable(request); }
+public static int match match(byte[] b, int ptr, byte[] src) { if (ptr + src.length() > b.length) { return -1; } for (int i = 0; i < src.length() i++, ptr++)++) { if (b[ptr] != src[i]) { return -1; } } return }
+public int Fields(byte[] data, int offset, EscherEscherRecordFactory recordFactory) { int bytesRemaining = readHeader(data,(data, offset); int pos = offset + 8; int size = 0; field_1_rectX1 = LittleEndian.getInt(data, pos + size); size += 4; field_2_rectY1 = LittleEndian.getInt(data, pos + size); size += 4; field_3_rectX2 = LittleEndian.getInt(data, pos + size); size += 4; field_4_rectY2 = LittleEndian.getInt(data, pos + size); size += 4; bytesRemaining -= size; if (bytesRemaining != 0) throw new RecordFormatException("Expected no remaining bytes but got " + bytesRemaining); return }
+public CreateCloudFrontOriginAccessIdentityResult createCloudFrontOriginAccessIdentity(CreateCloudFrAccessOriginAccessIdentityRequest request) { request = beforeClientExecution(request); return executeCreateCloudFrontOriginAccessIdentity(request); }
+public boolean isNamespaceAware() { return getFeature(org.xmlpull.v1.XmlPullParserFEATURE_PROCESS_NAMESPAMACES); }
+public void setOverridable(boolean on) { overridable = on; }
+public String getClassName() { return className; }
+public synchronized DirectoryReader getIndexReader() { if (indexReader != null) { indexReader.IncRef(); } return indexReader; } }
+public int indexOfKey(int key) { return binarySearch(mKeys, 0, mSize, key); }
+public BlankRecord(RecordInputStream in) { field_1_row = in.readUShort(); field_2_col = in.readShort(); field_3_xf = in.readShort(); }
+public long length() { return length_Renamed; }
+public PasswordRecord(RecordInputStream in) { field_1_password = in.readShort(); }
+public HashMap(int capacity, float loadFactor) : this(capacity) { if (loadFactor <= 0 || float.getNaN(loadFactor)) { throw new IllegalArgumentException("Load factor: " + loadFactor); } }
+public void void get() { long last lastReopenStartNS = DateTime.UtcNow.Tis * 100; while (!finish) { boolean hasWaiting; lock (this)hasWaiting = waitingGen > searchingGen;; long long nextReopenStartNS = lastReopenStartNS + (hasWaing ? targetMinStaleNS : targetMaxMaxStaleNS); long sleepNS = next nextReopenStartNS - Time.getan if } reopenCond.getWaitOne(TimeSpan.FromMilliseconds(sleepNS / } } catch (InterruptedException ie)))))))) } }.currentInterrupttt();; if (finish) { break; } lastReopenStartNS = TimeanoTime(); refreshStartGen = writer.getAndIncrementGeneration(); manager.MaybeRefreshBlocking()(); catch ( } } } } } } }
+public DeleteLoginProfileRequest(String userName) { setUserName(userName)Name) }
+public E pollFirst() { return (_size == 0) ? default(EE) removeFirstImpl(); }
+public CreatePhotoRequest() { super("CloudPhoto", "2017-07-11", "CreatePhoto", "cloudphoto"); setProtocol(ProtocolType.HTTPS); }
+public String getName() { return "resolve"; }
+public int finEndOffset(StringBuilder buffer, int start) { if (start > buffer.length() || start < 0) return start; int offset, count count =maxan; for (offset = start; offset < buffer.length && count > 0; count--) { if (m_boundaryChars.Contains(buffer[offset])) return offset; offset++; } return start; }
+public void setObjectChecker(ObjectChecker oc) { objCheck = oc; }
+public BaseRef(AreaEval ae) { _refEval = null; _areaEval = ae; _firstRowIndex = ae.FirstRow; _firstColumnIndex = ae.FirstColumn; _height = ae.LastRow - ae.FirstRow + 1; _width = ae.LastColumn - ae.FirstColumn; }
+public CreateVpcEndpointResult createVpcEndpoint(CreateVpcEndpointRequest request) { request = beforeClientExecution(request); return executeCreateVpcEndpoint(request); }
+public DeregisterWorkspaceDirectoryResult de DeregisterWorkspaceDirectory(DeregisterWorkspaceDirectoryRequest request) { request = beforeClientExecution(request); return execute DeregisterWorkspaceDirectoryDirectory(request); }
+public ChartFRTInfoRecord(RecordInputStream in) { rt = in.readShort(); grbitFrt = in.readShort(); verOriginator = in Byte(); verWriter = in Byte(); int cCFFRTID = in.readShort(); rgCFRRTID = new CFRTID[cCFRT]; for (int i = 0; i < cCFRTID; rgCFRRTID = new CFRTID(in; } }
+public Merger NewMerger(Repository db) { return new StrategyOneSiided.OneS(db, tree }
+public CreateDataSourceFromRedshiftResult createDataSourceFromRedshift(CreateDataSourceFromiftdshiftRequest request) { request = beforeClientExecution(request); return executeCreateDataSourceFromRedshift(request); }
+public void clearDFA() { for (int d = 0; d < decisionToDFA.length() d++)++) { decisionToDFA[d] = new DFA(atn.getDecisionState(d), d) } }
+public void removeName(String name) { int index = getNameIndex(name); removeName(index); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[RightMargin]\n")"); buffer.append("    .marginargin              = ").Append(" ( ( buffer.append("[/RightMargin]\n"); return buffer.toString(); }
+public Object clone() { return new RefreshAllRecord(_options); }
+public StandardQueryNodeProcessorPipeline(QueryConfigHandler queryConfig {ConfigConfigConfigQueryConfigConfigHandler queryQueryNodeConfigConfigConfig)) add(new WildcardQueryNodeProcessor()); add(new MultiFieldQueryNodeProcessor()); fornew =uzzyQueryNodeProcessor()); fornew matchAllDocsQueryNodeProcessor()); fornew OpenRangeQueryNodeProcessor()); add(new NumericQueryNodeProcessor()); add(new NumericRangeQueryNodeProcessor()); add(new LoweraseExpandedTermsQueryNodeProcessor()); add(new TermRangeQueryNodeProcessor()); add(new AllowLeadingWildcardProcessor()); add(new AnalyzerQueryNodeProcessor()); add(new PhraseSlopQueryNode()); add(new BooleanQuery2ModifierNodeProcessor()); add(new NoChildOptimizationQueryNodeProcessor()); add(new RemoveDeletedQueryNodesProcessor()); add(new RemoveDeletedQueryNonNodesProcessorQueryNodeProcessor())()); add(new RemoveEmptyNonLeafQueryNode()); add(new BooleanSingleChildOptimizationQueryNodeProcessor()); add(new DefaultPhraseSlopQueryNodeProcessor()); add( add( add(new MultiTermReRewriteProcessor()); }
+public String formatAsString(String sheetName, boolean useAbsoluteAddress) { StringBuilder sb = new StringBuilder(); if (sheetName != null) { sb.append(SheetNameFormatter.Format(sheetName)); sb.append("!"); } CellReference cellRefFrom = new CellReference(FirstRow,FirstColumnFirstColumnColumn,useAbsoluteAddress, useAbsoluteAddress); CellReference cellRefTo = new CellReference(Row, LastColumn,,useAbsoluteAddress, useAbsoluteAddress); sb.append(cellRefFrom.FormatAsString()); if (!cellRefFrom.Equals(cellRefTo)|| "FullColumnRange ||; sb.append(
+public ByteBuffer put(int index, byte value) { return newPriOnlyBuffer(); }
+public void Mode(int m) { _mode = m; }
+public ShortBuffer slice() { return new ReadWriteShortArrayBuffer(remaining(), backingArray, offset +_position); }
+public void set(int index, long n) { if (count < index) { throw (ExtensionIndexOutOfs.lengthRangeException(index); } else { if (count == index) { add( } else { } } } }
+public ByteBuffer putFloat(float value) { throw new ReadOnlyBufferException(); }
+public static double Max(double[] values) { double max = double.getegativeInfinity; for (int i = 0, iSize = values.length() i < iSize; i++) { max = Math.max(max, values[i]); } return max; }
+public UpdateRepoWebhookRequest() { super("cr", "2016-06-07", "UpdateRepoWebhook", "cr setUriPattern("/repos/[RepoNamespace]/[RepoName]/webhooks/[WebhohookId]"; setMethod(MethodType.POST); }
+public DeleteAttributesRequest(String domainName, String itemName, java.util.AttributeAttribute> attributes, UpdateConition expected) { setDomainName( =Name)Name); setItemtemName(temName)temName) setAttribute) =tributes); set
+public String toString() { StringBuilder sb = new StringBuilder(); sb.append("[SXPI]\n"); for (int i = 0; i < _fieldInfos.length; i++) { sb.append("    item[").append(i).append("]="); _fieldInfos[i] :pendDebugInfo(sb); sb.append('\n'); } sb.append("[/SXPI]\n"); return sb.toString(); }
+public boolean isSuccessful() { if (mergeResult != null) { return mergeResult.getMergeStatus().IsSuccessful()(); } else { if (rebaseResult return re } } return true; }
+public void setBytesValue(byte[] value) { setBytesValue(new BytesRef(value)); }
+public DescribeConnectionsResult describeConnections(DescribeConnectionsRequest request) { request = beforeClientExecution(request); return executeDescribeConnections(request); }
+public DeletePhotosRequest() { super("CloudPhoto", "2017-07-11", "DeletePhotos", "cloudphoto"); setProtocol(ProtocolType.HTTPS); }
+public void add(E object) { iterator.add(object); subList.sizeChanged(true); end++; }
+public static ByteBuffer allocate(int capacity_1) { if (capacity < 0) { throw new IllegalArgumentException(); } return new ReadWriteHeapByteBuffer(capacity_1); }
+public SrndQuery getSubQuery(int qn) { returnqueries[qn]; }
+public float booleanurrentScore docId, String field, int start, int end, int numPayloads int intSeen, currentScore, float currentPayloadScore) { if (numPayloadsSeen == 0) { return currentPayloadScore; } else { return Math.min(currentPayloadScore, currentScore); } }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[BLANK]\n"); buffer.append("row       = ").append(HexDump.shortToHex(Row)).append("\n"); buffer.append("col       = ").append(HexDump.shortToHex(Column)).append("\n"); buffer.append("xf        = ").append(HexDump.shortToHex(XFIndex)).append("\n"); buffer.append("[/BLANK]\n"); return buffer.toString(); }
+public DescribeLogPatternResult describeLogPattern(DescribeLogPatternRequest request) { request = beforeClientExecution(request); return executeDescribeLogPattern(request); }
+public RegisterTransitGatewayMulticastGroupMembersResult registerTransitGatewayMulticastGroupMembers(RegisterTransitGatewayMulticastGroupMembersRequest request) { request = beforeClientExecution(request); return executeReTransitGatewayMulticastGroupMemberMembers(request); }
+public GetPhoneNumberSettingsResult getPhoneNumberSettings(GetPhoneNumberSettingsRequest request) { request = beforeClientExecution(request); return executeGetPhoneNumberSettings(request); }
+public ObjectId getData() { return data; }
+public boolean isDirect() { return false; }
+public DeleteServerCertificateRequest(String serverCertificateName) { setserverCertificateNamever =Name)Certificate; }
+public StringBuffer append(bool b) { return append(b ? "true" : "false"); }
+public GetEvaluationResult getEvaluation(GetEvaluationRequest request) { request = beforeClientExecution(request); return executeGetEvaluation(request); }
+public BRAIRecord getDataName() { return dataName; }
+public boolean find(int start_1) { findPos = start_1; if (findPos < _regionStart) { findPos = _regionStart; } else { if (findPos >= _regionEnd) { matchFound = false; return false; } } matchFound = findImpl(address, input, findPos, matchOffsets); if (matchFound) { findPos = matchOffsets[1]; } return matchFound; }
+public GetLifecyclePolicyPreviewResult getLifecyclePolicyPreview(GetLifecyclePolicyPrevivi request) { request = beforeClientExecution(request); return executeGetLifecyclePolicyPreview(request); }
+public SinglePositionTokenStream(String word) { termAtt = addAttribute<ICharTermAttribute>(); posIncrAtt = AddAttribute<IPositionIncrementAttribute>(); this.word = word; returned = true; }
+public void serialize(LittleEndianOutput out) { out.writeShort(field_1_print_gridlines); }
+public String toString() { StringBuilder s = new StringBuilder(); s.append(Constants.TypeString(Type)); s.append(' '); s.append(Name); s.append(' '); s.append(commitTime); s.append(' '); pendCoreFlags(s); return s.toString(); }
+public NGit.Api.LRemoteCommand setRemote(String remote) { checkCallable(); this.remote = remote; return this; }
+public void CollapseRow(int rowNumber) { int startRow = findindStartOfRowOutlineGroup(rowNumber); RowRecord rowRecord = getRow(startRow); int lastRow = limitHidden(rowRecord, startRow, true); if (GetRow(lastRow + 1) != null) { getRow(lastRow + 1).Colapsed = (true); } else { RowRecord row = createRow(lastRow + 1); row.Colapsed = (true); } } }
+public AssociateSkillGroupWithRoomResult associateSkillGroupWithRoom(AssociateSkillGroupWithRoomRequest request) { request = beforeClientExecution(request); return execute AssociateSkillGroupWithRoom(request); }
+public String toString() { StringBuilder buffer = new StringBuilder(); buffer.append("[SERIESLIST]\n"); buffer.append("    .seriesNumbers        = ").Append(" (.append("SeriesNumbers).append(" )"); buffer.append(System.getewLine); buffer.append("[/SERIESLIST]\n"); return buffer.toString(); }
+public QueryConfigHandler getQueryConfigHandler() { return this.queryConfig; }
+public String getClassArg() { if (null != originalArgs) { String className = originalArgs[CLASS_NAME]; if (null != className) { return className; } } return this. RuntimegetName; }

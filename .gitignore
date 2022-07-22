@@ -1,0 +1,11 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+dataset/Csharp_Java/dataset/test.json
+dataset/Csharp_Java/dataset/train.json
+dataset/Csharp_Java/dataset/valid.json

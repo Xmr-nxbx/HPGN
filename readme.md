@@ -4,7 +4,23 @@
 
 本文在词符注意力机制的基础上，引入语句注意力机制，构建了一种基于层次注意力机制的源代码迁移模型（Hierarchical Pointer-Generator Networks，HPGN）。其在迁移过程中通过关注代码语句的语法和语义，从而进一步提升迁移代码的语义一致性。
 
-HPGN项目源代码正在整理中，将于近期上传。
+目前正在调整项目结构，部分代码正在更改中
+```
+HPGN
+│  hpgn_main.py                  层次指针生成网络——训练
+│  metric_result_analysis.py     指标分析
+│  pgn_main.py                   指针生成网络——训练
+│  readme.md
+├─dataset
+│  └─Csharp_Java      数据、模型、分词器、参考输出
+│      ├─dataset        预处理数据集和单词表
+│      ├─model          模型以及输出样例
+│      └─Tokenizers     分词器
+├─evaluator         bleu、Codebleu
+│  └─CodeBLEU
+└─Network           指针生成网络、层次指针生成网络
+  
+```
 
 # 评测指标 与 数据集
 - BLEU：计算生成的序列和参考序列的n-gram重叠率，并返回0到100%之间的分值。BLEU值越高，表示生成的序列越接近参考序列
