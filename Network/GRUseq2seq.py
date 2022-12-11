@@ -1,4 +1,5 @@
 import math
+from re import A
 
 import tensorflow as tf
 from tensorflow.keras import *
@@ -63,8 +64,8 @@ class BahdanauaAttention(layers.Layer):
         x = self.W_h(query) + self.W_s(key)
         if cover_vec is None:
             cover_vec = tf.expand_dims(tf.zeros(tf.shape(mask)), -1)
-        if self.coverage:
-            x += self.W_c(cover_vec)
+
+        x += self.W_c(cover_vec)
         # [b, seq, 1]
         x = self.V(tf.nn.tanh(x))
         if mask is not None:
@@ -105,8 +106,12 @@ class GRUDecoder(layers.Layer):
         # encode_sequence: [b, line, seq, 2*hid]
         # encode_mask: [b, line, seq]   pad: 1
         # previous_state: [b, hid] from Bi-encode states concatenation or previous
-        # coverage_vector: [b, seq, 1]
+        # coverage_vector: [b, line, seq, 1]
         # line_weight: [b, line]
+        batch = tf.shape(encode_sequence)[0]
+        line = tf.shape(encode_sequence)[1]
+        seq = tf.shape(encode_sequence)[2]
+        hid = tf.shape(encode_sequence)[3]
 
         x = tf.cast(decode_input, tf.float32)
         previous_state = tf.cast(previous_state, tf.float32)
@@ -116,23 +121,32 @@ class GRUDecoder(layers.Layer):
             decode_states_array = decode_states_array.write(i, state)
         decode_states = decode_states_array.stack()
 
-        context_vec_list = tf.TensorArray(dtype=tf.float32, size=tf.shape(line_weight)[1])
-        context_weight_list = tf.TensorArray(dtype=tf.float32, size=tf.shape(line_weight)[1])
-        # [b, 1, 1, line]
-        line_weight = tf.expand_dims(tf.expand_dims(line_weight, -2), -2)
-        for i in range(tf.shape(line_weight)[-1]):
-            c_v, c_w, _ = self.attention(x, encode_sequence[:, i], encode_mask[:, i], coverage_vector[:, i])
-            context_vec_list = context_vec_list.write(i, c_v * line_weight[..., i])
-            context_weight_list = context_weight_list.write(i, c_w * line_weight[..., i])
+        # context_vec_list = tf.TensorArray(dtype=tf.float32, size=tf.shape(line_weight)[1])
+        # context_weight_list = tf.TensorArray(dtype=tf.float32, size=tf.shape(line_weight)[1])
+        # # [b, 1, 1, line]
+        # line_weight = tf.expand_dims(tf.expand_dims(line_weight, -2), -2)
+        # for i in range(tf.shape(line_weight)[-1]):
+        #     c_v, c_w, _ = self.attention(x, encode_sequence[:, i], encode_mask[:, i], coverage_vector[:, i])
+        #     context_vec_list = context_vec_list.write(i, c_v * line_weight[..., i])
+        #     context_weight_list = context_weight_list.write(i, c_w * line_weight[..., i])
+        #
+        # context_vec_list = tf.transpose(context_vec_list.stack(), [1, 2, 3, 0])  # [b, 1, 2*hid, line]
+        # context_weight = tf.transpose(context_weight_list.stack(), [1, 0, 2, 3])  # [b, line, seq, 1]
+        # context_vec = tf.reduce_sum(context_vec_list, -1)  # [b, 1, 2*hid]
+        # # next_coverage and context_weight
+        # next_coverage_vector = coverage_vector + context_weight  # [b, line, seq, 1]
 
-        context_vec_list = tf.transpose(context_vec_list.stack(), [1, 2, 3, 0])  # [b, 1, 2*hid, line]
-        context_weight = tf.transpose(context_weight_list.stack(), [1, 0, 2, 3])  # [b, line, seq, 1]
-        context_vec = tf.reduce_sum(context_vec_list, -1)  # [b, 1, 2*hid]
-        # next_coverage and context_weight
-        next_coverage_vector = coverage_vector + context_weight  # [b, line, seq, 1]
+        encode_sequence = tf.reshape(encode_sequence, [batch, line*seq, hid])
+        encode_mask = tf.reshape(encode_mask, [batch, line*seq])
+        cover_v = tf.reshape(coverage_vector, [batch, line*seq, 1])
+
+        context_vector, context_weight, next_coverage_vector = self.attention(x, encode_sequence, encode_mask, cover_v)
+
+        context_weight = tf.reshape(context_weight, [batch, line, seq, 1])
+        next_coverage_vector = tf.reshape(next_coverage_vector, [batch, line, seq, 1])
 
         # [b, 1, 3 * hid]
-        x = tf.concat([x, context_vec], axis=-1)
+        x = tf.concat([x, context_vector], axis=-1)
         # [b, 1, hid]
         x = self.fc(x)
 
@@ -141,7 +155,7 @@ class GRUDecoder(layers.Layer):
         # context_vector: [b, 1, 2*hid] for pointer-generator
         # context_weight: [b, line, seq, 1]
         # coverage_vector: [b, line, seq, 1]
-        return x, decode_states, context_vec, context_weight, next_coverage_vector
+        return x, decode_states, context_vector, context_weight, next_coverage_vector
 
     def call(self, decode_input, encode_sequence, encode_mask, previous_state, coverage_vector=None, training=None):
         # decode_input: [b, 1, hid]
@@ -219,14 +233,19 @@ def get_extra_vocab(raw_source, token):
     def speed_up():
         def build_line_token(batch_data):
             source_line, mask_line = batch_data
-            line_token = tf.unique(tf.boolean_mask(source_line, mask_line)).y
+            selection = tf.boolean_mask(source_line, mask_line)
+            line_token = tf.unique(selection).y
             return line_token
 
         thread_num = max(min(max_thread, raw_source.shape[0]//4), min_thread)
-        pool = ThreadPool(thread_num)
-        extra_vocab_list = pool.map(build_line_token, zip(raw_source.numpy(), mask.numpy()))
-        pool.close()
-        pool.join()
+
+        extra_vocab_list = []
+        for i in range(len(raw_source)):
+            extra_vocab_list.append(build_line_token([raw_source[i], mask[i]]))
+        # pool = ThreadPool(thread_num)
+        # extra_vocab_list = pool.map(build_line_token, zip(raw_source.numpy().tolist(), mask.numpy().tolist()))
+        # pool.close()
+        # pool.join()
         return tf.keras.preprocessing.sequence.pad_sequences(extra_vocab_list, seq_len, object, 'post', 'post', vocab_pad_flag)
 
     extra_vocab = speed_up()
@@ -312,10 +331,13 @@ def get_token_id_from_concat_vocab(sequences, vocab, unk=unk_id):
             return sequence_id
 
         thread_num = max(min(max_thread, batch_size // 4), min_thread)
-        pool = ThreadPool(thread_num)
-        sequences_id = pool.map(map_func, zip(sequences.numpy(), vocab.numpy()))
-        pool.close()
-        pool.join()
+        sequences_id = []
+        for i in range(len(sequences)):
+            sequences_id.append(map_func([sequences[i], vocab[i]]))
+        # pool = ThreadPool(thread_num)
+        # sequences_id = pool.map(map_func, zip(sequences.numpy(), vocab.numpy()))
+        # pool.close()
+        # pool.join()
         return sequences_id
 
     sequences_id = speed_up()
