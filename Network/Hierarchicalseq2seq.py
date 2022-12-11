@@ -1,3 +1,4 @@
+import numpy as np
 import tensorflow as tf
 from tensorflow.keras import *
 
@@ -251,8 +252,8 @@ class HierarchicalSeq2Seq(Model):
         # [b, b*top-k, 2]
         new_indices = tf.TensorArray(dtype=tf.int32, size=batch_size)
         for i in range(batch_size):
-            tmp = tf.TensorArray(dtype=tf.int32, size=self.sentence_top_k)
-            for j in range(self.sentence_top_k):
+            tmp = tf.TensorArray(dtype=tf.int32, size=select_line_num)
+            for j in range(select_line_num):
                 tmp = tmp.write(j, [i, indices[i, j]])
             new_indices = new_indices.write(i, tmp.stack())
         new_indices = new_indices.stack()
@@ -458,27 +459,18 @@ def hie_before_send_data_process(dataset, flags, pad_unk_cl, line_limits, word_l
         # tmp = [start_lines[data_index]]
         tmp = []
         for line in single_batch_data:
-            if len(line) <= word_limits[data_index]:
-                # 预测 和 训练
-                if data_index == 0:
-                    tmp.append(line)
-                else:
-                    tmp.append(line + [ends[data_index]])
+            if len(line) < word_limits[data_index]:
+                tmp.append(line + [ends[data_index]])
             else:
                 word_limit = word_limits[data_index]
-                # 左：计算多出单词(除去end)还有多少个  右：每行单词 - cross_line
-                cross_line_num = math.ceil((len(line) - word_limit) / (word_limit - 1))
 
-                if data_index == 1:
-                    line = line + [ends[data_index]]
+                newList = [ line[:word_limit-1] + [ends[data_index]] ]
+                line = line[word_limit-1:]
+                while len(line) > 0:
+                    newList += [ [pad_unk_cl[2]] + line[:word_limit-2] + [ends[data_index]] ]
+                    line = line[word_limit-2:]
 
-                cross_list = [line[:word_limit]]
-                cross_list.extend([
-                    [pad_unk_cl[2]] +
-                    line[word_limit + i * (word_limit - 1): word_limit + (i + 1) * (word_limit - 1)]
-                    for i in range(cross_line_num)
-                ])
-                tmp.extend(cross_list)
+                tmp.extend(newList)
         tmp.append(end_lines[data_index])
         if len(tmp) < line_limits[data_index]:
             tmp.extend([[]] * (line_limits[data_index] - len(tmp)))
@@ -486,11 +478,27 @@ def hie_before_send_data_process(dataset, flags, pad_unk_cl, line_limits, word_l
             tmp = tmp[:line_limits[data_index]]
         return tf.keras.preprocessing.sequence.pad_sequences(tmp, word_limits[data_index], object, 'post', 'post', pad_unk_cl[0])
 
+    def pad_sequence(index):
+        data_index = index
+        max_line_num = 0
+        for each in dataset[data_index]:
+            max_line_num = max( min(len(each), line_limits[data_index]), max_line_num)
+        for i in range(len(dataset[data_index])):
+            each = dataset[data_index][i].tolist()
+            if len(each) < max_line_num:
+                each.extend([[pad_unk_cl[0]] * word_limits[data_index]] * (max_line_num - len(each)))
+            else:
+                each = each[:max_line_num]
+            dataset[data_index][i] = each
+        return dataset[data_index]
+
     pool = ThreadPool(batch_size)
     dataset = [pool.map(convert_to_standard_input, [[i, j] for j in range(len(dataset[i]))])
                for i in range(len(dataset))]
+    # dataset = pool.map(pad_sequence, [i for i in range(len(dataset))])
     pool.close()
     pool.join()
+
     dataset = [tf.stack(each, 0) for each in dataset]
 
     pad_num = vocab_token.numpy().tolist().index(str.encode(pad_unk_cl[0]))
@@ -805,6 +813,8 @@ def hie_analysis_process(model: HierarchicalSeq2Seq, x_token_id, x_word_mask, x_
         vocab_distribution = tf.TensorArray(dtype=tf.float32, size=out_seq_len)
         pointer_distribution = tf.TensorArray(dtype=tf.float32, size=out_seq_len)
         pgen_score = tf.TensorArray(dtype=tf.float32, size=out_seq_len)
+
+
 
         for word_index in range(out_seq_len):
             previous_word = out_word.read(word_index)

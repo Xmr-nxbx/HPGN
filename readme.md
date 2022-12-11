@@ -15,12 +15,17 @@ HPGN
 │  └─Csharp_Java      数据、模型、分词器、参考输出
 │      ├─dataset        预处理数据集和单词表
 │      ├─model          模型以及输出样例
+│      ├─trained-model  本实验模型的输出样例
 │      └─Tokenizers     分词器
+├─transformer_result    transformer输出结果
 ├─evaluator         bleu、Codebleu
 │  └─CodeBLEU
 └─Network           指针生成网络、层次指针生成网络
   
 ```
+# 运行环境
+python=3.9  
+tensorflow=2.7
 
 # 评测指标 与 数据集
 - BLEU：计算生成的序列和参考序列的n-gram重叠率，并返回0到100%之间的分值。BLEU值越高，表示生成的序列越接近参考序列
@@ -34,27 +39,166 @@ HPGN
 HPGN 隐藏层-64维，网络-1层
 
 ## Java到C#
-|模型|BLEU|EM|CodeBLEU|
-|--|--|--|--|
-|Naive|18.54|0.0|-|
-|PBSMT|43.53|12.5|42.71|
-|tree-to-tree|36.34|3.4|42.13|
-|Transformer|55.84|33.0|63.74|
-|Resnet-HPGN|58.74|19.5|63.08|
-|Gate-HPGN|61.40|27.3|64.93|
-|Base-HPGN|59.79|20.7|63.88|
-|指针生成网络|26.18|13.8|43.87|
+| 模型         | BLEU  | EM   | CodeBLEU |
+| ------------ | ----- | ---- | -------- |
+| Naive        | 18.54 | 0.0  | -        |
+| PBSMT        | 43.53 | 12.5 | 42.71    |
+| tree-to-tree | 36.34 | 3.4  | 42.13    |
+| Transformer  | 58.53 | 34.4 | 64.20    |
+| Resnet-HPGN  | 58.74 | 19.5 | 63.08    |
+| Gate-HPGN    | 61.40 | 27.3 | 64.93    |
+| Base-HPGN    | 59.79 | 20.7 | 63.88    |
+| 指针生成网络 | 26.18 | 13.8 | 43.87    |
 ## C#到Java
-|模型|BLEU|EM|CodeBLEU|
-|--|--|--|--|
-|Naive|18.69|0.0|-|
-|PBSMT|40.06|16.1|43.48|
-|tree-to-tree|32.09|4.4|43.86|
-|Transformer|50.47|37.9|61.59|
-|Resnet-HPGN|60.28|29.5|64.20|
-|Gate-HPGN|60.95|32.1|64.62|
-|Base-HPGN|58.26|30.0|62.35|
-|指针生成网络|27.84|20.5|44.88|
+| 模型         | BLEU  | EM   | CodeBLEU |
+| ------------ | ----- | ---- | -------- |
+| Naive        | 18.69 | 0.0  | -        |
+| PBSMT        | 40.06 | 16.1 | 43.48    |
+| tree-to-tree | 32.09 | 4.4  | 43.86    |
+| Transformer  | 52.87 | 34.7 | 58.56    |
+| Resnet-HPGN  | 60.28 | 29.5 | 64.20    |
+| Gate-HPGN    | 60.95 | 32.1 | 64.62    |
+| Base-HPGN    | 58.26 | 30.0 | 62.35    |
+| 指针生成网络 | 27.84 | 20.5 | 44.88    |
+
+# 人工评分
+## 指标
+<table>
+    <tr>
+        <th rowspan=2>分值</th>
+        <th colspan=2>评价指标</th>
+    </tr>
+    <tr>
+        <th>语法</th>
+        <th>语义</th>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>没有语法错误</td>
+        <td>语义一致</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>存在少数语法错误</th>
+        <td>少数语义缺失</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>存在部分语法错误</td>
+        <td>部分语义缺失或存在少数无关语义</th>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>存在大量语法错误</td>
+        <td>大量语义缺失或存在部分无关语义</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>不能看出语法结构</td>
+        <td>语义完全无关</td>
+    </tr>
+</table>
+
+## 成绩
+<table>
+    <tr>
+        <th rowspan=2 colspan=2>模型</th>
+        <th colspan=2>Java到C#</th>
+        <th colspan=2>C#到Java</th>
+    </tr>
+    <tr>
+        <th>语法</th>
+        <th>语义</th>
+        <th>语法</th>
+        <th>语义</th>
+    </tr>
+    <tr>
+        <th rowspan=6>Gate-HPGN</th>
+        <td>1</td>
+        <td>4.44</td>
+        <td>4.47</td>
+        <td>4.49</td>
+        <td>4.49</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>4.16</td>
+        <td>4.47</td>
+        <td>4.07</td>
+        <td>4.38</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4.66</td>
+        <td>4.68</td>
+        <td>4.73</td>
+        <td>4.74</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4.30</td>
+        <td>4.34</td>
+        <td>4.67</td>
+        <td>4.54</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>4.45</td>
+        <td>4.50</td>
+        <td>4.62</td>
+        <td>4.53</td>
+    </tr>
+    <tr>
+        <td>平均</td>
+        <td>4.40</td>
+        <td>4.49</td>
+        <td>4.52</td>
+        <td>4.54</td>
+    </tr>
+    <tr>
+        <th rowspan=6>Transformer</th>
+        <td>1</td>
+        <td>4.64</td>
+        <td>4.21</td>
+        <td>4.73</td>
+        <td>4.29</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>4.28</td>
+        <td>4.14</td>
+        <td>4.22</td>
+        <td>4.16</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4.79</td>
+        <td>4.67</td>
+        <td>4.83</td>
+        <td>4.69</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4.44</td>
+        <td>4.12</td>
+        <td>4.78</td>
+        <td>4.37</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>4.64</td>
+        <td>4.45</td>
+        <td>4.79</td>
+        <td>4.35</td>
+    </tr>
+    <tr>
+        <td>平均</td>
+        <td>4.56</td>
+        <td>4.32</td>
+        <td>4.67</td>
+        <td>4.37</td>
+    </tr>
+</table>
 
 # 输出案例
 
@@ -77,7 +221,7 @@ HPGN 隐藏层-64维，网络-1层
     </tr>
     <tr>
         <td>Transformer</td>
-        <td><code>public static WeightedTerm[] GetTerms(Query query){return GetTerms(false, new static static static static static static WeightTerms);}</code></td>
+        <td><code>public static WeightedTerm[] GetTerms(Query queryTerm) { return GetTerms(query, queryTerms, Term); }</code></td>
     </tr>
     <tr>
         <td>Gate-HPGN</td>
@@ -103,7 +247,7 @@ HPGN 隐藏层-64维，网络-1层
     </tr>
     <tr>
         <td>Transformer</td>
-        <td><code>public override long Skip(long n){int s = Math.Min(n) == 0 ? Math.Min(00.0 : Math.Min(n, s.Length);return s;}</code></td>
+        <td><code>public override long Skip(long n) { int s = (int)(MIN_SHIFT); return ((long)((ulong)block >> shift)) & unchecked((int)(0xff)); }</code></td>
     </tr>
     <tr>
         <td>Gate-HPGN</td>

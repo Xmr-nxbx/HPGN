@@ -9,3 +9,5 @@ gen
 dataset/Csharp_Java/dataset/test.json
 dataset/Csharp_Java/dataset/train.json
 dataset/Csharp_Java/dataset/valid.json
+
+__pycache__

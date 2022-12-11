@@ -26,8 +26,8 @@ config = {
     'state_feed': True,
     'state_feed_mode': 0,  # 0: gate, 1: res
     'reverse_key': False,
-    'lower_case': False,  # incorrect method
-    'force_copy': False,
+    'lower_case': False,  # deprecated
+    'force_copy': False,  # deprecated
 
     'epochs': 20,
     'batch_size': 40,
@@ -48,9 +48,12 @@ def select_dataset():
         print('datasets not exist')
         exit(0)
     _, folders, _ = next(os.walk(config['datasets_dir']))
-    time.sleep(1)
-    selection = input('\n'.join(['%d -> %s' % (i, folder) for i, folder in enumerate(folders)])
-                      + '\nplease select data by index(other to cancel):').strip()
+    # time.sleep(1)
+    if len(folders) != 1:
+        selection = input('\n'.join(['%d -> %s' % (i, folder) for i, folder in enumerate(folders)])
+                          + '\nplease select data by index(other to cancel):').strip()
+    else:
+        selection = '0'
     if not selection.isdigit() or int(selection) not in list(range(len(folders))):
         print('exit')
         exit(0)
@@ -180,7 +183,7 @@ def entry():
                 hie_auto_regressive_process(model, optimizer, token_id_list[0], token_id_list[1], word_mask_list[0], word_mask_list[1], line_mask_list[0], line_mask_list[1], y_first_line_id, y_first_word_id, unk_id, config['force_copy'], True)
 
             train_loss.append(loss.numpy().tolist())
-            print('epoch: %d\tstep: %d\tloss:%.2f\ttime spent:%.2fs' % (epoch, step, loss.numpy().tolist(), time.time() - step_start))
+            print('epoch: %d\tstep: %d\tloss:%.4f\ttime spent:%.2fs' % (epoch, step, loss.numpy().tolist(), time.time() - step_start))
 
             if step % 20 == 0:
                 # [b, line, seq]
@@ -206,7 +209,7 @@ def entry():
             valid_loss += loss.numpy().tolist()
         valid_loss = valid_loss/valid_step
         valid_loss_list.append(valid_loss)
-        print('epoch: %d\tvalid_loss: %.2f\t total time: %.2fs' % (epoch, valid_loss, time.time()-epoch_start))
+        print('epoch: %d\tvalid_loss: %.4f\t total time: %.2fs' % (epoch, valid_loss, time.time()-epoch_start))
 
         # write log
         with open(os.path.join(model_path, './message.log'), 'w', encoding='utf-8') as f:
@@ -255,7 +258,7 @@ def entry():
                                         line_mask_list[0], line_mask_list[1], y_first_line_id, y_first_word_id,
                                         unk_id, config['force_copy'], False)
 
-        print('step: %d\tloss: %.2f\ttime spent:%.2fs' % (step, loss.numpy().tolist(), time.time() - step_start))
+        print('step: %d\tloss: %.4f\ttime spent:%.2fs' % (step, loss.numpy().tolist(), time.time() - step_start))
         out_sentence = get_token_from_vocab(out_sentence, concat_vocab).numpy().tolist()
 
         for i in range(config['batch_size']):
